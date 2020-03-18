@@ -1,4 +1,4 @@
-package LeetCode_Java;
+package LeetCode_Java.Two_Pointer;
 
 import java.util.HashMap;
 import java.util.Map;
