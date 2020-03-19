@@ -27,6 +27,7 @@ dp[i] = (i - 1) * (dp[i - 1] + dp[i - 2])
 x x x x ...x x k x x ... n --> x x x x ...x x n x x ... k
 那么去掉 x和 n， 就是一个求n-2个数的Derangement
 
+
 2. 如果第k个数不放到第n个位置：
 x x x x ...x x k x x ... n --> x x x x ...x x n x x ... + k
 这个时候我们把n的位置去掉
