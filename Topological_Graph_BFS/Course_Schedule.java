@@ -43,7 +43,6 @@ public class Course_Schedule {
         for (int i = 0; i < numCourses; i++){
             map.put(i, new ArrayList<Integer>());
         }
-
         for (int i = 0; i < prerequisites.length; i++){
            map.get(prerequisites[i][1]).add(prerequisites[i][0]);
         }
