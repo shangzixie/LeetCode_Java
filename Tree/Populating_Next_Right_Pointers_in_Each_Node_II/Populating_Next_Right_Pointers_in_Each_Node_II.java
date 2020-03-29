@@ -1,4 +1,4 @@
-package LeetCode_Java.Tree;
+package LeetCode_Java.Tree.Populating_Next_Right_Pointers_in_Each_Node_II;
 
 public class Populating_Next_Right_Pointers_in_Each_Node_II {
     class Node {
