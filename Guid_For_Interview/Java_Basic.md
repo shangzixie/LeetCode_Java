@@ -197,3 +197,18 @@
 	2. HashTable对整个表上锁
 	![](https://i.imgur.com/kWigUEe.png)
 	![](https://i.imgur.com/fESqvP3.png)
+
+
+1. 底层实现： 
+	1. List
+		1. ArrayList: Object数组； 
+		2. LinkedList: 双向链表；
+
+	2. Set
+		1. HashSet: HashMap
+		2. LinkedHashSet: LinkedHashMap
+		3. TreeSet: 红黑树
+	3. Map
+		1. HashMap: 数组+链表。 链表主要解决哈希冲突，超过8改为红黑树
+		2. LinkedHashMap: 增加了一条双向链表，使得上面的结构可以保持键值对的插入顺序。同时通过对链表进行相应的操作，实现了访问顺序相关逻辑。
+		![](https://i.imgur.com/wN4Vh23.png)
