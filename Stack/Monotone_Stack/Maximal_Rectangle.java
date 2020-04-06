@@ -1,4 +1,4 @@
-package LeetCode_Java.Monotone_Stack;
+package LeetCode_Java.Stack.Monotone_Stack;
 import java.util.Stack;
 
 /*

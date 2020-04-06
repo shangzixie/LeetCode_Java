@@ -1,4 +1,4 @@
-package LeetCode_Java.Monotone_Stack.Next_Greater_Element;
+package LeetCode_Java.Stack.Monotone_Stack.Next_Greater_Element;
 
 import java.util.HashMap;
 import java.util.Map;

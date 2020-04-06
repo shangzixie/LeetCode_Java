@@ -1,10 +1,8 @@
-package LeetCode_Java;
-
-import LeetCode_Java.Two_Pointer.Minimum_Window_Substring;
+package LeetCode_Java.Stack.Stack.Evaluate_Reverse_Polish_Notation;
 
 import java.util.Stack;
 
-public class deBug {
+public class Evaluate_Reverse_Polish_Notation {
     public int evalRPN(String[] tokens) {
         Stack<Integer> stack = new Stack<>();
         String operators = "+-*/";

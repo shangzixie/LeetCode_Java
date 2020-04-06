@@ -1,4 +1,4 @@
-package LeetCode_Java.Monotone_Stack.Next_Greater_Element_II;
+package LeetCode_Java.Stack.Monotone_Stack.Next_Greater_Element_II;
 
 import java.util.Stack;
 
