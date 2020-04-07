@@ -1,4 +1,4 @@
-package LeetCode_Java.Two_Pointer;
+package LeetCode_Java.Two_Pointer.Sliding_Window.Minimum_Window_Substring;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,34 +13,33 @@ public class Minimum_Window_Substring {
         if (source == null || target == null) return "";
 
         Map<Character, Integer> charToFreq = new HashMap<>();
-        int matchLen = 0, minLen = Integer.MAX_VALUE, start = 0, index = 0, end = 0;
+        int minLen = Integer.MAX_VALUE, start = 0, end = 0, index = 0;
 
         //store all target character to map;
         for (char c: target.toCharArray()) charToFreq.put(c, charToFreq.getOrDefault(c, 0) + 1);
+        int matchLen = charToFreq.size();
 
-
-        while (end <  source.length()){
+        while (end < source.length()){
             char c = source.charAt(end);
-            if (charToFreq.containsKey(c)) {
+            if (charToFreq.containsKey(c)){
                 charToFreq.put(c, charToFreq.get(c) - 1);
-                if (charToFreq.get(c) == 0) matchLen++;
+                if (charToFreq.get(c) == 0) matchLen--;
             }
-            end++;
-
-            while (matchLen == charToFreq.size()){
-                if (minLen > end - start){
-                    minLen = end - start;
+            while (matchLen <=0){
+                if (minLen > end - start +1){
+                    minLen = end - start +1;
                     index = start;
                 }
+
                 char tempc = source.charAt(start);
                 if (charToFreq.containsKey(tempc)){
                     charToFreq.put(tempc, charToFreq.get(tempc) + 1);
-                    if (charToFreq.get(tempc) > 0) matchLen --;
+                    if (charToFreq.get(tempc) > 0) matchLen++;
                 }
 
                 start ++;
             }
-
+            end++;
         }
         return minLen == Integer.MAX_VALUE ? "" : source.substring(index, index + minLen);
     }
