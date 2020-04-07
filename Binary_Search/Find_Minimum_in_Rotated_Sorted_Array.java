@@ -22,7 +22,6 @@ public class Find_Minimum_in_Rotated_Sorted_Array {
             // 45671234
             //     |
             if (mid > 0 && nums[mid] < nums[mid-1]) return nums[mid];
-            if (nums[mid] > nums[mid + 1]) return nums[mid + 1];
 
             // binary search
 
