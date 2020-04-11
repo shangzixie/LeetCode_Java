@@ -15,3 +15,5 @@ we know 2 points confirm a line, so how to confirm the third point are in the sa
 // 最后我们可以得到和该点同一直线的最大点的数量。
 // 之后我们更换该固定点，计算
 // 最后得到全局最大数量
+
+![](https://i.imgur.com/pwmN6f5.png)

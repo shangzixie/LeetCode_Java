@@ -1,4 +1,4 @@
-package LeetCode_Java.Two_Pointer.Valid_Palindrome;
+package LeetCode_Java.Pointer.Valid_Palindrome;
 
 import static java.lang.Character.isLetter;
 

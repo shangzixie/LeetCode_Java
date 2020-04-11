@@ -1,4 +1,4 @@
-package LeetCode_Java.Two_Pointer.Sliding_Window.Minimum_Window_Substring;
+package LeetCode_Java.Pointer.Sliding_Window.Minimum_Window_Substring;
 
 import java.util.HashMap;
 import java.util.Map;
