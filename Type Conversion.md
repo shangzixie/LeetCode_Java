@@ -28,6 +28,9 @@ valueOf()
         
         1. String.valueOf(char[] a / int[] a) 
         2. new String(char[] a / int[] a) 
+    
+    2. to ArrayList
+        new ArrayList(Arrays.asList(int[]));    
 
 转换为Array
     1. linkedlist 或者 arraylist 转换为array
@@ -53,4 +56,11 @@ valueOf()
     1. 转化为string           
        1. String.valueOf(char[] a / int[] a) 
        2. new String(char[] a / int[] a) 
+
+    2. StringBuilder转换为
+        sb.toString()
+
+stringBuilder
+    1. String to StringBuffer using append() method
+    2. StringBuffer to String using toString() method
 ```
