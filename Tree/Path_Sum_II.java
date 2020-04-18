@@ -1,4 +1,4 @@
-package LeetCode_Java.Recursion;
+package LeetCode_Java.Tree;
 
 import com.sun.source.tree.Tree;
 

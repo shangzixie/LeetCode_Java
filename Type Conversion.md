@@ -49,7 +49,7 @@ valueOf()
         str.charAt(index) 
 
     3. 转换为整数，char等
-        String.valueOf(str.charAt()) 
+        Integer.valueOf(str.charAt()) 
 
 
 转换为String
@@ -61,6 +61,6 @@ valueOf()
         sb.toString()
 
 stringBuilder
-    1. String to StringBuffer using append() method
+    1. String to StringBuffer using append() method or new StringBuilder(string)
     2. StringBuffer to String using toString() method
 ```

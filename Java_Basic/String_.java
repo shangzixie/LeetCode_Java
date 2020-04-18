@@ -32,10 +32,11 @@ public class String_ {
 
     //string
 
-        //转换为StringBuilder 用append
-        StringBuilder sb = new StringBuilder();
+        //转换为StringBuilder 用append或者放进括号
         String s = "abcd";
-        sb.append(s);
+        StringBuilder sb = new StringBuilder(s); //或者 sb.append(s);
         System.out.println(sb);
+
+
     }
 }
