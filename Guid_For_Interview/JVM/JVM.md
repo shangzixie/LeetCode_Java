@@ -1,29 +1,7 @@
-##本地方法，Java方法
-    A native method is a Java method whose implementation is provided by non-java code
+##类加载过程
+    1. 
 
 
-
-
-线程私有	
-##程序计数器
-	1. 如果线程正在执行的是一个Java方法，这个计数器记录的是正在执行的虚拟机字节码指令的地
-       址；如果正在执行的是本地（Native）方法，这个计数器值则应为空（Undefined）。
-    
-    2.    
-			
-![](https://i.imgur.com/XODNhh3.png)
-
-
-##虚拟机栈
-    1. 存储基本数据类型，对象的引用（指针）
-    
-    
-##常量池
-
-##堆
-    1. 虚拟机管理的最大一块内存
-    2. 线程共享，在虚拟机启动时创建    
-    3. 垃圾回收管理
     
     
     
