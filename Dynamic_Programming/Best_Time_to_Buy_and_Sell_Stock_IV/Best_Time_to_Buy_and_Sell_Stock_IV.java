@@ -23,8 +23,8 @@ public class Best_Time_to_Buy_and_Sell_Stock_IV {
         hold[0] = 0;
         sold[0] = 0;
         for (int i = 0 ; i < n; i++){
-            int holdOld = hold;
-            int soldOld = sold;
+            int[] holdOld = hold;
+            int[] soldOld = sold;
 
             for (int j = 1; j <= K; j++){
                 hold[j] = Math.max(holdOld[j], soldOld[j-1] - prices[i]);
