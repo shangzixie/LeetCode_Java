@@ -7,11 +7,14 @@ public class Rotate_Array {
         int i = 0;
         int det = k % nums.length;
         int n = nums.length;
+        int num = nums[0];
 
         while(i != 0){
-            int nextNum = nums[i + det % n];
-            nums[i+ det % n] = nums[i];
-            i += det % n;
+            int nextIndex = (i + det) % n;
+            int nextNum = nums[nextIndex];
+            nums[nextIndex] = num;
+            i = nextIndex;
+            num = nextNum;
         }
         return nums;
     }
