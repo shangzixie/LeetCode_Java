@@ -1,5 +1,5 @@
 ```
-valueOf()
+valueOf(): xx.valueOf 就是把什么转化成XX
 
 1. 一个数组或字符转化为string 
                
@@ -59,6 +59,9 @@ valueOf()
 
     2. StringBuilder转换为
         sb.toString()
+    
+    3. char to string
+        String.valueOf(char c);
 
 stringBuilder
     1. String to StringBuffer using append() method or new StringBuilder(string)
