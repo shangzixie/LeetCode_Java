@@ -1,4 +1,4 @@
-package LeetCode_Java.Dynamic_Programming;
+package LeetCode_Java.Dynamic_Programming.Regular_Expression_Matching;
 
 public class Regular_Expression_Matching {
     public static boolean isMatch(String s, String p) {
