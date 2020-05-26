@@ -1,2 +1,55 @@
-The first method is to use `permutaions` recursive method.
+# 18. 4Sum
 
+[LeetCode 18](https://leetcode.com/problems/4sum/)
+
+
+## Methods
+
+###Method 1:  
+use `permutaions` recursive method  
+
+
+
+### Key Points
+need to consider repeating elements and to remove duplicates
+
+### Code
+
+```java
+public class Four_Sum {
+    List<List<Integer>> results = new ArrayList<>();
+
+    public List<List<Integer>> fourSum(int[] numbers, int target) {
+        // write your code here
+        Arrays.sort(numbers);
+        boolean[] visited = new boolean[numbers.length];
+
+        helper(numbers, target, new LinkedList<Integer>(), 0, visited);
+        return results;
+    }
+
+    private void helper(int[] numbers, int target, LinkedList<Integer> path, int startIndex, boolean[] visited){
+        if (startIndex >= numbers.length && target != 0) return; //reduce time complexity
+        if (path.size()== 4 && target != 0) return;              //reduce time complexity
+        if (path.size() == 4 && target == 0){
+            results.add(new LinkedList(path));
+            return;
+        }
+
+        for (int i = startIndex; i < numbers.length; i++){
+            if (i > 0 && numbers[i] == numbers[i-1] && visited[i-1] == false) continue; //use visited to remove duplications
+
+            path.add(numbers[i]);
+            visited[i] = true;
+
+            helper(numbers, target - numbers[i], path, i + 1, visited);
+
+            visited[i] = false;
+            path.removeLast();
+        }
+    }
+}
+```
+
+
+## Reference

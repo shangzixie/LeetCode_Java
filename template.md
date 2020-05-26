@@ -2,17 +2,19 @@
 
 [LeetCode ]()
 
-## Problem
-
-
 
 ## Methods
-Intuition: 
+
+### Method 1
+
+
+### Key Points
 
 
 ### Code
-```JavaScript
+```java
+
 
 ```
 
-### Reference
+## Reference

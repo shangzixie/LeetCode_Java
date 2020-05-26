@@ -1,5 +1,5 @@
 # LeetCode
-
+If you couldn't find an answer here, you could move to [my friend](https://github.com/frostace/LeetCode)
 
 ## 1. BFS
 * [Number_of_Island](BFS/Number_of_Island)
