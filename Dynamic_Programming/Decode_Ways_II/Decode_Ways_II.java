@@ -1,4 +1,4 @@
-package LeetCode_Java.Dynamic_Programming;
+package LeetCode_Java.Dynamic_Programming.Decode_Ways_II;
 
 public class Decode_Ways_II {
     public int numDecodings(String s) {

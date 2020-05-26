@@ -1,4 +1,4 @@
-package LeetCode_Java.Recursion.Letter_Combinations_of_a_Phone_Number;
+package LeetCode_Java.Tree.Letter_Combinations_of_a_Phone_Number;
 
 import java.util.ArrayList;
 import java.util.List;

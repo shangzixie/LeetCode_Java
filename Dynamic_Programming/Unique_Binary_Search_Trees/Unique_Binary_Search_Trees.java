@@ -1,4 +1,4 @@
-package LeetCode_Java.Dynamic_Programming;
+package LeetCode_Java.Dynamic_Programming.Unique_Binary_Search_Trees;
 
 public class Unique_Binary_Search_Trees {
 

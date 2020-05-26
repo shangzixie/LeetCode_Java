@@ -1,4 +1,4 @@
-package LeetCode_Java.Dynamic_Programming;
+package LeetCode_Java.Dynamic_Programming.Find_the_Derangement_of_An_Array;
 
 /*
 f[i] means if there are i numbers, how many derangement arrays it will produce.

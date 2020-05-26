@@ -1,4 +1,4 @@
-package LeetCode_Java.Binary_Search;
+package LeetCode_Java.Binary_Search.Find_Minimum_in_Rotated_Sorted_Array;
 
 /*
 https://www.youtube.com/watch?v=MzoL02wd5ag

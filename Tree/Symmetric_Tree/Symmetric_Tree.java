@@ -1,4 +1,4 @@
-package LeetCode_Java.Tree;
+package LeetCode_Java.Tree.Symmetric_Tree;
 
 
 

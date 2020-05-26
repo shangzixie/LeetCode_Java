@@ -1,4 +1,4 @@
-package LeetCode_Java.Tree;
+package LeetCode_Java.Tree.Convert_Sorted_List_to_Binary_Search_Tree;
 
 
 public class Convert_Sorted_List_to_Binary_Search_Tree {

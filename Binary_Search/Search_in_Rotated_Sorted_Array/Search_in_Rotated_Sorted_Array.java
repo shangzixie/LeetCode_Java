@@ -1,4 +1,4 @@
-package LeetCode_Java.Binary_Search;
+package LeetCode_Java.Binary_Search.Search_in_Rotated_Sorted_Array;
 
 
 /*

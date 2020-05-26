@@ -1,4 +1,4 @@
-package LeetCode_Java.Dynamic_Programming;
+package LeetCode_Java.Dynamic_Programming.Decode_Ways;
 
 import java.util.HashMap;
 import java.util.Map;

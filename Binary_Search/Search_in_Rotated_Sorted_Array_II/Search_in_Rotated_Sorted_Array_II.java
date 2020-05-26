@@ -1,4 +1,4 @@
-package LeetCode_Java.Binary_Search;
+package LeetCode_Java.Binary_Search.Search_in_Rotated_Sorted_Array_II;
 
 public class Search_in_Rotated_Sorted_Array_II {
     public boolean search(int[] nums, int target) {

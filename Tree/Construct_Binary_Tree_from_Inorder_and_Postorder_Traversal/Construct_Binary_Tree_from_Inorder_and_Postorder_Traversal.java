@@ -1,4 +1,4 @@
-package LeetCode_Java.Tree;
+package LeetCode_Java.Tree.Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal;
 
 import java.util.HashMap;
 
