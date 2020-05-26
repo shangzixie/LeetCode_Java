@@ -8,7 +8,7 @@ import java.util.LinkedList;
 
 public class Binary_Search_Tree_Iterator {
 
-    //TreeNode
+    //LeetCode_Java.buildinClass.TreeNode
     public class TreeNode {
         public int val;
         public TreeNode left, right;

@@ -1,3 +1,5 @@
+
+
 ```
 valueOf(): xx.valueOf 就是把什么转化成XX
 
@@ -30,7 +32,7 @@ valueOf(): xx.valueOf 就是把什么转化成XX
         2. new String(char[] a / int[] a) 
     
     2. to ArrayList
-        new ArrayList(Arrays.asList(int[]));    
+        List<String> list1 = Arrays.asList(array);    
 
 转换为Array
     1. linkedlist 或者 arraylist 转换为array
@@ -40,6 +42,15 @@ valueOf(): xx.valueOf 就是把什么转化成XX
 
     
 ```
+
+```
+对List进行操作
+
+    1. 转换为数组：
+    Integer a = arr.toArray(new int[0]); 
+
+```
+
 ```
 对String进行转换
     1. 转换为Char数组

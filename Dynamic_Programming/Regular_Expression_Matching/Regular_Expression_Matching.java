@@ -22,7 +22,8 @@ public class Regular_Expression_Matching {
                 }else if (p.charAt(j) == '.') {
                     dp[i][j] = dp[i - 1][j - 1];
                 }else if (p.charAt(j) == '*'){
-                    boolean possible1 = dp[i][j-2];
+                    boolean possible1 = dp[i][j-2];  // （字母 + *） means 0
+                    // ((letter + *) = letter || p[j-1] is .)
                     boolean possible2 = (s.charAt(i) == p.charAt(j-1) || p.charAt(j-1) == '.') && dp[i-1][j];
                     dp[i][j] = possible1 || possible2;
                 }
