@@ -53,15 +53,15 @@
 * [Three_Sum_Closest](Pointer/Three_Sum_Closest)
 * [Three_Sum_Multiplicity](Pointer/Three_Sum_Multiplicity)
 * [Valid_Palindrome](Pointer/Valid_Palindrome)
-###Sliding Window
+### Sliding Window
 * [Longest_Substring_Without_Repeating_Characters](Pointer/Sliding_Window/Longest_Substring_Without_Repeating_Characters)
 * [Minimum_Window_Substring](Pointer/Sliding_Window/Minimum_Window_Substring)
 * [Minimum_Window_Substring_II](Pointer/Sliding_Window/Minimum_Window_Substring_II)
 
-##9. Prefix Sum
+## 9. Prefix Sum
 * [Binary_Subarrays_With_Sum](Prefix_Sum/Binary_Subarrays_With_Sum)
 
-##10. Recursion/DFS
+## 10. Recursion/DFS
 * [Binary_Search_Tree_Iterator](Tree/Binary_Search_Tree_Iterator)
 * [Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal](Tree/Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal)
 * [Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal](Tree/Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal)
@@ -77,7 +77,7 @@
 * [Symmetric_Tree](Tree/Symmetric_Tree)
 * [Unique_Binary_Search_Tress_II](Tree/Unique_Binary_Search_Tress_II)
 
-##11. Tricky Method
+## 11. Tricky Method
 * [Longest_Consecutive_Sequence](Tricky/Longest_Consecutive_Sequence)
 * [Max_Points_on_A_Line](Tricky/Max_Points_on_A_Line)
 * [Next_Greater_Element_III](Tricky/Next_Greater_Element_III)
