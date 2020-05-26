@@ -53,6 +53,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Three_Sum_Closest](Pointer/Three_Sum_Closest)
 * [Three_Sum_Multiplicity](Pointer/Three_Sum_Multiplicity)
 * [Valid_Palindrome](Pointer/Valid_Palindrome)
+* [Remove_Nth_Node_From_End_of_List](Pointer/Remove_Nth_Node_From_End_of_List)
 ### Sliding Window
 * [Longest_Substring_Without_Repeating_Characters](Pointer/Sliding_Window/Longest_Substring_Without_Repeating_Characters)
 * [Minimum_Window_Substring](Pointer/Sliding_Window/Minimum_Window_Substring)
