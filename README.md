@@ -78,6 +78,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Surrounded_Regions](DFS/Surrounded_Regions)
 * [Symmetric_Tree](DFS/Symmetric_Tree)
 * [Unique_Binary_Search_Tress_II](DFS/Unique_Binary_Search_Tress_II)
+* [Generate_Parentheses](DFS/Generate_Parentheses)
 
 ## 11. Tricky Method
 * [Longest_Consecutive_Sequence](Tricky/Longest_Consecutive_Sequence)

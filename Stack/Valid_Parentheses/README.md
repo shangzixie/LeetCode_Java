@@ -17,8 +17,6 @@ from above, could confirm the conditions:
 from I: bracket appear in pairs, so we could use stack 
 
 from II and III: if current bracket is right bracket `]`, the last closest left bracket must be `[` to match it; we could use `stack.peek()`  
-### Key Points
-
 
 ### Code
 ```java
