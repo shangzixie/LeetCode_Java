@@ -6,15 +6,15 @@
 ## Methods
 
 ### Method 1
-Intuitively, need to consider how to get Nth node from end. Recursion? or traverse two times, the 1st time, use count to the number of all nodes, 
-the second time to remove Nth?
+1. Intuitively, need to consider how to get the Nth node from end. Recursion? or traverse two times, the 1st time, use count to the number of all nodes, 
+the second time to remove the Nth?
 
-But in fact, we could use 2 pointers instead traversing 2 times. 
+2. But in fact, we could use 2 pointers instead traversing 2 times. 
+
+3. we let p1 keep n distance from p2. Then when p2 traverse to the end, the p1.next is the node we want to move; 
 
 ### Key Points
- in order to consider edge case:`1-->null` or `1 --> 2 --> null`
- 
- need use dummy node. 
+ in order to consider edge case:`1-->null` or `1 --> 2 --> null`, need to use dummy node. 
 
 ### Code
 ```java

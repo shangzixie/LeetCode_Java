@@ -1,6 +1,5 @@
 package LeetCode_Java.Pointer.Remove_Nth_Node_From_End_of_List;
 
-import LeetCode_Java.Tree.Convert_Sorted_List_to_Binary_Search_Tree.Convert_Sorted_List_to_Binary_Search_Tree;
 import LeetCode_Java.buildinClass.ListNode;
 
 public class Remove_Nth_Node_From_End_of_List {

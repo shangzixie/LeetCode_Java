@@ -1,8 +1,9 @@
 # LeetCode
 If you couldn't find an answer here, you could move to [my friend](https://github.com/frostace/LeetCode)
 
-## 1. BFS
+## 1. BFS/Topological/Graph
 * [Number_of_Island](BFS/Number_of_Island)
+
 
 ## 2. Union Find
 * [Number_of_Islands_II](BFS/Union_Find/Number_of_Islands_II)
@@ -63,20 +64,20 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Binary_Subarrays_With_Sum](Prefix_Sum/Binary_Subarrays_With_Sum)
 
 ## 10. Recursion/DFS
-* [Binary_Search_Tree_Iterator](Tree/Binary_Search_Tree_Iterator)
-* [Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal](Tree/Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal)
-* [Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal](Tree/Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal)
-* [Contains_Duplicate_III](Tree/Contains_Duplicate_III)
-* [Convert_Sorted_Array_to_Binary_Search_Tree](Tree/Convert_Sorted_Array_to_Binary_Search_Tree)
-* [Convert_Sorted_List_to_Binary_Search_Tree](Tree/Convert_Sorted_List_to_Binary_Search_Tree)
-* [Four_Sum](Tree/Four_Sum)
-* [Letter_Combinations_of_a_Phone_Number](Tree/Letter_Combinations_of_a_Phone_Number)
-* [Path_Sum_II](Tree/Path_Sum_II)
-* [Populating_Next_Right_Pointers_in_Each_Node](Tree/Populating_Next_Right_Pointers_in_Each_Node)
-* [Populating_Next_Right_Pointers_in_Each_Node_II](Tree/Populating_Next_Right_Pointers_in_Each_Node_II)
-* [Surrounded_Regions](Tree/Surrounded_Regions)
-* [Symmetric_Tree](Tree/Symmetric_Tree)
-* [Unique_Binary_Search_Tress_II](Tree/Unique_Binary_Search_Tress_II)
+* [Binary_Search_Tree_Iterator](DFS/Binary_Search_Tree_Iterator)
+* [Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal](DFS/Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal)
+* [Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal](DFS/Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal)
+* [Contains_Duplicate_III](DFS/Contains_Duplicate_III)
+* [Convert_Sorted_Array_to_Binary_Search_Tree](DFS/Convert_Sorted_Array_to_Binary_Search_Tree)
+* [Convert_Sorted_List_to_Binary_Search_Tree](DFS/Convert_Sorted_List_to_Binary_Search_Tree)
+* [Four_Sum](DFS/Four_Sum)
+* [Letter_Combinations_of_a_Phone_Number](DFS/Letter_Combinations_of_a_Phone_Number)
+* [Path_Sum_II](DFS/Path_Sum_II)
+* [Populating_Next_Right_Pointers_in_Each_Node](DFS/Populating_Next_Right_Pointers_in_Each_Node)
+* [Populating_Next_Right_Pointers_in_Each_Node_II](DFS/Populating_Next_Right_Pointers_in_Each_Node_II)
+* [Surrounded_Regions](DFS/Surrounded_Regions)
+* [Symmetric_Tree](DFS/Symmetric_Tree)
+* [Unique_Binary_Search_Tress_II](DFS/Unique_Binary_Search_Tress_II)
 
 ## 11. Tricky Method
 * [Longest_Consecutive_Sequence](Tricky/Longest_Consecutive_Sequence)
@@ -86,3 +87,9 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Sliding_Window_Maximum](Tricky/Sliding_Window_Maximum)
 * [ZigZag_Conversion](Tricky/ZigZag_Conversion)
 
+
+## 12. Stack
+* [Evaluate_Reverse_Polish_Notation](Stack/Evaluate_Reverse_Polish_Notation)
+* [Monotone_Stack](Stack/Monotone_Stack)
+* [Reverse_Words_in_a_String_II](Stack/Reverse_Words_in_a_String_II)
+* [Valid_Parentheses](Stack/Valid_Parentheses)
