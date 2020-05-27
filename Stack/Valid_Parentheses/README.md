@@ -16,7 +16,7 @@ from above, could confirm the conditions:
 
 from I: bracket appear in pairs, so we could use stack 
 
-from II and III: if the last closest left bracket is `[`, just right bracket `]` is valid; we could use stack.peek()to judge  
+from II and III: if current bracket is right bracket `]`, the last closest left bracket must be `[` to match it; we could use `stack.peek()`  
 ### Key Points
 
 
