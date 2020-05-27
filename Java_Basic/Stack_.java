@@ -5,11 +5,18 @@ import java.util.Stack;
 
 public class Stack_ {
     public static void main(String[] args) {
+        /*
+        peek()
+        add()
+        pop()
+        isEmpty()
+         */
         Stack<Integer> stack = new Stack<>();
         stack.add(3);
         stack.add(2);
         stack.add(1);
         while(!stack.isEmpty()){
+            System.out.println(stack.peek());
             System.out.println(stack.pop());
         }
 
