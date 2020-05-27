@@ -4,6 +4,11 @@ import java.util.PriorityQueue;
 
 public class Heap_ {
     public static void main(String[] args) {
+        /*
+        add()
+        poll--pop min or max value (depends on min-heap or max-heap)
+
+         */
         PriorityQueue<Integer> heap = new PriorityQueue<>();
 
         heap.add(1);
