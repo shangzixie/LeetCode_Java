@@ -87,6 +87,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Set_Mismatch](Tricky/Set_Mismatch)
 * [Sliding_Window_Maximum](Tricky/Sliding_Window_Maximum)
 * [ZigZag_Conversion](Tricky/ZigZag_Conversion)
+* [Merge_K_Sorted_Lists](Tricky/Merge_K_Sorted_Lists)
 
 
 ## 12. Stack
