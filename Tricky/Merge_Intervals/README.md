@@ -18,7 +18,7 @@ every loop, modify and update the `merged.getLast()[1]`
 every loop, when current interval non-overlapping, append `(start, cur.end)` and update `start`;
 if current interval is overlap, keep iterating to find appropriate `end`
 
-###But
+### But
 it couldn't deal with this case: 
 ```
 [(1,10), (2,3),(4,5),(6,7),(8,9)]
