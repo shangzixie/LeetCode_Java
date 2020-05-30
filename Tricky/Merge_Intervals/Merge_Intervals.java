@@ -28,22 +28,29 @@ public class Merge_Intervals {
     }
     // right method 2: just update int end
     public List<Interval> merge2(List<Interval> intervals) {
-        if (intervals.size() == 1 || intervals.size() == 0) return intervals;
-        Collections.sort(intervals, (h1, h2)-> Integer.compare(h1.start, h2.start));
+        if (intervals.size() <= 1)
+            return intervals;
 
+        // Sort by ascending starting point using an anonymous Comparator
+        intervals.sort((i1, i2) -> Integer.compare(i1.start, i2.start));
+
+        List<Interval> result = new LinkedList<Interval>();
         int start = intervals.get(0).start;
-        int maxEnd = intervals.get(0).end;
-        List<Interval> ans = new ArrayList<>();
-        for (int i = 1; i < intervals.size();i++){
-            if (intervals.get(i).start > maxEnd){//non-overlapping
-                ans.add(new Interval(start, maxEnd));
-                start = intervals.get(i).start;
-            }else {
-                maxEnd = Math.max(intervals.get(i).end, maxEnd);
-            }
+        int end = intervals.get(0).end;
 
+        for (Interval interval : intervals) {
+            if (interval.start <= end) // Overlapping intervals, move the end if needed
+                end = Math.max(end, interval.end);
+            else {                     // Disjoint intervals, add the previous one and reset bounds
+                result.add(new Interval(start, end));
+                start = interval.start;
+                end = interval.end;
+            }
         }
-        return ans;
+
+        // Add the last interval
+        result.add(new Interval(start, end));
+        return result;
     }
 
 
