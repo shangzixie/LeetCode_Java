@@ -7,4 +7,5 @@ public class ListNode {
         this.val = x;
         this.next = null;
     }
+
 }
