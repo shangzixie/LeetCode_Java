@@ -74,47 +74,47 @@ iterator method
 
 ### code
 
-```
+```python
 
 class Solution:
 
-      def reverseBetween(self, head, m, n):
+    def reverseBetween(self, head, m, n):
          
-         dummy = ListNode(None, head)
-         m_prev = self.findkth(m-1, dummy)  # bug1:  head is dummy 
-         m_node = m_prev.next 
-         
-         n_node = self.findkth(n, dummy)
-         n_next = n_node.next 
-         
-         n_node.next = None  #let the node -->null
-         
-         self.reverse(m_node)
-         
-         m_prev.next = n_node #connect m_pre --> n_node
-         m_node.next = n_next #connect m --> n.next node 
-         
-         return dummy.next  
+        dummy = ListNode(None, head)
+        m_prev = self.findkth(m-1, dummy)  # bug1:  head is dummy 
+        m_node = m_prev.next 
+        
+        n_node = self.findkth(n, dummy)
+        n_next = n_node.next 
+        
+        n_node.next = None  #let the node -->null
+        
+        self.reverse(m_node)
+        
+        m_prev.next = n_node #connect m_pre --> n_node
+        m_node.next = n_next #connect m --> n.next node 
+        
+        return dummy.next  
       
-      def reverse(self, node): #reverse whole linkedlist 
-         pre = None 
-         while node != None:
-            nextNode = node.next 
-            node.next = pre 
-            pre = node 
-            node = nextNode
+        def reverse(self, node): #reverse whole linkedlist 
+            pre = None 
+            while node != None:
+                nextNode = node.next 
+                node.next = pre 
+                pre = node 
+                node = nextNode
          
-         return pre 
+        return pre 
             
             
             
-      def findkth(self, k, head):
+    def findkth(self, k, head):
          
-         for _ in range(k):
+        for _ in range(k):
             if not head:
-               return None 
+                return None 
             head = head.next 
-         return head
+        return head
 ```
 ### Method 3
 
