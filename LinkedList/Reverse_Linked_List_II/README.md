@@ -126,7 +126,8 @@ the role of `cur` is to keep forward so as to confirm the position of `then` :`c
 
 ### Key Points
 
-every time, after swapping `cur` and `then`, the `cur` will move forward 1. there is need to use `cur = cur.next` to move it; 
+1. every time, after swapping `cur` and `then`, the `cur` will move forward 1. there is need to use `cur = cur.next` to move it; 
+2. when reverse(shown in the picture as the blue arrow ) , it is not `then.next = cur.next` but `then.next = pre.next`
 
 ### code
 
@@ -148,9 +149,9 @@ class Solution {
         //reverse
         for(int i =0; i < n - m; i++){ //operate n - m times
             //swap
-            cur.next = then.next;
-            then.next = pre.next;
-            pre.next = then;
+            cur.next = then.next; //cut
+            then.next = pre.next; // connect it; it is not `then.next = cur.next`
+            pre.next = then;      // connect its pre
             
             //re-locate then; we don't need to move cur, because after swap, cur has been moved
             then = cur.next;
