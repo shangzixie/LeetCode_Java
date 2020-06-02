@@ -15,6 +15,8 @@ so every loop, need `last` and `count` to confirm if the rest nodes are bigger t
 
 so need 4 variables: `last` `pre` `cur` `tail`
 
+![](../../Image/Reverse_Nodes_in_k_group.png)
+
 ### Key Points
 every loop, don't forget to update the pre and last; 
 
