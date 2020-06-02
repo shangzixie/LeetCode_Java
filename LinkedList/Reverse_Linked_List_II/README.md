@@ -120,14 +120,14 @@ class Solution:
 
 ![](../../Image/Reverse_Linked_List_II_1.png)
 
-every time, insert `then` between `pre` and `pre.next`, and keep moving `then` forward by 1
+every time, insert `cur` between `pre` and `pre.next`, and keep moving `tail` forward by 1
 
-the role of `cur` is to keep forward so as to confirm the position of `then` :`cur.next = then`
+the role of `tail` is to keep forward so as to confirm the position of `cur` :`tail.next =  cur`
 
 ### Key Points
 
-1. every time, after swapping `cur` and `then`, the `cur` will move forward 1. there is need to use `cur = cur.next` to move it; 
-2. when reverse(shown in the picture as the blue arrow ) , it is not `then.next = cur.next` but `then.next = pre.next`
+1. every time, after swapping `cur` and `tail`, the `tail` will automatically move forward 1. there is need to use `tail = tail.next` to move it; 
+2. from (shown in the picture as the blue arrow ) , it is not `cur.next = tail` but `cur.next = pre.next`
 
 ### code
 
@@ -142,19 +142,19 @@ class Solution {
         //confirm position of pre
         for(int i = 0;i < m-1; i++) pre = pre.next; 
         
-        //confirm cur and then
-        ListNode cur = pre.next;
-        ListNode then = cur.next;
+        //confirm cur and tail
+        ListNode tail = pre.next;
+        ListNode cur = tail.next;
         
         //reverse
         for(int i =0; i < n - m; i++){ //operate n - m times
             //swap
-            cur.next = then.next; //cut
-            then.next = pre.next; // connect it; it is not `then.next = cur.next`
-            pre.next = then;      // connect its pre
+            tail.next = cur.next; //cut
+            cur.next = pre.next; // connect it; it is not `then.next = cur.next`
+            pre.next = cur;      // connect its pre
             
             //re-locate then; we don't need to move cur, because after swap, cur has been moved
-            then = cur.next;
+            cur = tail.next;
         }
         
         return dummy.next;
