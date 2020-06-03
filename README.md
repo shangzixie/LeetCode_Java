@@ -36,8 +36,9 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Partition_Labels](Greedy/partition_Labels)
 * [Trapping_Rain_Water](Greedy/Trapping_Rain_Water)
 
-## 6. Manacher Algorithm
-* [Longest_Palindromic_Substring](Manacher_Algorithm/Longest_Palindromic_Substring)
+## 6. Manacher /KMP Algorithm
+* [Manacher - Longest_Palindromic_Substring](Manacher_Algorithm/Longest_Palindromic_Substring)
+* [KMP](KMP_Algorithm)(Unfinished)
 
 ## 7. Math
 * [Add_Two_Numbers_II](Math/Add_Two_Numbers_II)
@@ -45,6 +46,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Number_Of_1_Bites](Math/Number_Of_1_Bites)
 * [Pow](Math/Pow)
 * [Rotate_Array](Math/Rotate_Array)
+* [Divide_Two_Integers](Math/Divide_Two_Integers)
 
 ## 8. Pointer
 * [Remove_Duplicates_from_Sorted_Array_II](Pointer/emove_Duplicates_from_Sorted_Array_II)
@@ -55,6 +57,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Three_Sum_Multiplicity](Pointer/Three_Sum_Multiplicity)
 * [Valid_Palindrome](Pointer/Valid_Palindrome)
 * [Remove_Nth_Node_From_End_of_List](Pointer/Remove_Nth_Node_From_End_of_List)
+* [Remove_Element](Pointer/Remove_Element)
 ### Sliding Window
 * [Longest_Substring_Without_Repeating_Characters](Pointer/Sliding_Window/Longest_Substring_Without_Repeating_Characters)
 * [Minimum_Window_Substring](Pointer/Sliding_Window/Minimum_Window_Substring)
@@ -90,6 +93,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [ZigZag_Conversion](Tricky/ZigZag_Conversion)
 * [Merge_K_Sorted_Lists](Tricky/Merge_K_Sorted_Lists)
 * [Merge_Intervals](Tricky/Merge_Intervals)
+* [Substring_with_Concatenation_of_All_Words](Tricky/Substring_with_Concatenation_of_All_Words)(Unfinished)
 
 
 
