@@ -18,7 +18,7 @@ public class Divide_Two_Integers {
 
         int a = Math.abs(A), b = Math.abs(B), res = 0;
         for (int x = 31; x >= 0; x--)
-            if ((a >>> x) - b >= 0) { // a >>> x is a // 2^x
+            if ((a >>> x) - b >= 0) { // a >>> x is a / 2^x
                 res += 1 << x;
                 a -= b << x;
             }

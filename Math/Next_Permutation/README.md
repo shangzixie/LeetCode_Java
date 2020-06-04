@@ -1,4 +1,4 @@
-31. Next Permutation
+## 31. Next Permutation
 
 [LeetCode 31](https://leetcode.com/problems/next-permutation/)
 
