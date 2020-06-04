@@ -5,7 +5,7 @@
 
 ## Methods
 
-### Wrong method
+### Wrong method -- Attention, this is a wrong method 
 Intuitively, using stack. 
 
 If current is `(`, add it into stack. if current is `)`: 
