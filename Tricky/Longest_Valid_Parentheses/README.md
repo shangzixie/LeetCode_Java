@@ -60,7 +60,9 @@ So inorder to deal with `continuous issue` in `wrong method`,  we make use of tw
 2. Whenever `left` becomes equal to `right`, we calculate the length of the current valid string and keep track of maximum length substring found so far. 
 3. If `right` becomes greater than `left` we reset `left` and `right` to 0 to deal with `continuous issue`
 
-However, there is an issue. There are only three cases for a string:
+However, there is an issue:
+
+There are only three cases for a string:
 
 1. '(' are more than ')'
 2. '(' are less than ')'
@@ -110,6 +112,55 @@ public class Solution {
 }
 
 ```
+### method 2
+optimize the `wrong method` by using stack. 
+there are 4 situations:
+    1. current is `(`
+        1. stack is not null
+        2. stack is null
+    2. current is `)`
+        1. stack is not null
+        2. stack is null
+
+so, we need consider `add` and `pop` from the 4 situations
+
+add: 
+ 1. current is `(` (no matter stack is null or not) 
+ 2. current is `)` and stack is null (deal with continuous issue)
+ 
+pop:
+ 1. current is `)` , stack is not null: pop a `(` from stack to form a valid parentheses
+ 2. current is `)`, stack is null: need to cut the continuity, so add the `)`
+
+### code 
+
+```python 
+
+class Solution:
+   """
+   @param s: a string
+   @return: return a integer
+   """
+   def longestValidParentheses(self, s):
+      stack = [-1]
+      maxlen = 0
+      for i in range(len(s)):
+         if s[i] == '(':  
+            stack.append(i)
+         else:
+            j = stack.pop()
+            if s[j] ==")" or j == -1:
+               stack.append(i)
+            elif s[j] == "(":
+               maxlen = max(maxlen, i - stack[-1])
+            
+               
+               
+      
+      return maxlen
+```
+
+
 
 ## Reference
 https://leetcode.com/problems/longest-valid-parentheses/solution/

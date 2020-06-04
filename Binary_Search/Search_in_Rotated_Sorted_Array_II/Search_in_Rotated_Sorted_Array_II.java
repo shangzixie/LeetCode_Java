@@ -10,10 +10,12 @@ public class Search_in_Rotated_Sorted_Array_II {
 
             if (nums[mid] == target) return true;  // could remove
 
-            if (nums[start] < nums[mid]){ //mid is at left part
+            //mid is at left part
+            if (nums[start] < nums[mid]){
                 if (nums[start] <= target && target <= nums[mid]) end = mid;
                 else start = mid;
-            }else if(nums[start] > nums[mid]){ //mid is at right part
+            //mid is at right part
+            }else if(nums[start] > nums[mid]){
                 if (nums[mid] <= target && target <= nums[end]) start = mid;
                 else end = mid;
             }else {
