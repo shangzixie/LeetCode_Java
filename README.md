@@ -95,6 +95,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [ZigZag_Conversion](Tricky/ZigZag_Conversion)
 * [Merge_K_Sorted_Lists](Tricky/Merge_K_Sorted_Lists)
 * [Merge_Intervals](Tricky/Merge_Intervals)
+* [Longest_Valid_Parentheses](Tricky/Longest_Valid_Parentheses)
 * [Substring_with_Concatenation_of_All_Words](Tricky/Substring_with_Concatenation_of_All_Words)(Unfinished)
 
 

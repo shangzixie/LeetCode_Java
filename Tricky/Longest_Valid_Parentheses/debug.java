@@ -1,4 +1,4 @@
-package LeetCode_Java.Stack.Longest_Valid_Parentheses;
+package LeetCode_Java.Tricky.Longest_Valid_Parentheses;
 
 public class debug {
     public static void main(String[] args) {
