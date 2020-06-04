@@ -47,6 +47,8 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Pow](Math/Pow)
 * [Rotate_Array](Math/Rotate_Array)
 * [Divide_Two_Integers](Math/Divide_Two_Integers)
+* [Next_Permutation](Math/Next_Permutation)
+
 
 ## 8. Pointer
 * [Remove_Duplicates_from_Sorted_Array_II](Pointer/emove_Duplicates_from_Sorted_Array_II)
