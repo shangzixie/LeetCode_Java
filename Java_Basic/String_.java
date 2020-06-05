@@ -14,6 +14,7 @@ public class String_ {
         str.append("e");
         str.append("f");
 
+
         //查
         str.charAt(3);
         str.length();
@@ -22,12 +23,13 @@ public class String_ {
         str.deleteCharAt(5);
         str.delete(3,4);
 
-        //
 
         // to string
         str.toString();
         //reverse
         str.reverse();
+
+
 
 
     //string
@@ -36,6 +38,10 @@ public class String_ {
         String s = "abcd";
         StringBuilder sb = new StringBuilder(s); //或者 sb.append(s);
         System.out.println(sb);
+
+        //repeat
+        String str1 = "abc";
+        // String repeated = str1.repeat(3); // it will return "abcabcabc";
 
 
     }

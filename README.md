@@ -105,6 +105,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Monotone_Stack](Stack/Monotone_Stack)
 * [Reverse_Words_in_a_String_II](Stack/Reverse_Words_in_a_String_II)
 * [Valid_Parentheses](Stack/Valid_Parentheses)
+* [Decode_String](Stack/Decode_String)
 
 ## 13. LinkedList
 * [Swap_Nodes_in_Pairs](LinkedList/Swap_Nodes_in_Pairs)
