@@ -24,7 +24,7 @@ class Solution {
         if (s.length() == 0) return "";
 
         LinkedList<String> stack = new LinkedList<>();
-        String ans = "", preString = "", curNum = "", ans = "";
+        String ans = "", preString = "", curNum = "";
 
         for (int i = 0;i< s.length();i++ ){
             char cur = s.charAt(i);
@@ -35,14 +35,14 @@ class Solution {
 
             else if (cur == '['){
                 //every time we need to append string then num so as to pop num first
-                stack.add(ans);
+                stack.add(ans);  // stack format:[string, num, string, num....]
                 stack.add(curNum);
                 ans = "";
                 curNum = "";
                 
-            }else{
+            }else{ // if cur == ']'
                 int num = Integer.valueOf(stack.removeLast()); //num will be pop at first
-                preString = stack.removeLast();                 // string 
+                preString = stack.removeLast();   // then  string will be pop 
                 // ans = preString + ans * num
                 ans = preString + ans.repeat(num);
             }
