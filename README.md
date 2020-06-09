@@ -86,6 +86,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Symmetric_Tree](DFS/Symmetric_Tree)
 * [Unique_Binary_Search_Tress_II](DFS/Unique_Binary_Search_Tress_II)
 * [Generate_Parentheses](DFS/Generate_Parentheses)
+* [Sudoku_Solver](DFS/Sudoku_Solver)
 * [Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero](DFS/Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero)
 
 ## 11. Tricky Method
