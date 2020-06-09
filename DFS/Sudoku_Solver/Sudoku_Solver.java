@@ -18,7 +18,7 @@ public class Sudoku_Solver {
         if (board[x][y] != 0){
             return dfs(board, nextX, nextY);
 
-            // if current is null
+        // if current is null
         }else {
             for (int i = 1;i < 10 ;i++ ){ //try it from 1 to 9
                 board[x][y] = i;
@@ -35,7 +35,7 @@ public class Sudoku_Solver {
 
 
     private boolean check(int[][]board, int curX, int curY, int curNum){
-        //if valid return true, ohterelse return false
+        //if valid return true, otherwise return false
 
         //check the same row
         for (int j = 0; j < 9; j++){

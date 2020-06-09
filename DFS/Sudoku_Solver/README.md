@@ -39,7 +39,7 @@ public class Sudoku_Solver {
                 if (dfs(board, nextX, nextY)) return true;
             }
             // if all value is invalid, last level maybe wrong
-            board[x][y] = 0;
+            board[x][y] = 0; //backtrack
             return false;
         }
 
@@ -48,7 +48,7 @@ public class Sudoku_Solver {
 
 
     private boolean check(int[][]board, int curX, int curY, int curNum){
-        //if valid return true, ohterelse return false
+        //if valid return true, otherwise return false
 
         //check the same row
         for (int j = 0; j < 9; j++){
