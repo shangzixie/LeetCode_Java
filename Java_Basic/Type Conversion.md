@@ -1,7 +1,16 @@
 
 
 ```
-valueOf(): xx.valueOf 就是把什么转化成XX
+valueOf(): String.valueOf() 就是把什么转化成String
+           Integer.valueOf() 就是把什么转化成Integer
+           but Character.valueOf is invalid; 
+
+int -> char:  (char)(the int number + '0')
+char -> int:   the char - '0'
+
+```
+
+```
 
 1. 一个数组或字符转化为string 
                
