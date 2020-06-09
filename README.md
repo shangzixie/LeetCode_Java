@@ -27,6 +27,8 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Palindrome_Partitioning_II](Dynamic_Programming/Palindrome_Partitioning_II)
 * [Regular_Expression_Matching](Dynamic_Programming/Regular_Expression_Matching)
 * [Unique_Binary_Search_Trees](Dynamic_Programming/Unique_Binary_Search_Trees)
+### Back Pack Problems
+* [Back_Pack_II](Dynamic_Programming/Backpack/Backpack_II)
 
 ## 5. Greedy
 * [Best_Time_to_Buy_and_Sell_Stock](Greedy/Best_Time_to_Buy_and_Sell_Stock)
@@ -97,6 +99,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Merge_Intervals](Tricky/Merge_Intervals)
 * [Longest_Valid_Parentheses](Tricky/Longest_Valid_Parentheses)
 * [Substring_with_Concatenation_of_All_Words](Tricky/Substring_with_Concatenation_of_All_Words)(Unfinished)
+* [Valid_Sudoku](Tricky/Valid_Sudoku)
 
 
 
