@@ -27,8 +27,15 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Palindrome_Partitioning_II](Dynamic_Programming/Palindrome_Partitioning_II)
 * [Regular_Expression_Matching](Dynamic_Programming/Regular_Expression_Matching)
 * [Unique_Binary_Search_Trees](Dynamic_Programming/Unique_Binary_Search_Trees)
-### Back Pack Problems
-* [Back_Pack_II](Dynamic_Programming/Backpack/Backpack_II)
+
+`Double Sequence Problem (双序列）`
+* [Edit_Distance](Dynamic_Programming/Edit_Distance)
+
+`Backpack/ Knapsack Problem (背包问题)`---[Summarize](Dynamic_Programming/Backpack_Knapsack)
+* [0/1 Problem](Dynamic_Programming/Backpack_Knapsack/Backpack_I)
+
+
+
 
 ## 5. Greedy
 * [Best_Time_to_Buy_and_Sell_Stock](Greedy/Best_Time_to_Buy_and_Sell_Stock)
