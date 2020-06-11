@@ -25,11 +25,11 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Find_the_Derangement_of_An_Array](Dynamic_Programming/Find_the_Derangement_of_An_Array)
 * [Maximum_Product_Subarray](Dynamic_Programming/Maximum_Product_Subarray)
 * [Palindrome_Partitioning_II](Dynamic_Programming/Palindrome_Partitioning_II)
-* [Regular_Expression_Matching](Dynamic_Programming/Regular_Expression_Matching)
 * [Unique_Binary_Search_Trees](Dynamic_Programming/Unique_Binary_Search_Trees)
 
 `Double Sequence Problem (双序列）`
 * [Edit_Distance](Dynamic_Programming/Edit_Distance)
+* [Regular_Expression_Matching](Dynamic_Programming/Regular_Expression_Matching)
 
 `Backpack/ Knapsack Problem (背包问题)`---[Summarize](Dynamic_Programming/Backpack_Knapsack)
 * [0/1 Problem](Dynamic_Programming/Backpack_Knapsack/Backpack_I)
