@@ -95,6 +95,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Generate_Parentheses](DFS/Generate_Parentheses)
 * [Sudoku_Solver](DFS/Sudoku_Solver)
 * [Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero](DFS/Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero)
+* [Combination_Sum](DFS/Combination_Sum)
 
 ## 11. Tricky Method
 * [Longest_Consecutive_Sequence](Tricky/Longest_Consecutive_Sequence)
