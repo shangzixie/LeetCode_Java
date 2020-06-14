@@ -1,62 +1,36 @@
-package LeetCode_Java.BFS.Number_of_Island;
+package BFS.Number_of_Island;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public class Number_of_Island {
-    public boolean[][] visited;
-    int[] dx = new int[]{1, -1, 0 ,0};
-    int[] dy = new int[]{0, 0, -1, 1};
-    class Points{
-        int x;
-        int y;
-        Points(int i, int j){
-            x = i;
-            y = j;
-        }
-    }
-    //
-    public int numIslands(boolean[][] grid) {
-        if (grid.length == 0) return 0;
 
-        visited = new boolean[grid.length][grid[0].length];
-        int m = grid.length;
-        int n = grid[0].length;
-        int count = 0;
-
-        for (int i = 0; i < m; i++){
-            for (int j = 0; j < n; j++){
-                if (visited[i][j] == true || grid[i][j] == false) continue;
-                visited[i][j] = true;
-                bfs(grid, i, j);
-                count++;
-            }
-        }
-        return count;
-
-    }
-
-
-    private void bfs(boolean[][] grid, int i, int j){
-        LinkedList<Points> queue = new LinkedList<>();
-        Points point = new Points(i ,j);
-        queue.add(point);
-
-
-        while (!queue.isEmpty()){
-            Points curPoint = queue.removeFirst();
-            int curX = curPoint.x;
-            int curY = curPoint.y;
-
-            for (int index = 0; index < 4; index++){
-                int nextX = curX + dx[index];
-                int nextY = curY + dy[index];
-                if (nextX < 0 || nextX >= grid.length || nextY <0 || nextY >= grid[0].length || visited[nextX][nextY] == true || grid[nextX][nextY] == false){
-                    continue;
+    int[] dx = {0, 0, -1, 1};
+    int[] dy = {-1, 1, 0, 0};
+    public int numIslands(char[][] grid) {
+            int count = 0;
+            for (int i = 0; i < grid.length; i++){
+                for (int j = 0; j < grid[0].length; j++){
+                    if (grid[i][j] == '0') continue;
+                    dfs(grid, 0, 0);
+                    count++;
                 }
-                visited[nextX][nextY] = true;
-                queue.add(new Points(nextX, nextY));
+            }
+            System.out.println(Arrays.deepToString(grid));
+            return count;
+    }
+
+    private void dfs(char[][] grid, int i, int j){
+            if (grid[i][j] == '0') return;
+
+            grid[i][j] = '0';
+            for (int next = 0; next < 4; next++){
+                int nextI =i + dx[next];
+                int nextJ = j + dy[next];
+                if (nextI < 0 || nextI >= grid.length || nextJ < 0 || nextJ >= grid[0].length) continue;
+                dfs(grid, nextI, nextJ);
             }
 
-        }
+
     }
 }
