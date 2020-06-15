@@ -128,6 +128,6 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 ## Weekly Contest
 
 ### Contest 194
-*[Least_Number_of_Unique_Integers_after_K_Removals](Weekly_Contest/Contest_193/Least_Number_of_Unique_Integers_after_K_Removals)
-*[Minimum_Number_of_Days_to_Make_m_Bouquets](Weekly_Contest/Contest_193/Minimum_Number_of_Days_to_Make_m_Bouquets))
+* [Least_Number_of_Unique_Integers_after_K_Removals](Weekly_Contest/Contest_193/Least_Number_of_Unique_Integers_after_K_Removals)
+* [Minimum_Number_of_Days_to_Make_m_Bouquets](Weekly_Contest/Contest_193/Minimum_Number_of_Days_to_Make_m_Bouquets))
 
