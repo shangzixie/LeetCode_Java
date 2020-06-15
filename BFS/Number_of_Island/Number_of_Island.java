@@ -12,7 +12,7 @@ public class Number_of_Island {
             for (int i = 0; i < grid.length; i++){
                 for (int j = 0; j < grid[0].length; j++){
                     if (grid[i][j] == '0') continue;
-                    dfs(grid, 0, 0);
+                    dfs(grid, i, j);
                     count++;
                 }
             }
