@@ -34,6 +34,11 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 `Backpack/ Knapsack Problem (背包问题)`---[Summarize](Dynamic_Programming/Backpack_Knapsack)
 * [0/1 Problem](Dynamic_Programming/Backpack_Knapsack/Backpack_I)
 
+`Binary Lifting for LCA(lowest common ancestor)`
+
+* [Kth_Ancestor_of_a_Tree_Node](Weekly_Contest/Contest_193/Kth_Ancestor_of_a_Tree_Node) ---[Lowest Common Ancestor by Binary Lifting](https://cp-algorithms.com/graph/lca_binary_lifting.html#toc-tgt-0)
+
+
 
 
 
@@ -49,7 +54,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Manacher - Longest_Palindromic_Substring](Manacher_Algorithm/Longest_Palindromic_Substring)
 * [KMP](KMP_Algorithm)(Unfinished)
 
-## 7. Math
+## 7. [Math](./Math)
 * [Add_Two_Numbers_II](Math/Add_Two_Numbers_II)
 * [Excel_Sheet_Column_Title](Math/Excel_Sheet_Column_Title)
 * [Number_Of_1_Bites](Math/Number_Of_1_Bites)
@@ -128,6 +133,8 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 ## Weekly Contest
 
 ### Contest 194
-* [Least_Number_of_Unique_Integers_after_K_Removals](Weekly_Contest/Contest_193/Least_Number_of_Unique_Integers_after_K_Removals)
-* [Minimum_Number_of_Days_to_Make_m_Bouquets](Weekly_Contest/Contest_193/Minimum_Number_of_Days_to_Make_m_Bouquets))
+
+* [2. Least_Number_of_Unique_Integers_after_K_Removals](Weekly_Contest/Contest_193/Least_Number_of_Unique_Integers_after_K_Removals)
+* [3. Minimum_Number_of_Days_to_Make_m_Bouquets](Weekly_Contest/Contest_193/Minimum_Number_of_Days_to_Make_m_Bouquets)
+* [4. Kth_Ancestor_of_a_Tree_Node](Weekly_Contest/Contest_193/Kth_Ancestor_of_a_Tree_Node)
 
