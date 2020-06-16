@@ -1,6 +1,11 @@
+import Math.Pow.myPow;
+
 public class testCode {
     public static void main(String[] args) {
 
-        System.out.println(Math.log10(900));
+        myPow a = new myPow();
+        a.myPow1(5, 10);
+
+
     }
 }

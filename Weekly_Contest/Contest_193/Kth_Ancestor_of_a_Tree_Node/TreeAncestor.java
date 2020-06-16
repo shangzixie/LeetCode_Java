@@ -20,7 +20,7 @@ public class TreeAncestor {
         int power = this.maxLevel;
         while (k > 0 && node > -1) {
 
-            if (k < 1 << power) { // 1 << power = 2^power
+            if (k < 1 << power) { // (1 << power) = (2^power)
                 power--; // let power from highest to decrease
             }else {
                 node = dp[power][node]; // find the maxLevel ancestor of node
