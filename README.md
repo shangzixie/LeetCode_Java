@@ -31,12 +31,11 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Edit_Distance](Dynamic_Programming/Edit_Distance)
 * [Regular_Expression_Matching](Dynamic_Programming/Regular_Expression_Matching)
 
-`Backpack/ Knapsack Problem (背包问题)`---[Summarize](Dynamic_Programming/Backpack_Knapsack)
-* [0/1 Problem](Dynamic_Programming/Backpack_Knapsack/Backpack_I)
+`Knapsack Problem (背包问题)`---[Summarize](Dynamic_Programming/Knapsack)
+* [0/1 Problem](Dynamic_Programming/Knapsack/Backpack_I)
 
-`Binary Lifting for LCA(lowest common ancestor)`
-
-* [Kth_Ancestor_of_a_Tree_Node](Weekly_Contest/Contest_193/Kth_Ancestor_of_a_Tree_Node) ---[Lowest Common Ancestor by Binary Lifting](https://cp-algorithms.com/graph/lca_binary_lifting.html#toc-tgt-0)
+`Binary Lifting for LCA(lowest common ancestor)` ---[Concept](https://cp-algorithms.com/graph/lca_binary_lifting.html#toc-tgt-0), [Video](https://cp-algorithms.com/graph/lca_binary_lifting.html#toc-tgt-0)
+* [Kth_Ancestor_of_a_Tree_Node](Weekly_Contest/Contest_193/Kth_Ancestor_of_a_Tree_Node)
 
 
 
