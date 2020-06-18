@@ -34,9 +34,10 @@ we could use `left` and `right` pointer instead of `i`, everytime, maintain the 
 
 ### Code
 ```java
-package Greedy.Trapping_Rain_Water;
+
 
 public class Trapping_Rain_Water {
+    //------do myself
     public int trapRainWater1(int[] heights) {
         if (heights.length == 0) return 0;
 
@@ -60,7 +61,7 @@ public class Trapping_Rain_Water {
         return ans;
     }
 
-    //--------------after optimize code------------------------
+    //--------------after optimizing------------------------
 
     public int trapRainWater(int[] heights) {
         // write your code here
