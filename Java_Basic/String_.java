@@ -1,4 +1,4 @@
-package LeetCode_Java.Java_Basic;
+package Java_Basic;
 
 public class String_ {
     public static void main(String[] args) {
@@ -43,6 +43,10 @@ public class String_ {
         String str1 = "abc";
         // String repeated = str1.repeat(3); // it will return "abcabcabc";
 
+        // isLetter, isDigit
+        String ss = "abc123";
+        Character.isLetter(ss.charAt(0));
+        Character.isDigit(ss.charAt(0));
 
     }
 }

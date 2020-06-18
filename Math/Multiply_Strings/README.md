@@ -21,7 +21,7 @@ class Solution {
         if (num1.equals("0") || num2.equals("0")) return "0";
         
         
-        int[] ans = new int[num1.length() + num2.length()]; 
+        int[] ans = new int[num1.length() + num2.length()]; // at most  num1.length() + num2.length() digits
         Arrays.fill(ans, 0); 
         
         for (int i = num1.length() - 1; i >= 0; i--) {
@@ -45,7 +45,9 @@ class Solution {
             ans[i] = digit; 
         }
 
-        if (carry > 0 && end > 0) ans[end-1] = carry; // if ans need carry to more digit        
+        if (carry > 0 && end > 0) ans[end-1] = carry; // if the product needs carry to more digit than num1 and num2
+
+        // convert the int[] array to string 
         String s = ""; 
         for (int i = 0; i < ans.length; i++){
             if (ans[i] == 0 && i < end) continue; 

@@ -44,7 +44,7 @@ class Solution {
             ans = "" + digit + ans; 
             p1--; 
         }
-        // if ans need carry to more digit
+        // if the sum needs carry to more digit
         if (carry != 0) ans = "" + carry + ans; 
         return ans;
     }

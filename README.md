@@ -30,6 +30,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 `Double Sequence Problem (双序列）`
 * [Edit_Distance](Dynamic_Programming/Edit_Distance)
 * [Regular_Expression_Matching](Dynamic_Programming/Regular_Expression_Matching)
+* [Wildcard_Matching](Dynamic_Programming/Wildcard_Matching)
 
 `Knapsack Problem (背包问题)`---[Summarize](Dynamic_Programming/Knapsack)
 * [0/1 Problem](Dynamic_Programming/Knapsack)
