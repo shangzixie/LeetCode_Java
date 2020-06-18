@@ -32,7 +32,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Regular_Expression_Matching](Dynamic_Programming/Regular_Expression_Matching)
 
 `Knapsack Problem (背包问题)`---[Summarize](Dynamic_Programming/Knapsack)
-* [0/1 Problem](Dynamic_Programming/Knapsack/Backpack_I)
+* [0/1 Problem](Dynamic_Programming/Knapsack)
 
 `Binary Lifting for LCA(lowest common ancestor)` ---[Concept](https://cp-algorithms.com/graph/lca_binary_lifting.html#toc-tgt-0), [Video](https://cp-algorithms.com/graph/lca_binary_lifting.html#toc-tgt-0)
 * [Kth_Ancestor_of_a_Tree_Node](Weekly_Contest/Contest_193/Kth_Ancestor_of_a_Tree_Node)
@@ -61,6 +61,8 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Rotate_Array](Math/Rotate_Array)
 * [Divide_Two_Integers](Math/Divide_Two_Integers)
 * [Next_Permutation](Math/Next_Permutation)
+* [Multiply_Strings](Math/Multiply_Strings)
+* [Add_String](Math/Add_String)
 
 
 ## 8. Pointer
@@ -122,6 +124,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Reverse_Words_in_a_String_II](Stack/Reverse_Words_in_a_String_II)
 * [Valid_Parentheses](Stack/Valid_Parentheses)
 * [Decode_String](Stack/Decode_String)
+* [Decode_String](Stack/Implement_Queue_by_Two_Stacks)
 
 ## 13. LinkedList
 * [Swap_Nodes_in_Pairs](LinkedList/Swap_Nodes_in_Pairs)
