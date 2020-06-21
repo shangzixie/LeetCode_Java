@@ -3,6 +3,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 
 ## 1. BFS/Topological/Graph
 * [Number_of_Island](BFS/Number_of_Island)
+* [Clone_Graph](BFS/Clone_Graph)
 
 
 ## 2. Union Find
@@ -49,6 +50,8 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Gas_Station](Greedy/Gas_Station)
 * [Partition_Labels](Greedy/partition_Labels)
 * [Trapping_Rain_Water](Greedy/Trapping_Rain_Water)
+* [Jump_Game](Greedy/Jump_Game)
+* [Jump_Game](Greedy/Jump_Game_II)
 
 ## 6. Manacher /KMP Algorithm
 * [Manacher - Longest_Palindromic_Substring](Manacher_Algorithm/Longest_Palindromic_Substring)
@@ -116,6 +119,8 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Longest_Valid_Parentheses](Tricky/Longest_Valid_Parentheses)
 * [Substring_with_Concatenation_of_All_Words](Tricky/Substring_with_Concatenation_of_All_Words)(Unfinished)
 * [Valid_Sudoku](Tricky/Valid_Sudoku)
+* [Rotate_Image](Tricky/Rotate_Image)
+* [Rotate_Array](Tricky/Rotate_Array)
 
 
 
@@ -125,13 +130,18 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Reverse_Words_in_a_String_II](Stack/Reverse_Words_in_a_String_II)
 * [Valid_Parentheses](Stack/Valid_Parentheses)
 * [Decode_String](Stack/Decode_String)
-* [Decode_String](Stack/Implement_Queue_by_Two_Stacks)
+* [Implement_Queue_by_Two_Stacks](Stack/Implement_Queue_by_Two_Stacks)
+
 
 ## 13. LinkedList
 * [Swap_Nodes_in_Pairs](LinkedList/Swap_Nodes_in_Pairs)
 * [Reverse_Linked_List](LinkedList/Reverse_Linked_List)
 * [Reverse_Linked_List_II](LinkedList/Reverse_Linked_List_II)
 * [Reverse_Nodes_in_k_Group](LinkedList/Reverse_Nodes_in_k_Group)
+
+## 14. Data Structure
+* [Maximum_Frequency_Stack](DataSturcture/Maximum_Frequency_Stack)
+* [LRU_Cache](DataSturcture/LRU_Cache)
 
 ## Weekly Contest
 
