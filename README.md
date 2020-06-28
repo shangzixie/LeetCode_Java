@@ -106,6 +106,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Sudoku_Solver](DFS/Sudoku_Solver)
 * [Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero](DFS/Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero)
 * [Combination_Sum](DFS/Combination_Sum)
+* [N_Queens](DFS/N_Queens)
 
 ## 11. Tricky Method
 * [Longest_Consecutive_Sequence](Tricky/Longest_Consecutive_Sequence)
@@ -130,7 +131,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Reverse_Words_in_a_String_II](Stack/Reverse_Words_in_a_String_II)
 * [Valid_Parentheses](Stack/Valid_Parentheses)
 * [Decode_String](Stack/Decode_String)
-* [Implement_Queue_by_Two_Stacks](Stack/Implement_Queue_by_Two_Stacks)
+
 
 
 ## 13. LinkedList
@@ -142,6 +143,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 ## 14. Data Structure
 * [Maximum_Frequency_Stack](DataSturcture/Maximum_Frequency_Stack)
 * [LRU_Cache](DataSturcture/LRU_Cache)
+* [Implement_Queue_by_Two_Stacks](DataSturcture/Implement_Queue_by_Two_Stacks)
 
 ## Weekly Contest
 
