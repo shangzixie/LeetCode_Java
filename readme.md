@@ -122,6 +122,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Valid_Sudoku](Tricky/Valid_Sudoku)
 * [Rotate_Image](Tricky/Rotate_Image)
 * [Rotate_Array](Tricky/Rotate_Array)
+* [Spiral_Matrix](Tricky/Spiral_Matrix)
 
 
 

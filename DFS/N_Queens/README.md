@@ -48,8 +48,8 @@ class Solution {
             // examine every previous queen(i, cols.get(i)) and current queen(curRow, curCol)
             if (cols.get(i) == curCol) return false; 
             //examine 45 
-            if (curRow + curCol == i + cols.get(i)) return false; 
-            if (curRow - curCol == i - cols.get(i)) return false; 
+            if (curRow + curCol == i + cols.get(i)) return false; // diagonals /
+            if (curRow - curCol == i - cols.get(i)) return false; // diagonals \
         }
         return true; 
     }
@@ -58,13 +58,12 @@ class Solution {
         
         for (int row = 0; row < cols.size(); row++) {
             StringBuffer s = new StringBuffer(); 
-            for (int col = 0; col < cols.size(); col++) {
-                s.append(col == cols.get(row) ? "Q" : ".");
+            for (int j = 0; j < cols.size(); j++) {
+                s.append(j == cols.get(row) ? "Q" : ".");
             }
             path.add(s.toString());
         }
-        return path; 
-        
+        return path;
     }
 }
 
@@ -72,3 +71,4 @@ class Solution {
 
 
 ## Reference
+[LintCode Solution](https://www.jiuzhang.com/solution/n-queens/#tag-highlight-lang-java)
