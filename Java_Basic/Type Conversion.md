@@ -56,7 +56,12 @@ char -> int:   the char - '0'
 对List进行操作
 
     1. 转换为数组：
-    Integer a = arr.toArray(new int[0]); 
+    List<Integer> list1 = new ArrayList<>(); 
+    List<int[]> list2 = new ArrayList<>();
+ 
+    Integer a = list1.toArray(new int[0]); 
+    int[][] b = list2.toArray(new int[0][0]); 括弧里面必须指明array的维度，长度可以不管
+    
 
 ```
 

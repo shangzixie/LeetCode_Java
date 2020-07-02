@@ -123,6 +123,12 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Rotate_Image](Tricky/Rotate_Image)
 * [Rotate_Array](Tricky/Rotate_Array)
 * [Spiral_Matrix](Tricky/Spiral_Matrix)
+* [Spiral_Matrix_II](Tricky/Spiral_Matrix_II)
+* [Insert_Interval](Tricky/Insert_Interval)
+* [Queue_Reconstruction_by_Height](Tricky/Queue_Reconstruction_by_Height)
+* [First_Missing_Positive](Tricky/First_Missing_Positive)
+* [First_Missing_Positive](Tricky/Group_Anagrams)
+
 
 
 
