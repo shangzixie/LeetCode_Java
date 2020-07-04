@@ -14,7 +14,7 @@ First, consider the `brute force`:
  
 for every `height[i]` need to find a `leftBound` that height shorter than `height[i]` and `rightBound` shorter than `height[i]`
 then `area = (rightBound - leftBound - 1) * height[i]` 
-![](../../../Image/Largest_Rectangle_in_Histogram.png)
+![](../../../Image/Largest_Rectangle_in_Histogram.png){ width=50% }
 
 <img src="../../../Image/Largest_Rectangle_in_Histogram.png" width="500"> 
 
