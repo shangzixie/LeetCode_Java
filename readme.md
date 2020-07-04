@@ -134,10 +134,16 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 
 ## 12. Stack
 * [Evaluate_Reverse_Polish_Notation](Stack/Evaluate_Reverse_Polish_Notation)
-* [Monotone_Stack](Stack/Monotone_Stack)
 * [Reverse_Words_in_a_String_II](Stack/Reverse_Words_in_a_String_II)
 * [Valid_Parentheses](Stack/Valid_Parentheses)
 * [Decode_String](Stack/Decode_String)
+### Monotone_Stack
+* [Next_Greater_Element](Stack/Monotone_Stack/Next_Greater_Element)
+* [Next_Greater_Element II](Stack/Monotone_Stack/Next_Greater_Element_II)
+* [Largest_Rectangle_in_Histogram](Stack/Monotone_Stack/Largest_Rectangle_in_Histogram)
+* [Maximal_Rectangle](Stack/Monotone_Stack/Maximal_Rectangle)
+
+
 
 
 
