@@ -1,4 +1,4 @@
-package Stack.Monotone_Stack.Largest_Rectangle_in_Histogram;
+package Stack.Monotonic_Stack.Largest_Rectangle_in_Histogram;
 
 import java.util.Stack;
 

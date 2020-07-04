@@ -1,4 +1,4 @@
-package Stack.Monotone_Stack.Maximal_Rectangle;
+package Stack.Monotonic_Stack.Maximal_Rectangle;
 import java.util.Stack;
 
 /*
