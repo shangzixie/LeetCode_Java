@@ -16,7 +16,7 @@ for every `height[i]` need to find a `leftBound` that height shorter than `heigh
 then `area = (rightBound - leftBound - 1) * height[i]` 
 ![](../../../Image/Largest_Rectangle_in_Histogram.png)
 
-<img src="../../../Image/Largest_Rectangle_in_Histogram.png" width="200"> 
+<img src="../../../Image/Largest_Rectangle_in_Histogram.png" width="500"> 
 
 
 time complexity O(n^2)
