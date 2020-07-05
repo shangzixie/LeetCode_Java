@@ -3,33 +3,28 @@ package Stack.Monotonic_Stack.Largest_Rectangle_in_Histogram;
 import java.util.Stack;
 
 public class Largest_Rectangle_in_Histogram {
-    public static int largestRectangleArea(int[] height) {
-        Stack<Integer> stack = new Stack<>();
-        stack.push(-1);
-        int maxArea = 0;
+    public static int largestRectangleArea(int[] heights) {
+        int[] leftLess = new int[heights.length];
+        int[] rightLess = new int[heights.length];
+        leftLess[0] = -1;
+        rightLess[heights.length - 1] = heights.length;
 
-        for (int i = 0; i < height.length; i++) {
-            while (stack.peek() != -1 && height[stack.peek()] > height[i]) {
-                int TraHeight = height[stack.pop()];
-                int width = i - stack.peek() - 1;
-                maxArea = Math.max(maxArea, TraHeight * width); // max(maxArea, height  * width)
-            }
-            stack.push(i);
+        for (int i = 1; i < heights.length; i++) {
+            int j = i - 1;
+            while (j >= 0 && leftLess[j] >= heights[i]) j = leftLess[j];
+            leftLess[i] = j;
         }
-        // when traverse to the end of the array, pop all item from stack
-        while (stack.peek() != -1) {
-            int stackPop = stack.pop();
-            maxArea = Math.max(maxArea, (height.length - stack.peek() - 1) * height[stackPop]);
+        for (int i = heights.length - 2; i >=0; i--) {
+            int j = i + 1;
+            while (j <= heights.length - 1 && heights[j] >= heights[i]) j = rightLess[j];
+            rightLess[i] = j;
         }
 
-        return maxArea;
-    }
-
-
-
-
-    public static void main(String[] args) {
-        int[] height = new int[]{2,1,5,6,2,3};
-        largestRectangleArea(height);
+        int ans = 0;
+        for (int i = 0; i < heights.length; i++) {
+            int area = (rightLess[i] - leftLess[i] - 1) * heights[i];
+            ans = Math.max(ans, area);
+        }
+        return ans;
     }
 }

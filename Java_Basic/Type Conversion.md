@@ -5,7 +5,7 @@ valueOf(): String.valueOf() 就是把什么转化成String
            Integer.valueOf() 就是把什么转化成Integer
            but Character.valueOf is invalid; 
 
-int -> char:  (char)(the int number + '0')
+int -> char:  (char)('0' + the int number)  
 char -> int:   the char - '0'
 
 ```

@@ -1,19 +1,11 @@
-import Math.Pow.myPow;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import Math.Permutation_Sequence.Permutation_Sequence;
 
 public class testCode {
     public static void main(String[] args) {
 
-        List<String> list = new LinkedList<String>();
-        list.add("Geeks");
-        list.add("for");
-        list.add("Geeks");
-        list.add("Practice");
+        Permutation_Sequence a = new Permutation_Sequence();
+        a.getPermutation(4,3);
 
-        String[] arr = list.toArray(new String[0]);
 
 
     }

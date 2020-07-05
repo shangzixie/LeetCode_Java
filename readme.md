@@ -67,6 +67,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Next_Permutation](Math/Next_Permutation)
 * [Multiply_Strings](Math/Multiply_Strings)
 * [Add_String](Math/Add_String)
+* [Permutation_Sequence](Math/Permutation_Sequence)(unfinished)
 
 
 ## 8. Pointer
@@ -128,6 +129,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Queue_Reconstruction_by_Height](Tricky/Queue_Reconstruction_by_Height)
 * [First_Missing_Positive](Tricky/First_Missing_Positive)
 * [First_Missing_Positive](Tricky/Group_Anagrams)
+
 
 
 
