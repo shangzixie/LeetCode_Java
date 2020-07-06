@@ -83,8 +83,33 @@ why cooperating processes are allowed:
 
 * Cooperating processes require some type of **inter-process communication**, which is most commonly one of two types: Shared Memory systems or Message Passing systems.
 ![](../../Image/Communications%20models.png)
+* Shared Memory is faster once it is set up, because no system calls are required and access occurs at normal memory speeds. However it is more complicated to set up, and doesn't work as well across multiple computers. Shared memory is generally preferable when large amounts of information must be shared quickly on the same computer.
+* Message Passing requires system calls for every message transfer, and is therefore slower, but it is simpler to set up and works well across multiple computers. Message passing is generally preferable when the amount and/or frequency of data transfers is small, or when multiple computers are involved.
 
+    #### message passing 
+    * Message passing systems must support at a minimum system calls for "send message" and "receive message".
+    * A communication link must be established between the cooperating processes before messages can be sent.
+    * With **direct communication** the sender must know the name of the receiver to which it wishes to send a message.
+    * There is a one-to-one link between every sender-receiver pair.
+    * **Indirect communication** uses shared mailboxes, or **ports**.
+    * Multiple processes can share the same mailbox or boxes.
+    
+## Communication in Client-Server Systems
+we discuss process communication before, now let's discuss client-server communication through networks. 
+There are two other strategies for communication in client–server systems: 
+ * sockets 
+ * remote procedure calls.
+ 
+### Socket
+* A socket is deﬁned as an endpoint for communication.  A pair of processes communicating over a network employ a pair of sockets—one for each process
+* Two processes communicating over a network often use a pair of connected sockets as a communication channel. Software that is designed for client-server operation may also use sockets for communication between two processes running on the same computer - For example the UI for a database program may communicate with the back-end database manager using sockets. ( If the program were developed this way from the beginning, it makes it very easy to port it from a single-computer system to a networked application. )
+* A socket is identified by an IP address concatenated with a port number, e.g. 200.100.50.5:80.
 
+Communication channels via sockets may be of one of two major forms:
+* TCP
+* UDP
+### Remote Procedure calls
+In distributed computing, a remote procedure call (RPC) is when a computer program causes a procedure (subroutine) to execute in a different address space (commonly on another computer on a shared network), which is coded as if it were a normal (local) procedure call, without the programmer explicitly coding the details for the remote interaction. That is, the programmer writes essentially the same code whether the subroutine is local to the executing program, or remote. 
 
 
  

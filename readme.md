@@ -67,7 +67,8 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Next_Permutation](Math/Next_Permutation)
 * [Multiply_Strings](Math/Multiply_Strings)
 * [Add_String](Math/Add_String)
-* [Permutation_Sequence](Math/Permutation_Sequence)(unfinished)
+* [Permutation_Sequence](Math/Permutation_Sequence)
+* [Plus_One](Math/Plus_One)
 
 
 ## 8. Pointer
