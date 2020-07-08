@@ -129,7 +129,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Insert_Interval](Tricky/Insert_Interval)
 * [Queue_Reconstruction_by_Height](Tricky/Queue_Reconstruction_by_Height)
 * [First_Missing_Positive](Tricky/First_Missing_Positive)
-* [First_Missing_Positive](Tricky/Group_Anagrams)
+* [Group_Anagrams](Tricky/Group_Anagrams)
 
 
 
@@ -140,6 +140,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Reverse_Words_in_a_String_II](Stack/Reverse_Words_in_a_String_II)
 * [Valid_Parentheses](Stack/Valid_Parentheses)
 * [Decode_String](Stack/Decode_String)
+* [Traverse a tree by preOrder, inOrder, postOrder](Stack/Traverse_Tree_No_Recursion)
 ### Monotonic_Stack
 * [Next_Greater_Element](Stack/Monotonic_Stack/Next_Greater_Element)
 * [Next_Greater_Element II](Stack/Monotonic_Stack/Next_Greater_Element_II)

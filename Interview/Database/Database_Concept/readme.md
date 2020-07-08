@@ -47,3 +47,9 @@ we could take `instructor` table as example, `search key` is the `name`
 every node has `search key` and `pointer` point to other children node's `search-key`
 
 These examples of B+-trees are all balanced. That is, the length of every path from the root to a leaf node is the same.  
+
+*[difference between b tree and b+ bree](https://stackoverflow.com/questions/870218/what-are-the-differences-between-b-trees-and-b-trees#:~:text=Since%20you%20can%20elevate%20commonly,to%20get%20to%20the%20data.&text=In%20a%20B%20tree%20search,are%20found%20in%20leaf%20nodes.)
+
+## Hash Indices 
+* In our description of hashing, we shall use the term **bucket** to denote a unit of storage that can store one or more records
+

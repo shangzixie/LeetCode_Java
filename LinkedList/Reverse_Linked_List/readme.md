@@ -20,23 +20,29 @@ class Solution {
         
         ListNode p1 = null; 
         ListNode p2 = head;
-        ListNode p3 = head.next;
         
-        while (p3 != null){
+        
+        while (p2 != null){
+            ListNode p3 = head.next;
             //change direct 
             p2.next = p1; 
             
             //move pointer 
             p1 = p2; 
             p2 = p3;
-            p3 = p3.next; 
+             
         }
         //in the end, don't forget the last node 
         p2.next = p1; 
         
         return p2;
     }
+}
+```
+after optimize 
+```java
 
+class optimize{
     //---------------after optimize
     public ListNode reverse(ListNode head) {
         if (head.next == null) return head; 
