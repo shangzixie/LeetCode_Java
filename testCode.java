@@ -1,18 +1,24 @@
 import Math.Permutation_Sequence.Permutation_Sequence;
 
 public class testCode {
-    public static void main(String[] args) {
-        int n = 100;
-        int res = 0;
-        while(n>2){
-            res += n/3;
-            n = n/3+n%3;
-        }
-        if(n==2) res+=1;
+    private int i = 1;
+    private int j = 2;
 
-        System.out.println(res);
+    public testCode(int var){
+        System.out.println(i);
+        System.out.println(j);
+        this.i = var;
+        System.out.println(i);
+        System.out.println(j);
+    }
 
-
+    {               // 实例代码块
+        j += 3;
 
     }
+
+    public static void main(String[] args) {
+        new testCode(8);
+    }
+
 }

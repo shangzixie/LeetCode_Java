@@ -1,4 +1,4 @@
-# Basic Knowledge Must know about LinkedList
+# Basic Knowledge Must need to know about LinkedList
 
 ## Find the middle of a LikedList 
 
