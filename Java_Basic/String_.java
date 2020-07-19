@@ -13,11 +13,15 @@ public class String_ {
         str.append("d");
         str.append("e");
         str.append("f");
+        str.append("f");
+
+
 
 
         //查
         str.charAt(3);
         str.length();
+
 
         //删
         str.deleteCharAt(5);
