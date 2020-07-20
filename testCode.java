@@ -6,4 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class testCode {
+    public static void main(String[] args) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+    }
 }
