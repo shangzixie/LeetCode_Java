@@ -11,7 +11,6 @@ https://www.youtube.com/watch?v=9NZuhGL0SlU
 public class Maximal_Rectangle {
     public int maximalRectangle(boolean[][] matrix) {
         if (matrix == null || matrix.length == 0) return 0;
-
         int m = matrix.length;
         int n = matrix[0].length;
         int[][] grid = new int[m][n];
@@ -23,7 +22,6 @@ public class Maximal_Rectangle {
         }
         return maxArea;
     }
-
     private int getArea(int[] heights){
         Stack<Integer> stack = new Stack<>();
         stack.push(-1);
@@ -48,7 +46,6 @@ public class Maximal_Rectangle {
         for (int j =0; j < matrix[0].length; j++){
             grid[0][j] = (matrix[0][j] == true? 1:0);
         }
-
         for (int i = 1; i < matrix.length; i++){
             for (int j =0 ; j < matrix[0].length; j++){
                 grid[i][j] = (matrix[i][j] == false? 0: grid[i-1][j] + 1);
