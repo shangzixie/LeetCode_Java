@@ -8,7 +8,7 @@
 ### Method 1
 * `Time Complexity`: O(n)
 * `Intuition`: prefix Sum 
-* `Algorithm`: `Max subarray sum = max continuous sum - min continuous sum`
+* `Algorithm`: `Max subarray sum = array sum - min continuous sum`
 
 
 ### Key Points
@@ -22,15 +22,12 @@ class Solution {
         
         //construct prefix sum array 
         int minSum = 0, sum = 0, ans = Integer.MIN_VALUE; 
-        for (int i = 0; i < nums.length; i++) {
-            sum += nums[i]; 
+        for(int num: nums){
+            sum += num; 
             ans = Math.max(sum - minSum, ans); 
             minSum = Math.min(minSum, sum); 
         }
-        return ans; 
-        
-        
-        
+        return ans;
         
     }
 }
