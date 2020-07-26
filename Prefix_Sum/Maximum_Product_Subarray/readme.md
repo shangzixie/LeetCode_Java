@@ -1,6 +1,6 @@
-# **. **
+# 152. maximum product subarray
 
-[LeetCode ]()
+[LeetCode 152](https://leetcode.com/problems/maximum-product-subarray/)
 
 
 ## Methods
@@ -10,17 +10,16 @@
 * `Intuition`: prefix Product
 * `Key Points`: There are positive, negtive, zero number. So we need consider the 3 situations.
 * `Algorithm`: 
-if prefix Product is positive: 
+
+1. if prefix Product is positive: 
 
 `max product = positve prefix Product / min positive prefix Product`
 
-or
-
-if prefix product is negtive: 
+2. if prefix product is negtive: 
  
 `max product = negtive prefix Product / max negtive prefix Product`
 
-if current is zero: 
+3. if current is zero: 
 
 all variable Will be initialized. 
 
