@@ -6,7 +6,7 @@
 ## Methods
 
 ### Method 1
-* `Time Complexity`: 
+* `Time Complexity`: O(n)
 * `Intuition`: prefix sum + hashMap
 * `Algorithm`: 
 
@@ -30,7 +30,7 @@ class Solution {
         map.put(0, 1); // why need to put {0：1}? just because, we want newSum - oldSum = k, but if the 
                         // newSum = k, oldSum = null. we need to consider this situation. such as nums =[1 2 3], k = 6
         for (int num : nums) {
-            prefixSum += num; 
+            prefixSum += num; //该行放第一位，避免第一个element就是k
             if (map.containsKey(prefixSum - k)) ans += map.get(prefixSum - k); 
             map.put(prefixSum, map.getOrDefault(prefixSum, 0) + 1); 
         }
