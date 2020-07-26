@@ -8,13 +8,12 @@
 ### Method 1
 * `Time Complexity`: 
 * `Intuition`:
+* `Key Points`: 
 * `Algorithm`: 
 
 
-### Key Points
-
-
 ### Code
+* `Code Design`: 
 ```java
 
 
