@@ -1,31 +1,34 @@
 import LeetCode_Java.buildinClass.TreeNode;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Solution {
-
-    public  static List<Integer> meanderingArray(List<Integer> unsorted){
-        Integer[] arr = new Integer[unsorted.size()];
-        for (int i = 0; i < unsorted.size(); i++) {
-            arr[i] = unsorted.get(i);
+    static List<List<Integer>> ans;
+    public  static List<List<Integer>> answer(int n, int sum){
+        ans = new ArrayList<>();
+        dfs(n, sum, new ArrayList<>());
+        return ans;
+    }
+    private static void dfs(int n, int sum, List<Integer> path) {
+        if (n == 0) {
+            if (sum == 0) ans.add(new ArrayList<>(path));
+            return;
         }
-        Arrays.sort(arr);
 
-        int maxIndex = arr.length - 1, minIndex = 0;
-        int max = arr[unsorted.size() - 1] + 1;
-        for (int i = 0; i < arr.length; i++) {
-            if (i % 2 == 0) {
-                arr[i] += (unsorted.get(maxIndex) % max) * max;
-                maxIndex--;
-            } else {
-                arr[i] += (unsorted.get(minIndex) % max) * max;
-                minIndex--;
-            }
-        }
-        return Arrays.asList(arr);
+        // choose current
+        path.add(n);
+        dfs(n - 1, sum - n, path);
+        path.remove(path.size() - 1);
+        // not choose current
+        dfs(n - 1, sum, path);
+    }
 
-
+    public static void main(String[] args) {
+        int n = 5;
+        int sum = 8;
+        System.out.println(answer(n, sum));
     }
 
 }
