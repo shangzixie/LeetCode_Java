@@ -83,6 +83,9 @@ Add
 * [Valid_Palindrome](Pointer/Valid_Palindrome)
 * [Remove_Nth_Node_From_End_of_List](Pointer/Remove_Nth_Node_From_End_of_List)
 * [Remove_Element](Pointer/Remove_Element)
+* [4Sum](Pointer/Four_Sum)
+* [4Sum II](Pointer/Four_Sum_II)
+
 ### Sliding Window
 * [Longest_Substring_Without_Repeating_Characters](Pointer/Sliding_Window/Longest_Substring_Without_Repeating_Characters)
 * [Minimum_Window_Substring](Pointer/Sliding_Window/Minimum_Window_Substring)
@@ -138,6 +141,7 @@ Add
 * [First_Missing_Positive](Tricky/First_Missing_Positive)
 * [Group_Anagrams](Tricky/Group_Anagrams)
 * [Group_Anagrams](Tricky/Text_Justification)
+* [Reaching_Point](Tricky/Reaching_Point)
 
 
 
