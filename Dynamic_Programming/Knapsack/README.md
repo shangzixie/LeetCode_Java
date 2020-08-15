@@ -2,12 +2,13 @@
 
 
 ```
-f[i][j]=max{f[i-1][j],f[i-1][j-w[i]]+v[i]}
+f[i][v]表示前i件物品恰放入一个容量为v的背包可以获得的最大价值
+f[i][v]=max{f[i-1][v],f[i-1][v-v[i]]+w[i]}
 w[] is weight 
 v[] is value 
 ```
 
-## 1. [0/1 problem](Backpack_I)
+## 1. 0/1 problem
 
 ### Description
 There are `n` items and a backpack with size `m`. Given array `A` representing the size of each item and array `V` representing the value of each item.
@@ -45,7 +46,7 @@ public class Solution {
      * @param m: An integer m denotes the size of a backpack
      * @param A: Given n items with size A[i]
      * @param V: Given n items with value V[i]
-     * @return: The maximum value
+     * @return : The maximum value
      */
     public int backPackII1(int m, int[] A, int[] V) {
         // 2d array 
