@@ -176,6 +176,7 @@ Add
 
 ## Weekly Contest
 
+The first quesiton is too easy, so not show it.
 ### Contest 193
 
 * [2. Least_Number_of_Unique_Integers_after_K_Removals](Weekly_Contest/Contest_193/Least_Number_of_Unique_Integers_after_K_Removals)
@@ -186,4 +187,8 @@ Add
 ### Contest 194
 * [2. Making_File_Names_Unique](Weekly_Contest/Contest_194/Making_File_Names_Unique)
 * [3. Avoid_Flood_in_The_City](Weekly_Contest/Contest_194/Avoid_Flood_in_The_City)
+
+### Contest 202
+* [2. Minimum Operations to Make Array Equal](Weekly_Contest/Contest_202/Minimum_Operations_to_Make_Array_Equal)
+
 
