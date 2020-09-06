@@ -67,6 +67,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Multiply_Strings](Math/Multiply_Strings)
 * [Permutation_Sequence](Math/Permutation_Sequence)
 * [Next_Permutation](Math/Next_Permutation)
+* [Fibonacci Number](Math/Fibonacci_Number)
 Add
 * [Add_String](Math/Add_String)
 * [Plus_One](Math/Add_Binary)
@@ -190,5 +191,7 @@ The first quesiton is too easy, so not show it.
 
 ### Contest 202
 * [2. Minimum Operations to Make Array Equal](Weekly_Contest/Contest_202/Minimum_Operations_to_Make_Array_Equal)
+* [3. Magnetic Force Between Two Balls](Weekly_Contest/Contest_202/Magnetic_Force_Between_Two_Balls)
+
 
 
