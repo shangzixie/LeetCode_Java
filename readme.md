@@ -192,6 +192,7 @@ The first quesiton is too easy, so not show it.
 ### Contest 202
 * [2. Minimum Operations to Make Array Equal](Weekly_Contest/Contest_202/Minimum_Operations_to_Make_Array_Equal)
 * [3. Magnetic Force Between Two Balls](Weekly_Contest/Contest_202/Magnetic_Force_Between_Two_Balls)
+* [4. Minimum Number of Days to Eat N Oranges](Weekly_Contest/Contest_202/Minimum_Number_of_Days_to_Eat_N_Oranges)
 
 
 
