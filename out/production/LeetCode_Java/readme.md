@@ -67,6 +67,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Multiply_Strings](Math/Multiply_Strings)
 * [Permutation_Sequence](Math/Permutation_Sequence)
 * [Next_Permutation](Math/Next_Permutation)
+* [Fibonacci Number](Math/Fibonacci_Number)
 Add
 * [Add_String](Math/Add_String)
 * [Plus_One](Math/Add_Binary)
@@ -176,6 +177,7 @@ Add
 
 ## Weekly Contest
 
+The first quesiton is too easy, so not show it.
 ### Contest 193
 
 * [2. Least_Number_of_Unique_Integers_after_K_Removals](Weekly_Contest/Contest_193/Least_Number_of_Unique_Integers_after_K_Removals)
@@ -186,4 +188,11 @@ Add
 ### Contest 194
 * [2. Making_File_Names_Unique](Weekly_Contest/Contest_194/Making_File_Names_Unique)
 * [3. Avoid_Flood_in_The_City](Weekly_Contest/Contest_194/Avoid_Flood_in_The_City)
+
+### Contest 202
+* [2. Minimum Operations to Make Array Equal](Weekly_Contest/Contest_202/Minimum_Operations_to_Make_Array_Equal)
+* [3. Magnetic Force Between Two Balls](Weekly_Contest/Contest_202/Magnetic_Force_Between_Two_Balls)
+* [4. Minimum Number of Days to Eat N Oranges](Weekly_Contest/Contest_202/Minimum_Number_of_Days_to_Eat_N_Oranges)
+
+
 
