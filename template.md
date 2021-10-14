@@ -2,22 +2,22 @@
 
 [LeetCode ]()
 
-
 ## Methods
 
 ### Method 1
-* `Time Complexity`: 
-* `Intuition`:
-* `Key Points`: 
-* `Algorithm`: 
 
+* `Time Complexity`:
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
 
 ### Code
-* `Code Design`: 
+
+* `Code Design`:
+
 ```java
 
 
 ```
-
 
 ## Reference
