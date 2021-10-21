@@ -3,24 +3,24 @@
 
 [LeetCode ]()
 
-
 ## Methods
 
 ### Method 1
-![](../Image/KMP1.png)
-![](../Image/KMP2.png)
+
+![1](../Image/KMP1.png)
+![2](../Image/KMP2.png)
 
 set a prefix table
 
 ### Key Points
 
-
 ### Code
+
 ```java
 public class Solution {
     /**
-     * @param source: 
-     * @param target: 
+     * @param source:
+     * @param target:
      * @return: return the index
      */
     public int strStr(String source, String target) {
@@ -30,7 +30,7 @@ public class Solution {
         int c = 0, d = 0;
         char[] sourceC = source.toCharArray();
         char[] targetC = target.toCharArray();
-        int[] next = getNext(targetC); 
+        int[] next = getNext(targetC);
         while(c<sourceC.length && d<targetC.length){
             if( d == -1 || sourceC[c] == targetC[d] ){
                 c++;
@@ -42,15 +42,15 @@ public class Solution {
         if(d ==targetC.length){
             return c-d;
         }
-        return -1;      
+        return -1;
     }
 
-    //get next array 
+    //get next array
     protected int[] getNext(char[] p) {
         int[] next = new int[p.length];
-        int a = -1, b = 0; 
+        int a = -1, b = 0;
         next[0]= -1;
-        
+
         while(b <p.length-1){
             if( a == -1 || p[a] == p[b] ){
                 a++;
@@ -66,6 +66,7 @@ public class Solution {
 
 ```
 
-
 ## Reference
-method https://www.youtube.com/watch?v=dgPabAsTFa8&t=1010s
+
+[reading](https://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)
+[video](https://www.youtube.com/watch?v=dgPabAsTFa8&t=1010s)
