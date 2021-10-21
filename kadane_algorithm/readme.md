@@ -1,4 +1,4 @@
-# kadane算法
+# Kadane算法
 
 ## reference
 
