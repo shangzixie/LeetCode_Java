@@ -6,27 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script>
-    const result = [];
+const results = [];
 
-    var substes = function(nums) {
-      nums = nums.sort();
+var permuteUnique = function(nums) {
+  nums = nums.sort();
+  const visited = new Array(nums.length);
+  for (let i = 0; i < nums.length; i++) {
+    visited[i] = false;
+  }
 
-      dfs(nums, 0, []);
+  dfs(nums, visited, []);
+  return results;
+}
 
-      return result;
-    }
+var dfs = function(nums, visited, subset) {
+  if (subset.length === nums.length) {
+    results.push([...subset]);
+    return;
+  }
 
-    var dfs = function(nums, index, subset) {
-      result.push([...subset]);
+  for (let i = 0; i < nums.length; i++) {
+    if (i > 0 && nums[i - 1] === nums[i] && visited[i - 1]) continue;
+    if (visited[i]) continue;
 
-      for (let i = index; i < nums.length; i++) {
-        subset.push(nums[i]);
-        dfs(nums, i + 1, subset);
-        subset.pop();
-      }
-    }
+    visited[i] = true;
+    subset.push(nums[i]);
+    dfs(nums, visited, subset)
+    visited[i] = false;
+    subset.pop();
+  }
+}
 
-    substes([1, 2, 3]);
+
+console.log(permuteUnique([1, 2, 3]));
     </script>
 </head>
 <body>
