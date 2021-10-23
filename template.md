@@ -1,6 +1,4 @@
-# **. **
-
-[LeetCode ]()
+# [LeetCode ]()
 
 ## Methods
 
