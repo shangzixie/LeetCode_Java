@@ -1,1 +1,0 @@
-https://xinghao-huang-portfolio.herokuapp.com/year/12/26/LeetCode/163.%20Missing%20Ranges/#problem
