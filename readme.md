@@ -1,22 +1,26 @@
 # LeetCode
+
 If you couldn't find an answer here, you could move to [my friend](https://github.com/frostace/LeetCode)
 
 ## 1. BFS/Topological/Graph
+
 * [Number_of_Island](BFS/Number_of_Island)
 * [Clone_Graph](BFS/Clone_Graph)
 
 
 ## 2. Union Find
+
 * [Number_of_Islands_II](BFS/Union_Find/Number_of_Islands_II)
 
-## 3. Binary Search 
+## 3. Binary Search
+
 * [Find_Minimum_in_Rotated_Sorted_Array](Binary_Search/Find_Minimum_in_Rotated_Sorted_Array)
 * [Find_Minimum_in_Rotated_Sorted_Array_II](Binary_Search/Find_Minimum_in_Rotated_Sorted_Array_II)
 * [Median_of_Two_Sorted_Array](Binary_Search/Median_of_Two_Sorted_Array)
 * [Search_in_Rotated_Sorted_Array](Binary_Search/Search_in_Rotated_Sorted_Array)
 * [Search_in_Rotated_Sorted_Array_II](Binary_Search/Search_in_Rotated_Sorted_Array_II)
 
-## 4. Dynamic Programming 
+## 4. Dynamic Programming
 
 * [Best_Time_to_Buy_and_Sell_Stock_III](Dynamic_Programming/Best_Time_to_Buy_and_Sell_Stock_III)
 * [Best_Time_to_Buy_and_Sell_Stock_IV](Dynamic_Programming/Best_Time_to_Buy_and_Sell_Stock_IV)
@@ -39,11 +43,8 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 `Binary Lifting for LCA(lowest common ancestor)` ---[Concept](https://cp-algorithms.com/graph/lca_binary_lifting.html#toc-tgt-0), [Video](https://cp-algorithms.com/graph/lca_binary_lifting.html#toc-tgt-0)
 * [Kth_Ancestor_of_a_Tree_Node](Weekly_Contest/Contest_193/Kth_Ancestor_of_a_Tree_Node)
 
-
-
-
-
 ## 5. Greedy
+
 * [Best_Time_to_Buy_and_Sell_Stock](Greedy/Best_Time_to_Buy_and_Sell_Stock)
 * [Best_Time_to_Buy_and_Sell_Stock_II](Greedy/Best_Time_to_Buy_and_Sell_Stock_II)
 * [Container_with_Most_Water](Greedy/Container_with_Most_Water)
@@ -54,6 +55,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Jump_Game](Greedy/Jump_Game_II)
 
 ## 6. Manacher /KMP Algorithm
+
 * [Manacher - Longest_Palindromic_Substring](Manacher_Algorithm/Longest_Palindromic_Substring)
 * [KMP](KMP_Algorithm)(Unfinished)
 
@@ -68,6 +70,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Permutation_Sequence](Math/Permutation_Sequence)
 * [Next_Permutation](Math/Next_Permutation)
 * [Fibonacci Number](Math/Fibonacci_Number)
+* [mutiply_string](Math/Multiply_Strings/README.md)
 Add
 * [Add_String](Math/Add_String)
 * [Plus_One](Math/Add_Binary)
@@ -75,6 +78,7 @@ Add
 * [Plus_One](Math/Plus_One)
 
 ## 8. Pointer
+
 * [Remove_Duplicates_from_Sorted_Array_II](Pointer/emove_Duplicates_from_Sorted_Array_II)
 * [Missing_Ranges](Pointer/Missing_Ranges)
 * [One_Edit_Distance](Pointer/One_Edit_Distance)
@@ -88,17 +92,21 @@ Add
 * [4Sum II](Pointer/Four_Sum_II)
 
 ### Sliding Window
+
 * [Longest_Substring_Without_Repeating_Characters](Pointer/Sliding_Window/Longest_Substring_Without_Repeating_Characters)
 * [Minimum_Window_Substring](Pointer/Sliding_Window/Minimum_Window_Substring)
 * [Minimum_Window_Substring_II](Pointer/Sliding_Window/Minimum_Window_Substring_II)
+* [Continuous_Subarray_Sum](Sliding_Window/Continuous_Subarray_Sum)
 
 ## 9. Prefix Sum
+
 * [Binary_Subarrays_With_Sum](Prefix_Sum/Binary_Subarrays_With_Sum)
 * [Maximum_Subarray](Prefix_Sum/Maximum_Subarray)
 * [Subarray_Sum_Equals_K](Prefix_Sum/Subarray_Sum_Equals_K)
 * [Maximum_Product_Subarray](Prefix_Sum/Maximum_Product_Subarray)
 
 ## 10. Recursion/DFS
+
 * [Binary_Search_Tree_Iterator](DFS/Binary_Search_Tree_Iterator)
 * [Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal](DFS/Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal)
 * [Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal](DFS/Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal)
@@ -120,8 +128,12 @@ Add
 * [Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero](DFS/Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero)
 * [Combination_Sum](DFS/Combination_Sum)
 * [N_Queens](DFS/N_Queens)
+* [Lowest_Common_Ancestor_of_a_Binary_Tree](DFS/Lowest_Common_Ancestor_of_a_Binary_Tree/readme.md)
+* [Inorder_Successor_In_BST](DFS/Inorder_Successor_In_BST/readme.md)
+* [word search](DFS/Word_Search/readme.md)
 
 ## 11. Tricky Method
+
 * [Longest_Consecutive_Sequence](Tricky/Longest_Consecutive_Sequence)
 * [Max_Points_on_A_Line](Tricky/Max_Points_on_A_Line)
 * [Next_Greater_Element_III](Tricky/Next_Greater_Element_III)
@@ -144,12 +156,10 @@ Add
 * [Group_Anagrams](Tricky/Text_Justification)
 * [Reaching_Point](Tricky/Reaching_Point)
 
-
-
-
-
 ## 12. Stack
+
 * [Evaluate_Reverse_Polish_Notation](Stack/Evaluate_Reverse_Polish_Notation)
+* [Reverse_Words_in_a_String](Stack/Reverse_Words_in_a_String/readme.md)
 * [Reverse_Words_in_a_String_II](Stack/Reverse_Words_in_a_String_II)
 * [Valid_Parentheses](Stack/Valid_Parentheses)
 * [Decode_String](Stack/Decode_String)
@@ -157,44 +167,45 @@ Add
 * [Implement_Queue_using_Stacks](Stack/Implement_Queue_using_Stacks)
 
 ### Monotonic_Stack
+
 * [Next_Greater_Element](Stack/Monotonic_Stack/Next_Greater_Element)
 * [Next_Greater_Element II](Stack/Monotonic_Stack/Next_Greater_Element_II)
 * [Largest_Rectangle_in_Histogram](Stack/Monotonic_Stack/Largest_Rectangle_in_Histogram)
 * [Maximal_Rectangle](Stack/Monotonic_Stack/Maximal_Rectangle)
 
-
-
-
-
 ## 13. [LinkedList](./LinkedList)
+
 * [Swap_Nodes_in_Pairs](LinkedList/Swap_Nodes_in_Pairs)
 * [Reverse_Linked_List](LinkedList/Reverse_Linked_List)
 * [Reverse_Linked_List_II](LinkedList/Reverse_Linked_List_II)
 * [Reverse_Nodes_in_k_Group](LinkedList/Reverse_Nodes_in_k_Group)
+* [Merge k Sorted Lists](LinkedList/23_Merge_k_Sorted_Lists)
 
 ## 14. Data Structure
+
 * [Maximum_Frequency_Stack](DataSturcture/Maximum_Frequency_Stack)
 * [LRU_Cache](DataSturcture/LRU_Cache)
 * [Implement_Queue_by_Two_Stacks](DataSturcture/Implement_Queue_by_Two_Stacks)
+* [Peeking Iterator](DataSturcture/Peeking_Iterator)
+* [LRU](DataSturcture/LRU_Cache/LRU.js)
 
 ## Weekly Contest
 
 The first quesiton is too easy, so not show it.
+
 ### Contest 193
 
 * [2. Least_Number_of_Unique_Integers_after_K_Removals](Weekly_Contest/Contest_193/Least_Number_of_Unique_Integers_after_K_Removals)
 * [3. Minimum_Number_of_Days_to_Make_m_Bouquets](Weekly_Contest/Contest_193/Minimum_Number_of_Days_to_Make_m_Bouquets)
 * [4. Kth_Ancestor_of_a_Tree_Node](Weekly_Contest/Contest_193/Kth_Ancestor_of_a_Tree_Node)
 
-
 ### Contest 194
+
 * [2. Making_File_Names_Unique](Weekly_Contest/Contest_194/Making_File_Names_Unique)
 * [3. Avoid_Flood_in_The_City](Weekly_Contest/Contest_194/Avoid_Flood_in_The_City)
 
 ### Contest 202
+
 * [2. Minimum Operations to Make Array Equal](Weekly_Contest/Contest_202/Minimum_Operations_to_Make_Array_Equal)
 * [3. Magnetic Force Between Two Balls](Weekly_Contest/Contest_202/Magnetic_Force_Between_Two_Balls)
 * [4. Minimum Number of Days to Eat N Oranges](Weekly_Contest/Contest_202/Minimum_Number_of_Days_to_Eat_N_Oranges)
-
-
-
