@@ -13,76 +13,44 @@ function ListNode(val, next) {
   this.val = (val===undefined ? 0 : val)
   this.next = (next===undefined ? null : next)
 }
-/**
- * @param {ListNode} head
- * @return {ListNode}
- */
- var sortList = function(head) {
-    if (!head) return;
+ var insertionSortList = function(head) {
+    if (!head) return null;
 
-    return divided(head);
-};
+    const dummy = new ListNode(Number.MIN_VALUE, head);
+    let cur = dummy;
+    let prev = dummy;
 
-var findMid = function(node) {
-    let slow = node;
-    let fast = node.next;
-    while (fast && fast.next) {
-        fast = fast.next.next;
-        slow = slow.next;
-    }
-
-    return slow;
-}
-
-var divided = function(node) {
-    if (!node.next) return node;
-
-    // find mid node
-    let mid = findMid(node);
-    let rightStart = mid.next;
-
-    // split
-    mid.next = null;
-    // continue divided
-    let left = divided(node);
-    let right = divided(rightStart);
-
-    return merge(left, right);
-}
-
-var merge = function(list1, list2) {
-    const dummy = new ListNode();
-    let tail = dummy;
-    let p1 = list1;
-    let p2 = list2;
-
-    while(p1 && p2) {
-        if (p1.val > p2) {
-            tail.next = p2;
-            p2 = p2.next;
-        } else {
-            tail.next = p1;
-            p1 = p1.next;
+    while (cur.next) {
+        // cur.next 位置正确
+        if (cur.val <= cur.next.val) {
+            cur = cur.next;
+        } else { // cur.next节点应该往前移动
+            // 把该节点存起来 并从链表中抽离
+            let temp = cur.next;
+            cur.next = cur.next.next;
+            // 找它应该的位置
+            prev = dummy;
+            while (prev.next.val < temp.val) {
+                prev = prev.next;
+            }
+            // 插入
+            temp.next = prev.next;
+            prev.next = temp;
         }
-        tail = tail.next;
-    }
-
-    if (p1) {
-        tail.next = p1;
-    } else {
-        tail.next = p2;
     }
     return dummy.next;
 };
 
-let l1 = new ListNode(4, null);
-let l2 = new ListNode(2, null);
+let l1 = new ListNode(-1, null);
+let l2 = new ListNode(5, null);
 let l3 = new ListNode(3, null);
-let l4 = new ListNode(1, null);
+let l4 = new ListNode(4, null);
+let l5 = new ListNode(0, null);
 l1.next = l2;
 l2.next = l3;
 l3.next = l4;
-sortList(l1);
+l4.next = l5;
+insertionSortList(l1);
 </script>
 </head>
 <body>
