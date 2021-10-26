@@ -103,11 +103,12 @@ III. In the end, return the last node of the LinkedList.
 ```java
 public class Solution {
     public ListNode reverse(ListNode head) {
+        if (!head) return new ListNode();
         if (head.next == null) return head;
         ListNode tail = reverse(head.next); // 姑且相信递归可以把后面的都搞定，并且找到最后那个节点
         head.next.next = head; // 后面翻转后最后的尾巴应该指向当前的头，而尾巴不就正是原来的next嘛。。。
         head.next = null; // 别忘了当前的头现在得指向null
-        return tail; // 返回尾巴收工
+        return tail; // 每次都是返回同样的节点tail
     }
 }
 ```
