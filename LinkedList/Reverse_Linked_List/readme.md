@@ -20,7 +20,6 @@ the third point is used for moving of the second pointer
 class Solution {
     public ListNode reverseList(ListNode head) {
         if (head == null || head.next == null) return head;
-
         ListNode p1 = null;
         ListNode p2 = head;
 
@@ -50,7 +49,7 @@ class optimize{
     public ListNode reverse(ListNode head) {
         if (head.next == null) return head;
 
-
+        // 因为第一个元素要当末尾空节点, 所以初始化p1 = null
         ListNode p1 = null;
         ListNode p2 = head;
         while (p2 != null) {
