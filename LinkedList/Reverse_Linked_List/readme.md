@@ -2,52 +2,55 @@
 
 [LeetCode 206](https://leetcode.com/problems/reverse-linked-list/)
 
-
 ## Methods
 
 ### Method 1
+
 use 3 pointers to reverse
 
 ### Key Points
-the third point is used for moving of the second pointer 
 
-![](../../Image/Reverse_Linked_List.png)
+the third point is used for moving of the second pointer
+
+![1](../../Image/Reverse_Linked_List.png)
+
 ### Code
+
 ```java
 class Solution {
     public ListNode reverseList(ListNode head) {
-        if (head == null || head.next == null) return head; 
-        
-        ListNode p1 = null; 
+        if (head == null || head.next == null) return head;
+
+        ListNode p1 = null;
         ListNode p2 = head;
-        
-        
+
         while (p2 != null){
             ListNode p3 = head.next;
-            //change direct 
-            p2.next = p1; 
-            
-            //move pointer 
-            p1 = p2; 
+            //change direct
+            p2.next = p1;
+
+            //move pointer
+            p1 = p2;
             p2 = p3;
-             
         }
-        //in the end, don't forget the last node 
-        p2.next = p1; 
-        
+        //in the end, don't forget the last node
+        p2.next = p1;
+
         return p2;
     }
 }
 ```
-after optimize 
+
+after optimize
+
 ```java
 
 class optimize{
     //---------------after optimize
     public ListNode reverse(ListNode head) {
-        if (head.next == null) return head; 
-        
-        
+        if (head.next == null) return head;
+
+
         ListNode p1 = null;
         ListNode p2 = head;
         while (p2 != null) {
@@ -61,44 +64,43 @@ class optimize{
     }
 
 }
-
 ```
+
 ### Method 2
+
 using recursive method
 
 ### Key Points
-every level, need to do 3 steps:
 
+every level, need to do 3 steps:
 
 I. change `curNode.next.next`
 
-
 ```
-from 
+from
 
 curNode -> curNode.next->
 
 to
- 
+
     curNode     ->    curNode.next
                 <-
 ```
 
 II. then let curNode points to null:
+
   ```
   from
-   
       curNode     ->    curNode.next
                   <-
-
-  to 
+  to
        curNode     <-    curNode.next
-                   
+  ```
 
-  ```  
 III. In the end, return the last node of the LinkedList.
 
 ### Code
+
 ```java
 public class Solution {
     public ListNode reverse(ListNode head) {
@@ -111,6 +113,6 @@ public class Solution {
 }
 ```
 
-
 ## Reference
+
 https://leetcode.com/problems/reverse-linked-list/solution/
