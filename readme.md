@@ -140,7 +140,7 @@ Add
 * [Set_Mismatch](Tricky/Set_Mismatch)
 * [Sliding_Window_Maximum](Tricky/Sliding_Window_Maximum)
 * [ZigZag_Conversion](Tricky/ZigZag_Conversion)
-* [Merge_K_Sorted_Lists](Tricky/Merge_K_Sorted_Lists)
+* [Merge k Sorted Lists](LinkedList/23_Merge_k_Sorted_Lists)
 * [Merge_Intervals](Tricky/Merge_Intervals)
 * [Longest_Valid_Parentheses](Tricky/Longest_Valid_Parentheses)
 * [Substring_with_Concatenation_of_All_Words](Tricky/Substring_with_Concatenation_of_All_Words)(Unfinished)
