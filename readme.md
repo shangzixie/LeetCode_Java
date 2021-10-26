@@ -181,6 +181,7 @@ Add
 * [Reverse_Nodes_in_k_Group](LinkedList/Reverse_Nodes_in_k_Group)
 * [Merge k Sorted Lists](LinkedList/23_Merge_k_Sorted_Lists)
 * [copy_list_with_random_pointer](LinkedList/copy_list_with_random_pointer)
+* [sort_list](LinkedList\sorted_List)
 
 ## 14. Data Structure
 

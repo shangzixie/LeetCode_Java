@@ -1,24 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script>
+# [LeetCode ]()
+
+## Methods
+
+### Method 1
+
+* `Time Complexity`: ![6](../../Image/6.png)
+* `Intuition`:
+* `Key Points`: merge sort
+* `Algorithm`:
+
+### Code
+
+* `Code Design`:
+
+```javascript
 /**
  * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
  */
-function ListNode(val, next) {
-  this.val = (val===undefined ? 0 : val)
-  this.next = (next===undefined ? null : next)
-}
 /**
  * @param {ListNode} head
  * @return {ListNode}
  */
- var sortList = function(head) {
-    if (!head) return;
+var sortList = function(head) {
+    if (!head) return null;
 
     return divided(head);
 };
@@ -57,7 +65,7 @@ var merge = function(list1, list2) {
     let p2 = list2;
 
     while(p1 && p2) {
-        if (p1.val > p2) {
+        if (p1.val > p2.val) {
             tail.next = p2;
             p2 = p2.next;
         } else {
@@ -74,18 +82,6 @@ var merge = function(list1, list2) {
     }
     return dummy.next;
 };
+```
 
-let l1 = new ListNode(4, null);
-let l2 = new ListNode(2, null);
-let l3 = new ListNode(3, null);
-let l4 = new ListNode(1, null);
-l1.next = l2;
-l2.next = l3;
-l3.next = l4;
-sortList(l1);
-</script>
-</head>
-<body>
-  test
-</body>
-</html>
+## Reference
