@@ -54,7 +54,44 @@
         }
         return -1;
     }
+```
 
+```javascript
+/**
+ * @param {number[]} arr
+ * @return {string}
+ */
+var largestTimeFromDigits = function(arr) {
+    let largestTime = -1;
+    for (let i = 0; i< 4; i++) {
+        for (let j = 0; j < 4; j++) {
+            for (let k = 0; k < 4; k++) {
+                if (i == k || j == k || i == j ) continue;
+                let l = 6 - i - j - k;
+                let result = helper(arr[i], arr[j], arr[k], arr[l]);
+                largestTime = Math.max(result, largestTime);
+            }
+        }
+    }
+    if (largestTime === -1) return '';
+    let hour = Math.floor(largestTime / 60);
+    let minute = largestTime % 60;
+
+    if (hour === 0) hour = '00';
+    if (hour > 0 && hour < 10) hour = '0' + hour;
+    if (minute === 0) minute = '00';
+    if (minute > 0 && minute < 10) minites = '0' + minute;
+    return '' + hour + ':'+ minute;
+};
+
+var helper = function(a, b, c, d) {
+    let hour = a * 10 + b;
+    let minute = c * 10 + d;
+    if (hour < 24 && minute < 59) {
+        return hour * 60 + minute;
+    }
+    return -1;
+}
 ```
 
 ## Reference
