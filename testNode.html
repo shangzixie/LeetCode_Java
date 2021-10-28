@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+/**
+ * Definition for singly-linked list.
+ */
+function ListNode(val, next) {
+  this.val = (val===undefined ? 0 : val)
+  this.next = (next===undefined ? null : next)
+}
+ var insertionSortList = function(head) {
+    if (!head) return null;
+
+    const dummy = new ListNode(Number.MIN_VALUE, head);
+    let cur = dummy;
+    let prev = dummy;
+
+    while (cur.next) {
+        // cur.next 位置正确
+        if (cur.val <= cur.next.val) {
+            cur = cur.next;
+        } else { // cur.next节点应该往前移动
+            // 把该节点存起来 并从链表中抽离
+            let temp = cur.next;
+            cur.next = cur.next.next;
+            // 找它应该的位置
+            prev = dummy;
+            while (prev.next.val < temp.val) {
+                prev = prev.next;
+            }
+            // 插入
+            temp.next = prev.next;
+            prev.next = temp;
+        }
+    }
+    return dummy.next;
+};
+
+let l1 = new ListNode(-1, null);
+let l2 = new ListNode(5, null);
+let l3 = new ListNode(3, null);
+let l4 = new ListNode(4, null);
+let l5 = new ListNode(0, null);
+l1.next = l2;
+l2.next = l3;
+l3.next = l4;
+l4.next = l5;
+insertionSortList(l1);
+</script>
+</head>
+<body>
+  test
+</body>
+</html>
