@@ -11,40 +11,34 @@
 
 如果按照这种方法: ![8](../../Image/8.png)
 每次移动一个数a到另外一个位置数b, 再移动b到其他位置c这样, 会出现edge case: 移动a到b, 经过计算,b的下一个位置在a, 这样导致a和b其实为互相调换, 而无法对其他元素进行修改
+
 这时候引入一个变量`i`, 用来记录每次循环里面a的index, 下次循环index如果还是和i相等,就向后移动一位
+`movedNum`用来记录将要被移动的元素, `nextMovedNum`用来记录将要被移动到的所在位置的元素
 
 ### Code
 
 * `Code Design`:
 
-```javascript
-/**
- * @param {number[]} nums
- * @param {number} k
- * @return {void} Do not return anything, modify nums in-place instead.
- */
-var rotate = function(nums, k) {
-    let len = nums.length;
-    let index = 0;
-    let movedNum = nums[0];
-    let i = 0;
+```java
+class Solution {
+    public void rotate(int[] nums, int k) {
+        int len = nums.length,n = len;
+        int i = 0, index = 0, movedNum = nums[index], nextMovedNum = nums[index];
 
-    for (let j = 0; j < len; j++) {
-        // store next will moved number
-        let nextMovedNumIndex = (index + k) % len;
-        let nextMovedNum = nums[nextMovedNumIndex];
-        // move current number
-        nums[nextMovedNumIndex] = movedNum;
-        // next loop
-        index = nextMovedNumIndex;
-        movedNum = nextMovedNum;
-        // 如果下次循环index 和上次的一样 就移动一位
-        if (index === i) {
-            index += 1;
+        if (k % n == 0) return;
 
+        while (n-- != 0) {
+            index =  (index + k) % len;
+            nextMovedNum = nums[index];
+            nums[index] = movedNum;
+            movedNum = nextMovedNum;
+            if (index == i) {
+                index = ++i;
+                movedNum = nums[index];
+            }
         }
     }
-};
+}
 ```
 
 ### Method 2
