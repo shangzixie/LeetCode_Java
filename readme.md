@@ -80,7 +80,8 @@ Add
 
 ## 8. Pointer
 
-* [Remove_Duplicates_from_Sorted_Array_II](Pointer/emove_Duplicates_from_Sorted_Array_II)
+* [Remove_Duplicates_from_Sorted_Array](Pointer/Remove_Duplicates_from_Sorted_Array)
+* [Remove_Duplicates_from_Sorted_Array_II](Pointer/Remove_Duplicates_from_Sorted_Array_II)
 * [Missing_Ranges](Pointer/Missing_Ranges)
 * [One_Edit_Distance](Pointer/One_Edit_Distance)
 * [Three_Sum](Pointer/Three_Sum)
