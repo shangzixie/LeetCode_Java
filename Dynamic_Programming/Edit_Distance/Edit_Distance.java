@@ -23,6 +23,4 @@ public class Edit_Distance {
         }
         return dp[word1.length()-1][word2.length()-1];
     }
-
-
 }
