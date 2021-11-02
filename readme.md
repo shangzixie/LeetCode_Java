@@ -7,7 +7,6 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Number_of_Island](BFS/Number_of_Island)
 * [Clone_Graph](BFS/Clone_Graph)
 
-
 ## 2. Union Find
 
 * [Number_of_Islands_II](BFS/Union_Find/Number_of_Islands_II)
@@ -33,14 +32,17 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Unique_Binary_Search_Trees](Dynamic_Programming/Unique_Binary_Search_Trees)
 
 `Double Sequence Problem (双序列）`
+
 * [Edit_Distance](Dynamic_Programming/Edit_Distance)
 * [Regular_Expression_Matching](Dynamic_Programming/Regular_Expression_Matching)
 * [Wildcard_Matching](Dynamic_Programming/Wildcard_Matching)
 
 `Knapsack Problem (背包问题)`---[Summarize](Dynamic_Programming/Knapsack)
+
 * [0/1 Problem](Dynamic_Programming/Knapsack)
 
 `Binary Lifting for LCA(lowest common ancestor)` ---[Concept](https://cp-algorithms.com/graph/lca_binary_lifting.html#toc-tgt-0), [Video](https://cp-algorithms.com/graph/lca_binary_lifting.html#toc-tgt-0)
+
 * [Kth_Ancestor_of_a_Tree_Node](Weekly_Contest/Contest_193/Kth_Ancestor_of_a_Tree_Node)
 
 ## 5. Greedy
