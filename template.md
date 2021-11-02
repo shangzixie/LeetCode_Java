@@ -18,4 +18,22 @@
 
 ```
 
+----------------------
+
+### Method 2
+
+* `Time Complexity`:
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
+
+### Code
+
+* `Code Design`:
+
+```java
+
+
+```
+
 ## Reference

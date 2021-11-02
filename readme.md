@@ -6,6 +6,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 
 * [Number_of_Island](BFS/Number_of_Island)
 * [Clone_Graph](BFS/Clone_Graph)
+* [Binary_Tree_Right_Side_View](BFS\Binary_Tree_Right_Side_View)
 
 ## 2. Union Find
 
