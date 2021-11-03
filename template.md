@@ -5,6 +5,7 @@
 ### Method 1
 
 * `Time Complexity`:
+* `Space Complexity`:
 * `Intuition`:
 * `Key Points`:
 * `Algorithm`:
@@ -23,6 +24,7 @@
 ### Method 2
 
 * `Time Complexity`:
+* `Space Complexity`:
 * `Intuition`:
 * `Key Points`:
 * `Algorithm`:
