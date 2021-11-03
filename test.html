@@ -7,37 +7,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script>
+//////////////////////////////////////////////////////
 /**
- * @param {string[]} strs
- * @return {string[][]}
+ * @param {number} a
+ * @param {number} b
+ * @return {number}
  */
- var groupAnagrams = function(strs) {
-    if (strs.length <= 0) return [];
+ var divide = function(dividend, divisor) {
+    if (divisor === 1) return dividend;
+    if (-2147483648 === dividend) return 2147483647;
+    let a = Math.abs(dividend);
+    let b = Math.abs(divisor);
 
-    const map = new Map();
-    for (let str of strs) {
-        const count = new Array(26);
-        for (let i = 0; i < str.length; i++) {
-            if (count[str[i].charCodeAt() - 'a'.charCodeAt()]) count[str[i].charCodeAt() - 'a'.charCodeAt()]++;
-            else count[str[i].charCodeAt() - 'a'.charCodeAt()] = 1;
+    let result = 0;
+    while (a - b >= 0) {
+        let x = 0;
+        while (a - (b << x) >= 0) {
+          console.log( a - (b << x));
+          x += 1;
         }
-
-        let key = '';
-        for (let i = 0; i < 26; i++) {
-            // 注意! 如果是undefined, 也会被转为字符串'undefined', 所以要过滤掉
-            if (count[i]) key += String.fromCharCode(i + 'a'.charCodeAt()) + i;
-        }
-        if (!map.has(key)) map.set(key, []);
-        map.get(key).push(str);
+        x -= 1;
+        result += 1 << x;
+        a -= b << x;
     }
 
-    const result = [];
-    for (let [key, value] of map) {
-        result.push(value);
-    }
-    return result;
+    return (dividend >= 0) === (divisor >= 0) ? result : -result;
 };
-groupAnagrams(["ddddddddddg","dgggggggggg"]);
+
+divide(2147483647, 2);
+
+
+////////////////////////
 </script>
 </head>
 <body>
