@@ -73,3 +73,15 @@ a^b^c=a^c^b 异或运算具有交换律
         return res;
     }
 ```
+
+------------------------
+
+### Method 2
+
+* `Time Complexity`:
+* `Space Complexity`:
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
+
+首先求得数组所有元素总和totalSum，后利用Set(相同元素只能存入一次)将数组中每个不重复元素存入，并求的不同元素和setSum,出现一次元素值即为(setSum * 3 - totalSum)/2
