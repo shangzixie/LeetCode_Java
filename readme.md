@@ -75,12 +75,14 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Fibonacci Number](Math/Fibonacci_Number)
 * [mutiply_string](Math/Multiply_Strings/README.md)
 * [Largest_Time_for_Given_Digits](Math/Largest_Time_for_Given_Digits)
-* []()
+* [Add_Binary](Math/Add_Binary/readme.md)
 Add
 * [Add_String](Math/Add_String)
 * [Plus_One](Math/Add_Binary)
 * [Add_Two_Numbers_II](Math/Add_Two_Numbers_II)
 * [Plus_One](Math/Plus_One)
+* [Single_Number](Math/Single_Number)
+* [Single_Number_II](Math/Single_Number_II)
 
 ## 8. Pointer
 
@@ -96,6 +98,7 @@ Add
 * [Remove_Element](Pointer/Remove_Element)
 * [4Sum](Pointer/Four_Sum)
 * [4Sum II](Pointer/Four_Sum_II)
+* [two_sum_II_Input Array Is Sorted](Pointer\Two_Sum_II)
 
 ### Sliding Window
 
