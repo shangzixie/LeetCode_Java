@@ -76,6 +76,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [mutiply_string](Math/Multiply_Strings/README.md)
 * [Largest_Time_for_Given_Digits](Math/Largest_Time_for_Given_Digits)
 * [Add_Binary](Math/Add_Binary/readme.md)
+* [Maximum_Product_of_Word_Lengths](Math/Maximum_Product_of_Word_Lengths)
 Add
 * [Add_String](Math/Add_String)
 * [Plus_One](Math/Add_Binary)
