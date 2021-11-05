@@ -23,8 +23,6 @@ public class Three_Sum {
     private void twoSum(int start, int end, int target, int[] nums, List<List<Integer>> results){
         List<Integer> triplets = new ArrayList<>();
 
-
-
         while (start < end){
             if (nums[start] + nums[end] < target){
                 start++;
