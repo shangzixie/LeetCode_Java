@@ -107,6 +107,7 @@ Add
 * [Minimum_Window_Substring](Pointer/Sliding_Window/Minimum_Window_Substring)
 * [Minimum_Window_Substring_II](Pointer/Sliding_Window/Minimum_Window_Substring_II)
 * [Continuous_Subarray_Sum](Sliding_Window/Continuous_Subarray_Sum)
+* [Minimum_Size_Subarray_Sum](Sliding_Window\Minimum_Size_Subarray_Sum)
 
 ## 9. Prefix Sum
 
