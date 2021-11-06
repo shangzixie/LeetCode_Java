@@ -10,6 +10,10 @@
 * `Key Points`:
 * `Algorithm`:
 
+brute force.
+
+it's so garbage
+
 ### Code
 
 * `Code Design`:
@@ -43,17 +47,30 @@ var numSubarrayProductLessThanK = function(nums, k) {
 
 * `Time Complexity`:
 * `Space Complexity`:
-* `Intuition`:
-* `Key Points`:
+* `Intuition`: sliding window
+* `Key Points`: 向左滑动
 * `Algorithm`:
 
-### Code
-
-* `Code Design`:
-
-```java
+该题的难点是, index为i和j时候, 如何计算i,j之间连续subarray的总数量?
+方法:
+![21](../../Image/21.png)
 
 
-```
+![18](../../Image/18.png)
+![19](../../Image/19.png)
+
+----------------------
+
+### Method 3
+
+* `Time Complexity`:
+* `Space Complexity`:
+* `Intuition`: sliding window
+* `Key Points`: 向右滑动
+* `Algorithm`:
+
+![20](../../Image/20.png)
 
 ## Reference
+
+[leetcode ans](https://leetcode-cn.com/problems/subarray-product-less-than-k/solution/javahua-dong-chuang-kou-xiang-zuo-hua-hu-dftx/)
