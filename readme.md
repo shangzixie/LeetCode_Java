@@ -117,6 +117,7 @@ Add
 * [Subarray_Sum_Equals_K](Prefix_Sum/Subarray_Sum_Equals_K)
 * [Maximum_Product_Subarray](Prefix_Sum/Maximum_Product_Subarray)
 * [Contiguous_Array](Prefix_Sum/Contiguous_Array)
+* [Find_Pivot_Index](Prefix_Sum/Find_Pivot_Index)
 
 ## 10. Recursion/DFS
 
