@@ -60,15 +60,22 @@ var pivotIndex = function(nums) {
 * `Code Design`:
 
 ```javascript
-
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
 var pivotIndex = function(nums) {
-    const total = nums.reduce((a, b) => a + b, 0);
-    let sum = 0;
+    let total = 0;
+    // 可以改为 const total = nums.reduce((a, b) => a + b, 0);
+    for (let num of nums) {
+        total += num;
+    }
+
+    let prefixSum = 0;
     for (let i = 0; i < nums.length; i++) {
-        if (2 * sum + nums[i] === total) {
-            return i;
-        }
-        sum += nums[i];
+        // 因为要找pivot, 所以不能先加nums[i]
+        if (total - 2 *  prefixSum - nums[i] === 0) return i;
+        prefixSum += nums[i];
     }
     return -1;
 };
