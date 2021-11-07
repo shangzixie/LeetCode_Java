@@ -118,6 +118,7 @@ Add
 * [Maximum_Product_Subarray](Prefix_Sum/Maximum_Product_Subarray)
 * [Contiguous_Array](Prefix_Sum/Contiguous_Array)
 * [Find_Pivot_Index](Prefix_Sum/Find_Pivot_Index)
+* [Range_Sum_Query_2D_Immutable](Prefix_Sum/Range_Sum_Query_2D_Immutable)
 
 ## 10. Recursion/DFS
 
