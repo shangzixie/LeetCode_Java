@@ -109,6 +109,7 @@ Add
 * [Continuous_Subarray_Sum](Sliding_Window/Continuous_Subarray_Sum)
 * [Minimum_Size_Subarray_Sum](Sliding_Window/Minimum_Size_Subarray_Sum)
 * [Subarray_Product_Less_Than_K](Sliding_Window/Subarray_Product_Less_Than_K)
+* [Permutation_in_String](Sliding_Window/Permutation_in_String)
 
 ## 9. Prefix Sum
 
