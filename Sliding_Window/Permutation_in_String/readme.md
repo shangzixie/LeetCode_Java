@@ -2,9 +2,9 @@
 
 ## Methods
 
-### Method 1
+### [Method 1](https://leetcode-cn.com/problems/permutation-in-string/solution/zi-fu-chuan-de-pai-lie-by-leetcode-solut-7k7u/)
 
-* `Time Complexity`:
+* `Time Complexity`: O(n^2)
 * `Space Complexity`:
 * `Intuition`: Sliding Window
 * `Key Points`:
@@ -46,10 +46,10 @@ var checkInclusion = function(s1, s2) {
 
 ----------------------
 
-### Method 2
+### [Method 2](https://leetcode-cn.com/problems/permutation-in-string/solution/zi-fu-chuan-de-pai-lie-by-leetcode-solut-7k7u/)
 
-* `Time Complexity`:
-* `Space Complexity`:
+* `Time Complexity`: O(m + n). m n为s1和s2长度
+* `Space Complexity`: O(26 * 2) = O(32) = O(1)
 * `Intuition`:
 * `Key Points`:方法一, 每次比较连个数组`cnt1`和`cnt2`, 事件负责度都为O(n), 这里考虑优化
 * `Algorithm`:
@@ -121,10 +121,10 @@ var checkInclusion = function(s1, s2) {
 
 ----------------------
 
-### Method 3
+### [Method 3](https://leetcode-cn.com/problems/permutation-in-string/solution/zi-fu-chuan-de-pai-lie-by-leetcode-solut-7k7u/)
 
-* `Time Complexity`:
-* `Space Complexity`:
+* `Time Complexity`: O(m + n). m n为s1和s2长度
+* `Space Complexity`: O(26 * 2) = O(32) = O(1)
 * `Intuition`:
 * `Key Points`:
 * `Algorithm`:
@@ -195,8 +195,8 @@ var checkInclusion = function(s1, s2) {
 
 ### [Method 5](https://leetcode-cn.com/problems/permutation-in-string/solution/yong-hua-dong-chuang-kou-shuang-zhi-zhen-72m5/)
 
-* `Time Complexity`:
-* `Space Complexity`:
+* `Time Complexity`: O(m + n)
+* `Space Complexity`: O(26 * 2) = O(32) = O(1)
 * `Intuition`: 双指针, sliding window
 * `Key Points`:
 * `Algorithm`:
@@ -241,7 +241,3 @@ bool checkInclusion(char* s1, char* s2) {
 }
 
 ```
-
-## Reference
-
-[leetcode ans](https://leetcode-cn.com/problems/permutation-in-string/solution/zi-fu-chuan-de-pai-lie-by-leetcode-solut-7k7u/)
