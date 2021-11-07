@@ -192,7 +192,7 @@ var checkInclusion = function(s1, s2) {
 
 ----------------------
 
-### Method 5
+### [Method 5](https://leetcode-cn.com/problems/permutation-in-string/solution/yong-hua-dong-chuang-kou-shuang-zhi-zhen-72m5/)
 
 * `Time Complexity`:
 * `Space Complexity`:
@@ -200,6 +200,7 @@ var checkInclusion = function(s1, s2) {
 * `Key Points`:
 * `Algorithm`:
 
+[video](https://leetcode-cn.com/problems/permutation-in-string/solution/hua-dong-chuang-kou-shuang-zhi-zhen-by-c-w1r3/)
 题目要求，在s2中找到s1字符串，这个子串顺序可以随意，但字符必须一个不多，一个不少。
 所以，按题意，求的是在s1长度内，s2是否含有和s1字符个数一样的子串。
 建立一个数组，下标0～25分别代表26个小写英文字母，每个元素用于计算s1和s2中的个数。
