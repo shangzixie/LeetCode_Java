@@ -4,7 +4,7 @@
 
 ### [Method 1](https://leetcode-cn.com/problems/permutation-in-string/solution/zi-fu-chuan-de-pai-lie-by-leetcode-solut-7k7u/)
 
-* `Time Complexity`: O(n^2)
+* `Time Complexity`: O(n + m * 26), ctn的长度为26常数
 * `Space Complexity`:
 * `Intuition`: Sliding Window
 * `Key Points`:
