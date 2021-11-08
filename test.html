@@ -9,32 +9,52 @@
   <script>
 //////////////////////////////////////////////////////
 /**
- * @param {number} a
- * @param {number} b
- * @return {number}
+ * @param {string} s
+ * @param {string} t
+ * @return {string}
  */
- var divide = function(dividend, divisor) {
-    if (divisor === 1) return dividend;
-    if (-2147483648 === dividend) return 2147483647;
-    let a = Math.abs(dividend);
-    let b = Math.abs(divisor);
-
-    let result = 0;
-    while (a - b >= 0) {
-        let x = 0;
-        while (a - (b << x) >= 0) {
-          console.log( a - (b << x));
-          x += 1;
-        }
-        x -= 1;
-        result += 1 << x;
-        a -= b << x;
+ var minWindow = function(s, t) {
+    s = s.toLowerCase();
+    t= t.toLocaleLowerCase();
+    let ctn1 = new Array(26).fill(0); // 记录s
+    let ctn2 = new Array(26).fill(0); // 记录t
+    for (let i = 0; i < t.length; i++) {
+        ctn1[s[i].charCodeAt() - 'a'.charCodeAt()]++;
+        ctn2[t[i].charCodeAt() - 'a'.charCodeAt()]++;
     }
-
-    return (dividend >= 0) === (divisor >= 0) ? result : -result;
+    // diff
+    let diff = 0;
+    for (let i = 0; i < t.length; i++) {
+        if (ctn2[i] > 0 && ctn1[i] === 0) diff++;
+    }
+    if (diff === 0) ans = t.length;
+    // sliding window
+    let minLen = Number.MAX_VALUE, ansLeft = 0, ansRight = 0;
+    let left = 0, right = t.length;
+    for (; right < s.length; right++) {
+        // move left
+        while (diff === 0) {
+            const indexLeft = s[left].charCodeAt() - 'a'.charCodeAt(); 
+            ctn1[indexLeft]--;
+            if (ctn1[indexLeft] ===0 && ctn2[indexLeft] !== 0) diff++;
+            left++;
+        }
+        // 字母进到window
+        const indexRight = s[right].charCodeAt() - 'a'.charCodeAt();
+        if (ctn2[indexRight] > 0 && ctn1[indexRight] === 0) diff--;
+        ctn1[indexRight]++;
+        if (diff === 0) {
+            if (minLen > (right - left + 1)) {
+                minLen = right - left + 1;
+                ansLeft = left;
+                ansRight = right;
+            }
+        }
+    }
+    return s.slice(left, right + 1).toUpperCase();
 };
 
-divide(2147483647, 2);
+minWindow("ADOBECODEBANC", "ABC");
 
 
 ////////////////////////
