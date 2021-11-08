@@ -31,6 +31,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Maximum_Product_Subarray](Dynamic_Programming/Maximum_Product_Subarray)
 * [Palindrome_Partitioning_II](Dynamic_Programming/Palindrome_Partitioning_II)
 * [Unique_Binary_Search_Trees](Dynamic_Programming/Unique_Binary_Search_Trees)
+* [Palindromic_Substrings](Dynamic_Programming/Palindromic_Substrings)
 
 `Double Sequence Problem (双序列）`
 
