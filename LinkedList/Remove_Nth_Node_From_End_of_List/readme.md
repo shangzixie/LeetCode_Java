@@ -51,19 +51,14 @@ var removeNthFromEnd = function(head, n) {
 
 ### Method 2
 
-* `Time Complexity`:
-* `Space Complexity`:
-* `Intuition`:
+* `Time Complexity`: O(n)
+* `Space Complexity`: O(n)
+* `Intuition`: Stack
 * `Key Points`:
 * `Algorithm`:
 
-### Code
-
-* `Code Design`:
-
-```java
-
-
-```
+![29](../../Image/29.png)
 
 ## Reference
+
+[leetcode ans](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/solution/shan-chu-lian-biao-de-dao-shu-di-nge-jie-dian-b-61/)
