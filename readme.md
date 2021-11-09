@@ -201,6 +201,7 @@ Add
 * [copy_list_with_random_pointer](LinkedList/copy_list_with_random_pointer)
 * [sort_list](LinkedList/sorted_List)
 * [insertion_sort_list](LinkedList/insertion_sort_list)
+* [Remove_Nth_Node_From_End_of_List](LinkedList/Remove_Nth_Node_From_End_of_List)
 
 ## 14. Data Structure
 
