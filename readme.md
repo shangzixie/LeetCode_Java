@@ -31,6 +31,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Maximum_Product_Subarray](Dynamic_Programming/Maximum_Product_Subarray)
 * [Palindrome_Partitioning_II](Dynamic_Programming/Palindrome_Partitioning_II)
 * [Unique_Binary_Search_Trees](Dynamic_Programming/Unique_Binary_Search_Trees)
+* [Palindromic_Substrings](Dynamic_Programming/Palindromic_Substrings)
 
 `Double Sequence Problem (双序列）`
 
@@ -103,9 +104,9 @@ Add
 
 ### Sliding Window
 
-* [Longest_Substring_Without_Repeating_Characters](Pointer/Sliding_Window/Longest_Substring_Without_Repeating_Characters)
-* [Minimum_Window_Substring](Pointer/Sliding_Window/Minimum_Window_Substring)
-* [Minimum_Window_Substring_II](Pointer/Sliding_Window/Minimum_Window_Substring_II)
+* [Longest_Substring_Without_Repeating_Characters](Sliding_Window/Longest_Substring_Without_Repeating_Characters)
+* [Minimum_Window_Substring](Sliding_Window/Minimum_Window_Substring/readme.md)
+* [Minimum_Window_Substring_II](Sliding_Window/Minimum_Window_Substring_II)
 * [Continuous_Subarray_Sum](Sliding_Window/Continuous_Subarray_Sum)
 * [Minimum_Size_Subarray_Sum](Sliding_Window/Minimum_Size_Subarray_Sum)
 * [Subarray_Product_Less_Than_K](Sliding_Window/Subarray_Product_Less_Than_K)
