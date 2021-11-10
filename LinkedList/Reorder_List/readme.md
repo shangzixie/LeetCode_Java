@@ -73,4 +73,59 @@ class Solution {
 
 ```
 
+```javascript
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {void} Do not return anything, modify head in-place instead.
+ */
+var reorderList = function(head) {
+    let leftTail = findMiddleNode(head);
+    let rightTail = leftTail.next;
+    leftTail.next = null;
+    let rightHead = reverse(rightTail);
+    merge(head, rightHead);
+    return head;
+};
+
+var reverse = function(head) {
+    if (!head) return head;
+    if (head.next === null) return head;
+    const tail = reverse(head.next);
+    head.next.next = head;
+    head.next = null;
+    return tail;
+}
+
+var merge = function(l1, l2) {
+    let p1 = l1, p2 = l2;
+    while (p1 !== null && p2 !== null) {
+        p1After = p1.next;
+        p2After = p2.next;
+        // merge p1, p2
+        p1.next = p2;
+        p1 = p1After;
+        p2.next = p1After;
+        p2 = p2After;
+    }
+}
+
+var findMiddleNode = function(head) {
+    const dummy = new ListNode();
+    dummy.next = head;
+    let fast = dummy, slow = dummy;
+    while (fast && fast.next) {
+        fast = fast.next.next;
+        slow = slow.next;
+    }
+    return slow;
+}
+```
+
 ## Reference
