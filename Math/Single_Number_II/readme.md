@@ -25,6 +25,7 @@
         //int类型有32位，统计每一位1的个数
         for (int i = 0; i < 32; i++) {
             //统计第i位中1的个数
+            // sum 表示当前第 i 位所有数的和
             int sum = 0;
             for (int j = 0; j < nums.length; j++) {
                 sum += (nums[j] >> i) & 1;
