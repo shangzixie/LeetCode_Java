@@ -115,4 +115,4 @@ public class Solution {
 
 ## Reference
 
-https://leetcode.com/problems/reverse-linked-list/solution/
+[leetcode ans](https://leetcode.com/problems/reverse-linked-list/solution/)

@@ -52,3 +52,16 @@ class solution{
     }
 }
 ```
+
+dfs
+
+```javascript
+var reverseList = function(head) {
+    if (!head) return null;
+    if (!head.next) return head;
+    const tail = reverseList(head.next);
+    head.next.next = head;
+    head.next = null;
+    return tail;
+};
+```
