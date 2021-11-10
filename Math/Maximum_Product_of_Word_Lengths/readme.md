@@ -48,6 +48,7 @@ class Solution {
             for (int j = i + 1; j < length; j++) {
                 int pre2 = ints[j];
                 //与运算, 如果为0, 则表示没相同的字母
+                // &运算要带括号
                 if ((pre1 & pre2) == 0){
                     int te = words[i].length() * words[j].length();
                     re = re >= te ? re : te;
