@@ -4,8 +4,8 @@
 
 ### Method 1
 
-* `Time Complexity`:
-* `Space Complexity`:
+* `Time Complexity`: O(n^2)
+* `Space Complexity`:O(n)
 * `Intuition`:
 * `Key Points`:
 * `Algorithm`:
