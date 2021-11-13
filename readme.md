@@ -198,7 +198,7 @@ Add
 * [Reverse_Linked_List](LinkedList/Reverse_Linked_List)
 * [Reverse_Linked_List_II](LinkedList/Reverse_Linked_List_II)
 * [Reverse_Nodes_in_k_Group](LinkedList/Reverse_Nodes_in_k_Group)
-* [Merge k Sorted Lists](LinkedList/23_Merge_k_Sorted_Lists)
+* [Merge k Sorted Lists](LinkedList/Merge_k_Sorted_Lists)
 * [copy_list_with_random_pointer](LinkedList/copy_list_with_random_pointer)
 * [sort_list](LinkedList/sorted_List)
 * [insertion_sort_list](LinkedList/insertion_sort_list)
@@ -207,6 +207,8 @@ Add
 * [Reorder_List](LinkedList/Reorder_List)
 * [Linked_List_Cycle_II](LinkedList/Linked_List_Cycle_II)
 * [Flatten_a_Multilevel_Doubly_Linked_List](LinkedList/Flatten_a_Multilevel_Doubly_Linked_List)
+* [Palindrome_Linked_List](LinkedList/Palindrome_Linked_List)
+* [Insert_into_a_Sorted_Circular_Linked_List](linkedList/Insert_into_a_Sorted_Circular_Linked_List)
 
 ## 14. Data Structure
 
