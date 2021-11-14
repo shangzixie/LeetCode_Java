@@ -172,7 +172,7 @@ Add
 * [Queue_Reconstruction_by_Height](Tricky/Queue_Reconstruction_by_Height)
 * [First_Missing_Positive](Tricky/First_Missing_Positive)
 * [Group_Anagrams](Tricky/Group_Anagrams)
-* [Group_Anagrams](Tricky/Text_Justification)
+* [Text_Justification](Tricky/Text_Justification)
 * [Reaching_Point](Tricky/Reaching_Point)
 
 ## 12. Stack
