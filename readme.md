@@ -216,7 +216,7 @@ Add
 * [LRU_Cache](DataSturcture/LRU_Cache)
 * [Implement_Queue_by_Two_Stacks](DataSturcture/Implement_Queue_by_Two_Stacks)
 * [Peeking Iterator](DataSturcture/Peeking_Iterator)
-* [LRU](DataSturcture/LRU_Cache/LRU.js)
+* [Insert_Delete_GetRandom_O(1)](DataSturcture/Insert_Delete_GetRandom_O(1))
 
 ## Weekly Contest
 
