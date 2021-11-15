@@ -17,12 +17,37 @@
 
 * `Code Design`:
 
-```java
-
+```python
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        stack = []
+        validOerator = {'+', '-', '*', '/'}
+        operator = None
+        for i in range(len(tokens)):
+            if tokens[i] in validOerator:
+                num2 = stack.pop()
+                num1 = stack.pop()
+                num3 = 0
+                if tokens[i] == '+':
+                    num3 = num1 + num2
+                elif tokens[i] == '-':
+                    num3 = num1 - num2
+                elif tokens[i] == '*':
+                    num3 = num1 * num2
+                else:
+                    num3 = int(num1 / float(num2))
+                    if abs(num1) < abs(num2): num3 = 0
+                stack.append(num3)
+            else:
+                num3 = int(tokens[i])
+                stack.append(num3)
+        return stack.pop()
 
 ```
 
 ## Reference1
+
+[leetcode ans](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/solution/xiang-jie-ni-bo-lan-biao-da-shi-fu-ben-t-sfl6/)
 
 ----------------------
 
