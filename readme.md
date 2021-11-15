@@ -178,13 +178,16 @@ Add
 
 ## 12. Stack
 
+* [Asteroid_Collision](Stack/Asteroid_Collision)
+* [Decode_String](Stack/Decode_String)
 * [Evaluate_Reverse_Polish_Notation](Stack/Evaluate_Reverse_Polish_Notation)
+* [Implement_Queue_using_Stacks](Stack/Implement_Queue_using_Stacks)
+* [Implement_Stack_using_Queues](Stack/Implement_Stack_using_Queues)
+* [Monotonic_Stack](Stack/Monotonic_Stack)
 * [Reverse_Words_in_a_String](Stack/Reverse_Words_in_a_String/readme.md)
 * [Reverse_Words_in_a_String_II](Stack/Reverse_Words_in_a_String_II)
-* [Valid_Parentheses](Stack/Valid_Parentheses)
-* [Decode_String](Stack/Decode_String)
 * [Traverse a tree by preOrder, inOrder, postOrder](Stack/Traverse_Tree_No_Recursion)
-* [Implement_Queue_using_Stacks](Stack/Implement_Queue_using_Stacks)
+* [Valid_Parentheses](Stack/Valid_Parentheses)
 
 ### Monotonic_Stack
 
