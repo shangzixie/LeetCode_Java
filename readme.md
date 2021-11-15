@@ -174,6 +174,7 @@ Add
 * [Group_Anagrams](Tricky/Group_Anagrams)
 * [Text_Justification](Tricky/Text_Justification)
 * [Reaching_Point](Tricky/Reaching_Point)
+* [Verifying_an_Alien_Dictionary](Tricky/Verifying_an_Alien_Dictionary)
 
 ## 12. Stack
 
