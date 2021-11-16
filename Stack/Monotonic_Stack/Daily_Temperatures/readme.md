@@ -12,6 +12,8 @@
 
 最暴力解法就是, 如果当前数为`nums[i]`, 则需要遍历`i`之后的所有数,找到比它大的某数`nums[j]`. 答案就是`j - i`
 换个思路, 也可以说, 对于当前数`nums[j]`, 向前遍历, 找到第一个比它小的数`nums[i]`
+我们用一个单调递减的单调栈, 用来记录之前的那些元素, 只要当前数比栈顶元素大, 当前数就是栈顶元素要找的答案, pop()掉该元素,继续比较栈内元素和当前数
+具体看[视频](https://leetcode-cn.com/problems/daily-temperatures/solution/leetcode-tu-jie-739mei-ri-wen-du-by-misterbooo/))
 
 ### Code1
 
