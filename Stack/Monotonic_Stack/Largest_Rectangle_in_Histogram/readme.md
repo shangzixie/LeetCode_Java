@@ -2,21 +2,23 @@
 
 [LeetCode 84](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
-
 ## Methods
 
 ### Method 1
-* `Time Complexity`: O(n^2) 
+
+* `Time Complexity`: O(n^2)
 * `Intuition`: brute force
-* `Algorithm`: 
+* `Algorithm`:
 
 First, consider the `brute force`:
- 
+
 for every `height[i]` need to find a `leftBound` that height shorter than `height[i]` and `rightBound` shorter than `height[i]`
-then `area = (rightBound - leftBound - 1) * height[i]` 
+then `area = (rightBound - leftBound - 1) * height[i]`
+
 ![](../../../Image/Largest_Rectangle_in_Histogram.png)
+
 time complexity O(n^2)
- 
+
 ```java
 public class Solution {
 
@@ -50,32 +52,39 @@ public class Solution {
     }
 }
 ```
+
 so the target becomes how to find the `leftBound` and `rightbound` more efficiently.
- 
+
+----------------------
+
 ### Method 2
-* `Time Complexity`: O(n) 
-* `Intuition`: use 2 arrays `leftLess` and `rightLess` to store every element left height less than it and right height less than it 
-* `Algorithm`: 
+
+* `Time Complexity`: O(n)
+* `Intuition`: use 2 arrays `leftLess` and `rightLess` to store every element left height less than it and right height less than it
+* `Algorithm`:
 
 use 2 arrays `leftLess` and `rightLess` to store every element left height less than it and right height less than it
-how to build `leftLess[]` ? 
+how to build `leftLess[]` ?
 
 set the `leftLess` store the index
+
 ```
-leftLess[0] = -1;//there is no left bar at the first bar so set the first ele -1              
-for (int i = 1; i < heights.length; i++) {              
+leftLess[0] = -1;//there is no left bar at the first bar so set the first ele -1
+for (int i = 1; i < heights.length; i++) {
     int p = i - 1;
-    //p keep reducing so as to let height[p] < height[i] 
+    //p keep reducing so as to let height[p] < height[i]
     while (p >= 0 && height[p] >= height[i]) {
         p--;
     }
-    leftLess[i] = p;              
+    leftLess[i] = p;
 }
 ```
-the time complexity is O(n^2), we could optimize it. 
-![](../../../Image/Largest_Rectangle_in_Histogram1.png) 
+the time complexity is O(n^2), we could optimize it.
+
+![](../../../Image/Largest_Rectangle_in_Histogram1.png)
+
 for current index `i`, if `height[i-1]` is taller than it, we could find `p` from `leftLess[i-1]`.
-```  
+```
 int[] leftLess = new int[heights.length];
 leftLessMin[0] = -1;
 for (int i = 1; i < heights.length; i++) {
@@ -89,9 +98,8 @@ for (int i = 1; i < heights.length; i++) {
 
 ```
 
-
-
 ### Code
+
 ```java
 class solution {
     public int largestRectangleArea(int[] heights) {
@@ -108,7 +116,7 @@ class solution {
             }
             leftLessMin[i] = l;
         }
-    
+
         //求每个柱子的右边第一个小的柱子的下标
         int[] rightLessMin = new int[heights.length];
         rightLessMin[heights.length - 1] = heights.length;
@@ -119,7 +127,7 @@ class solution {
             }
             rightLessMin[i] = r;
         }
-    
+
         //求包含每个柱子的矩形区域的最大面积，选出最大的
         int maxArea = 0;
         for (int i = 0; i < heights.length; i++) {
@@ -131,17 +139,20 @@ class solution {
 }
 ```
 
-### Method 3
-* `Time Complexity`: O(n) 
-* `Intuition`: monotonic stack. use `stack` to simulate `leftLess` and current index `i` is the `rightBound`
-* `Algorithm`: 
-    * `area = (rightBound - leftBound - 1) * height`
-    * optimize the method 2. In order to optimize the `leftLess[]` and `rightLess[]`, we could combine them. let current `i` is the `rightBound`, `stack.peek()` is the height, the second stack peek is the `leftBound`
-    * stack peek is the `height` , so `height = stack.getLast()` 
-    * `leftBound` and `rightBound` are not include in area 
-    * need to guarantee `height > Min(height[leftBound], height[rightRbound])`   
+----------------------
 
-### Code 
+### Method 3
+
+* `Time Complexity`: O(n)
+* `Intuition`: monotonic stack. use `stack` to simulate `leftLess` and current index `i` is the `rightBound`
+* `Algorithm`:
+  * `area = (rightBound - leftBound - 1) * height`
+  * optimize the method 2. In order to optimize the `leftLess[]` and `rightLess[]`, we could combine them. let current `i` is the `rightBound`, `stack.peek()` is the height, the second stack peek is the `leftBound`
+  * stack peek is the `height` , so `height = stack.getLast()`
+  * `leftBound` and `rightBound` are not include in area
+  * need to guarantee `height > Min(height[leftBound], height[rightRbound])`
+
+### Code
 
 ```java
 public class Solution {
@@ -154,14 +165,14 @@ public class Solution {
             if (stack.isEmpty()) {
                 stack.add(p);
                 p++;
-            } else { // if stack is not null 
+            } else { // if stack is not null
                 int top = stack.peek();
                 //当前高度大于栈顶，入栈
                 if (heights[p] >= heights[top]) {
                     stack.push(p);
                     p++;
                 } else {
-                    // when heights[p] < heights[top], p is rightBound 
+                    // when heights[p] < heights[top], p is rightBound
                     //保存栈顶高度
                     int height = heights[stack.pop()];
                     //左边第一个小于当前柱子的下标
@@ -189,7 +200,56 @@ public class Solution {
 }
 ```
 
+----------------------
+
+### Method 4
+
+单调栈除了用上述方法解释外, 还可以:
+
+![1](../../../Image/40.png)
+![1](../../../Image/41.png)
+![1](../../../Image/42.png)
+![1](../../../Image/43.png)
+![1](../../../Image/44.png)
+![1](../../../Image/45.png)
+![1](../../../Image/46.png)
+
+### Code1
+
+* `Code Design`:
+
+```python
+from typing import List
+
+
+class Solution:
+    def largestRectangleArea(self, heights: List[int]) -> int:
+        size = len(heights)
+        res = 0
+        heights = [0] + heights + [0]
+        # 先放入哨兵结点，在循环中就不用做非空判断
+        stack = [0]
+        size += 2
+
+        for i in range(1, size):
+            while heights[i] < heights[stack[-1]]:
+                cur_height = heights[stack.pop()]
+                cur_width = i - stack[-1] - 1
+                res = max(res, cur_height * cur_width)
+            stack.append(i)
+        return res
+
+```
+
+----------------------
+
 ## Reference
+
+[leetcode ans](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/solution/bao-li-jie-fa-zhan-by-liweiwei1419/)
 [video](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/solution/zhu-zhuang-tu-zhong-zui-da-de-ju-xing-by-leetcode-/)
 
 [A Chinese Blog](https://leetcode.wang/leetCode-84-Largest-Rectangle-in-Histogram.html)
+
+
+
+除了上述思路可以解释单调栈
