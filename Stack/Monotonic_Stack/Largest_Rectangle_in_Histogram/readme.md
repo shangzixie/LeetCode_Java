@@ -249,7 +249,3 @@ class Solution:
 [video](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/solution/zhu-zhuang-tu-zhong-zui-da-de-ju-xing-by-leetcode-/)
 
 [A Chinese Blog](https://leetcode.wang/leetCode-84-Largest-Rectangle-in-Histogram.html)
-
-
-
-除了上述思路可以解释单调栈
