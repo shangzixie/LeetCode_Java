@@ -194,7 +194,7 @@ Add
 * [Next_Greater_Element II](Stack/Monotonic_Stack/Next_Greater_Element_II)
 * [Largest_Rectangle_in_Histogram](Stack/Monotonic_Stack/Largest_Rectangle_in_Histogram)
 * [Maximal_Rectangle](Stack/Monotonic_Stack/Maximal_Rectangle)
-* 
+* [Daily_Temperatures](Stack/Monotonic_Stack/Daily_Temperatures)
 
 ## 13. [LinkedList](./LinkedList)
 
@@ -221,6 +221,7 @@ Add
 * [Implement_Queue_by_Two_Stacks](DataSturcture/Implement_Queue_by_Two_Stacks)
 * [Peeking Iterator](DataSturcture/Peeking_Iterator)
 * [Insert_Delete_GetRandom_O(1)](DataSturcture/Insert_Delete_GetRandom_O(1))
+* [Complete_Binary_Tree_Inserter](DataSturcture/Complete_Binary_Tree_Inserter)
 
 ## Weekly Contest
 

@@ -218,6 +218,8 @@ public class Solution {
 
 * `Code Design`:
 
+加入哨兵
+
 ```python
 from typing import List
 
