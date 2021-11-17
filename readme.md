@@ -7,6 +7,8 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Number_of_Island](BFS/Number_of_Island)
 * [Clone_Graph](BFS/Clone_Graph)
 * [Binary_Tree_Right_Side_View](BFS/Binary_Tree_Right_Side_View)
+* [Union_Find](BFS/Union_Find)
+* [Find_Bottom_Left_Tree_Value](BFS/Find_Bottom_Left_Tree_Value)
 
 ## 2. Union Find
 
