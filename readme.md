@@ -152,6 +152,7 @@ Add
 * [Lowest_Common_Ancestor_of_a_Binary_Tree](DFS/Lowest_Common_Ancestor_of_a_Binary_Tree/readme.md)
 * [Inorder_Successor_In_BST](DFS/Inorder_Successor_In_BST/readme.md)
 * [word search](DFS/Word_Search/readme.md)
+* [Binary_Tree_Right_Side_View](DFS/Binary_Tree_Right_Side_View)
 
 ## 11. Tricky Method
 
