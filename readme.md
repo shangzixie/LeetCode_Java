@@ -153,6 +153,8 @@ Add
 * [Inorder_Successor_In_BST](DFS/Inorder_Successor_In_BST/readme.md)
 * [word search](DFS/Word_Search/readme.md)
 * [Binary_Tree_Right_Side_View](DFS/Binary_Tree_Right_Side_View)
+* [Binary_Tree_Pruning](DFS/Binary_Tree_Pruning)
+* [Sum_Root_to_Leaf_Numbers](DFS/Sum_Root_to_Leaf_Numbers)
 
 ## 11. Tricky Method
 
