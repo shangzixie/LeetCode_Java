@@ -16,12 +16,48 @@ For instance : in one path we have 1,2,-1,-1,2, then the prefix sum will be: 1, 
 
 * `Code Design`:
 
+```python
+class Solution:
+    def pathSum(self, root: TreeNode, targetSum: int) -> int:
+        self.map = {}
+        self.ans = 0
+        self.dfs(root, targetSum, 0)
+
+        return self.ans
+
+    def dfs(self, node, targetSum, sum):
+        if node is None:
+            return
+
+        curSum = sum + node.val
+        # get the ans
+        if curSum == targetSum:
+            self.ans += 1
+        if curSum - targetSum in self.map:
+            self.ans += self.map[curSum - targetSum]
+        # add cursum into map
+        if curSum in self.map:
+            self.map[curSum] += 1
+        else:
+            self.map[curSum] = 1
+        # dfs
+        if node.left:
+            self.dfs(node.left, targetSum, curSum)
+        if node.right:
+            self.dfs(node.right, targetSum, curSum)
+        # remove cursum from map
+        self.map[curSum] -= 1
+        if self.map[curSum] <= 0:
+            del self.map[curSum]
+```
+
 ```java
 
 class Solution {
     int ans;
     public int pathSum(TreeNode root, int sum) {
         HashMap<Integer, Integer> map = new HashMap<>();
+        // when from root to leaf is the targetSum, no need to use pathSum - targetSum
         map.put(0, 1);
         return dfs(root, sum, 0, map);
     }
