@@ -156,6 +156,7 @@ Add
 * [Binary_Tree_Pruning](DFS/Binary_Tree_Pruning)
 * [Sum_Root_to_Leaf_Numbers](DFS/Sum_Root_to_Leaf_Numbers)
 * [Increasing_Order_Search_Tree](DFS/Increasing_Order_Search_Tree)
+* [Binary_Tree_Maximum_Path_Sum](DFS/Binary_Tree_Maximum_Path_Sum)
 
 ## 11. Tricky Method
 
