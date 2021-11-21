@@ -94,6 +94,27 @@ public:
 };
 ```
 
+```python
+class Solution:
+    def inorderSuccessor(self, root: 'TreeNode', p: 'TreeNode') -> 'TreeNode':
+        self.ans = None
+        self.lastNode = None
+        self.dfs(root, p)
+        return self.ans
+
+    def dfs(self, node, p):
+        if node is None:
+            return
+
+        self.dfs(node.left, p)
+
+        if self.lastNode is p:
+            self.ans = node
+        self.lastNode = node
+
+        self.dfs(node.right, p)
+```
+
 ## Reference
 
 [blog](https://www.cnblogs.com/grandyang/p/5306162.html)
