@@ -36,6 +36,12 @@ Explanation: There is no in-order successor of the current node, so the answer i
 * `Time Complexity`:
 * `Intuition`: BST, root.left < root < root.right; BST的中序遍历, 拿到的是一个递增序列,所以 一个数的in-order processor一定大于等于它
 * `Key Points`:
+
+1. 如果当前节点有右孩子，顺序后继在当前节点之下，如下图中红色节点所示。
+2. 如果当前节点无右孩子，顺序后继在当前节点之上，如下图中蓝色节点所示。
+![47](../../Image/47.png)
+![47](../../Image/48.png)
+
 * `Algorithm`:
 
 1. 从根节点开始，每到达一个节点就比较根节点的值和节点p的值
