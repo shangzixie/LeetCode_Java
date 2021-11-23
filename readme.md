@@ -2,18 +2,19 @@
 
 If you couldn't find an answer here, you could move to [my friend](https://github.com/frostace/LeetCode)
 
-## 1. BFS/Topological/Graph
+## 1. BFS/Topological
 
 * [Number_of_Island](BFS/Number_of_Island)
 * [Clone_Graph](BFS/Clone_Graph)
 * [Binary_Tree_Right_Side_View](BFS/Binary_Tree_Right_Side_View)
-* [Union_Find](BFS/Union_Find)
 * [Find_Bottom_Left_Tree_Value](BFS/Find_Bottom_Left_Tree_Value)
-* [Redundant_Connection](BFS/Redundant_Connection)
 
-## 2. Union Find
+## 2. Graph/Union_Find
 
-* [Number_of_Islands_II](BFS/Union_Find/Number_of_Islands_II)
+### [Union_Find](Graph/Union_Find/readme.md)
+
+* [Number_of_Islands_II](Graph/Number_of_Islands_II)
+* [Redundant_Connection](Graph/Redundant_Connection)
 
 ## 3. Binary Search
 
