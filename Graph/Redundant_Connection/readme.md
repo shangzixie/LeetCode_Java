@@ -6,9 +6,11 @@
 
 * `Time Complexity`:
 * `Space Complexity`:
-* `Intuition`:
-* `Key Points`:
+* `Intuition`: Union Find
+* `Key Points`: input is array, need use Union Find Algorithm to transfer it to a graph
 * `Algorithm`:
+
+
 
 ### Code1
 

@@ -1,5 +1,11 @@
 # Union Find
 
+## when to use it
+
+Union-Find is used to determine the connected components in a graph. We can determine whether 2 nodes are in the same connected component or not in the graph. We can also determine that by adding an edge between 2 nodes whether it leads to cycle in the graph or not.
+
+## implement and code
+
 ![61](../../Image/61.png)
 ![62](../../Image/62.png)
 
