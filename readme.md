@@ -9,6 +9,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Binary_Tree_Right_Side_View](BFS/Binary_Tree_Right_Side_View)
 * [Union_Find](BFS/Union_Find)
 * [Find_Bottom_Left_Tree_Value](BFS/Find_Bottom_Left_Tree_Value)
+* [Redundant_Connection](BFS/Redundant_Connection)
 
 ## 2. Union Find
 
