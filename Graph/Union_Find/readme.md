@@ -19,7 +19,7 @@ package UnionFind;
  */
 public class UnionFind {
      private int count; //记录连通分量
-     private int[]parent; //节点x的根节点是parent[x]
+     private int[]parent; //代表某个节点node的根节点是parent[node]
      public UnionFind(int n){
          //一开始互不相通
          this.count=n;
