@@ -48,6 +48,17 @@ class MedianFinder:
 
 ```
 
+### Follow Up
+
+Q:如果数据流中所有整数都在 0 到 100 范围内，你将如何优化你的算法？
+
+A:存储一个100范围的arr数组，记录0-100数据出现的个数，以及总的数据的个数，遍历arr数组，可以计算出中位数
+
+Q:如果数据流中 99% 的整数都在 0 到 100 范围内，你将如何优化你的算法？
+
+A:如上还是维持以上的一个arr数组，对于<0和>100的数据，统计个数，这部分数据对结果不会产生影响，因为中位数出现在99%的数据里面，即0-100这个范围内
+
 ## Reference1
 
 [leetcode ans](https://leetcode-cn.com/problems/find-median-from-data-stream/solution/gong-shui-san-xie-jing-dian-shu-ju-jie-g-pqy8/)
+[follow up ans](https://leetcode-cn.com/problems/find-median-from-data-stream/solution/zhong-wen-jing-dian-shu-ju-liu-de-zhong-btw2x/)
