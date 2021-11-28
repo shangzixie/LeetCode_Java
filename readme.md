@@ -222,6 +222,7 @@ Add
 * [Peeking Iterator](DataSturcture/Peeking_Iterator)
 * [Insert_Delete_GetRandom_O(1)](DataSturcture/Insert_Delete_GetRandom_O(1))
 * [Complete_Binary_Tree_Inserter](DataSturcture/Complete_Binary_Tree_Inserter)
+* [Find_Median_from_Data_Stream](DataSturcture/Find_Median_from_Data_Stream)
 
 ## Weekly Contest
 
