@@ -55,4 +55,4 @@ class Solution:
 
 ## Reference1
 
-![leetcode ans](https://leetcode-cn.com/problems/insert-into-a-sorted-circular-linked-list/solution/xun-huan-you-xu-lie-biao-de-cha-ru-by-leetcode/)
+[leetcode ans](https://leetcode-cn.com/problems/insert-into-a-sorted-circular-linked-list/solution/xun-huan-you-xu-lie-biao-de-cha-ru-by-leetcode/)

@@ -1,9 +1,20 @@
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+# [LeetCode 814. Binary Tree Pruning](https://leetcode-cn.com/problems/binary-tree-pruning/)
+
+## Methods
+
+### Method 1
+
+* `Time Complexity`:
+* `Space Complexity`:
+* `Intuition`: DFS
+* `Key Points`:
+* `Algorithm`:
+
+### Code1
+
+* `Code Design`:
+
+```python
 class Solution:
     def pruneTree(self, root: TreeNode) -> TreeNode:
         ans = self.dfs(root)
@@ -23,3 +34,6 @@ class Solution:
         if left and right and node.val == 0:
             return True
         return False
+```
+
+## Reference1

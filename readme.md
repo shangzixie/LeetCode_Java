@@ -2,15 +2,19 @@
 
 If you couldn't find an answer here, you could move to [my friend](https://github.com/frostace/LeetCode)
 
-## 1. BFS/Topological/Graph
+## 1. BFS/Topological
 
 * [Number_of_Island](BFS/Number_of_Island)
 * [Clone_Graph](BFS/Clone_Graph)
 * [Binary_Tree_Right_Side_View](BFS/Binary_Tree_Right_Side_View)
+* [Find_Bottom_Left_Tree_Value](BFS/Find_Bottom_Left_Tree_Value)
 
-## 2. Union Find
+## 2. Graph/Union_Find
 
-* [Number_of_Islands_II](BFS/Union_Find/Number_of_Islands_II)
+### [Union_Find](Graph/Union_Find/readme.md)
+
+* [Number_of_Islands_II](Graph/Number_of_Islands_II)
+* [Redundant_Connection](Graph/Redundant_Connection)
 
 ## 3. Binary Search
 
@@ -150,6 +154,12 @@ Add
 * [Lowest_Common_Ancestor_of_a_Binary_Tree](DFS/Lowest_Common_Ancestor_of_a_Binary_Tree/readme.md)
 * [Inorder_Successor_In_BST](DFS/Inorder_Successor_In_BST/readme.md)
 * [word search](DFS/Word_Search/readme.md)
+* [Binary_Tree_Right_Side_View](DFS/Binary_Tree_Right_Side_View)
+* [Binary_Tree_Pruning](DFS/Binary_Tree_Pruning)
+* [Sum_Root_to_Leaf_Numbers](DFS/Sum_Root_to_Leaf_Numbers)
+* [Increasing_Order_Search_Tree](DFS/Increasing_Order_Search_Tree)
+* [Binary_Tree_Maximum_Path_Sum](DFS/Binary_Tree_Maximum_Path_Sum)
+* [Convert_BST_to_Greater_Tree](DFS/Convert_BST_to_Greater_Tree)
 
 ## 11. Tricky Method
 
