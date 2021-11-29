@@ -93,7 +93,9 @@ class Solution:
             if balance == -2:
                 small.push(big.pop())
             # 重新达到平衡了,该看看堆顶是不是待删除元素了
-            # 这里先删除small 再删除 big, 
+            # 这里先删除small 再删除 big, 因为默认的如果等于堆顶元素, 就会放入small中, 所以
+            # 奇数个时候, small可能比big多一个数; 删除时候, 如果遇到big和small的堆顶元素相同 但是只需要删除一个的时候,
+            # 就要先删除small的
             while not small.empty() and mp[small.top()]:
                 mp[small.top()] -= 1
                 small.pop()
