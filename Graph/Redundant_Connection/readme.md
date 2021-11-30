@@ -83,7 +83,7 @@ class UnionFind { // 并查集类
             return new int[0];
         }
         int len = edges.length;
-
+        // 构建入度和邻接表
         int[] inDegree = new int[len + 1];
         Set<Integer>[] map = new HashSet[len + 1];
         for(int[] edge: edges){
