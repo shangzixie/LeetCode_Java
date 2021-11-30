@@ -37,7 +37,7 @@ class Solution:
             columnNumber -= 1
             remainder = columnNumber % 26
             ans = chr(remainder + ord('A')) + ans
-            columnNumber = int(operator.truediv(columnNumber, 26))
+            columnNumber = columnNumber // 26
         return ans
 ```
 

@@ -84,5 +84,5 @@ A:如上还是维持以上的一个arr数组，对于<0和>100的数据，统计
 
 ## Reference1
 
-[leetcode ans](https://leetcode-cn.com/problems/find-median-from-data-stream/solution/gong-shui-san-xie-jing-dian-shu-ju-jie-g-pqy8/)
-[follow up ans](https://leetcode-cn.com/problems/find-median-from-data-stream/solution/zhong-wen-jing-dian-shu-ju-liu-de-zhong-btw2x/)
+[leetcode ans](https://leetcode-cn.com/problems/find-median-from-data-stream/solution/feng-xian-dui-chong-dui-ding-dui-qiu-zho-a36j/)
+[follow up ans](https://leetcode-cn.com/problems/find-median-from-data-stream/solution/gong-shui-san-xie-jing-dian-shu-ju-jie-g-pqy8/)
