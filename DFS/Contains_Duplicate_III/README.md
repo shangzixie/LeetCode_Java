@@ -49,6 +49,8 @@ the window should have the following features:
 TreeSet
 it has ceiling and floor method, which will give you the smallest number larger than nums[i] and the largest number smaller than nums[i]
 
+treeset is a black-red tree
+
 ### Code2
 
 * `Code Design`:
