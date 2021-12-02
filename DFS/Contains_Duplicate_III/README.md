@@ -2,15 +2,13 @@
 
 ## Methods
 
-### Method 1
+### Method 1(Brute force)
 
 * `Time Complexity`: O(n * k)
 * `Space Complexity`:
 * `Intuition`:
 * `Key Points`:
 * `Algorithm`:
-
-Brute force
 
 let i from 0 to the end of the array, j keeps the k distance from i. Every time, calculate in the k size window  , whether there is a nums[j] which satisfy `nums[j] - nums[i] <= t`
 
@@ -80,3 +78,26 @@ public class Contains_Duplicate_III {
 ```
 
 ## Reference2
+
+----------------------
+
+### Method 3(best method)
+
+* `Time Complexity`: O(n)
+* `Space Complexity`: O(k)
+* `Intuition`: bucket
+* `Key Points`:
+* `Algorithm`:
+
+
+### Code3
+
+* `Code Design`:
+
+```java
+
+```
+
+## Reference3
+
+[video](https://www.youtube.com/watch?v=yc4hCFzNNQc&t=840s)
