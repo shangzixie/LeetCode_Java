@@ -1,6 +1,7 @@
 # LeetCode
 
 If you couldn't find an answer here, you could move to [my friend](https://github.com/frostace/LeetCode)
+[toc]
 
 ## 1. BFS/Topological
 
@@ -133,7 +134,6 @@ Add
 * [Binary_Search_Tree_Iterator](DFS/Binary_Search_Tree_Iterator)
 * [Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal](DFS/Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal)
 * [Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal](DFS/Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal)
-* [Contains_Duplicate_III](DFS/Contains_Duplicate_III)
 * [Convert_Sorted_Array_to_Binary_Search_Tree](DFS/Convert_Sorted_Array_to_Binary_Search_Tree)
 * [Convert_Sorted_List_to_Binary_Search_Tree](DFS/Convert_Sorted_List_to_Binary_Search_Tree)
 * [Four_Sum](DFS/Four_Sum)
@@ -185,6 +185,7 @@ Add
 * [Text_Justification](Tricky/Text_Justification)
 * [Reaching_Point](Tricky/Reaching_Point)
 * [Verifying_an_Alien_Dictionary](Tricky/Verifying_an_Alien_Dictionary)
+* [Contains_Duplicate_III](Tricky/Contains_Duplicate_III)
 
 ## 12. Stack
 
