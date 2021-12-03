@@ -89,14 +89,68 @@ public class Contains_Duplicate_III {
 * `Key Points`:
 * `Algorithm`:
 
+如果我们能从最小的数`min`开始, 一个数num <= `min + t`, 就把它放进和`min`一个桶里面
+接着 `min + t`< num <= `min + 2t` 就放到第二个桶里
+以此类推, 我们就有了`(max - min) / t`个桶
+每次一个新的数字`nums[i]`, 我们就判断它属于哪一个桶的, 如果这个桶内有其他数字, 他们的差值一定小于等于t, 所以返回`true`
+如果该桶为空, 我们还要看下和这个桶相邻的前后桶, 因为这两个桶内也会存在某些数字数字`nums[j]`, 使`abs(nums[j] - nums[i]) <= t`
 
 ### Code3
 
 * `Code Design`:
 
-```java
+t为0要单独处理时候的代码:
 
+```python
+class Solution:
+    def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool:
+        if t == 0: return self.whenTIsZero(nums, k, t)
+
+        minNum = sys.maxsize
+        for i in range(len(nums)):
+            minNum = min(nums[i], minNum)
+
+        bucket = {}
+        for i in range(len(nums)):
+            bucketIndex = (nums[i] - minNum) // t
+            # clear outside window num
+            if i >= k + 1 and (nums[i - k - 1] - minNum) // t in bucket:
+                del bucket[(nums[i - k - 1] - minNum) // t]
+            # build bucket and check ans
+            if bucketIndex in bucket:
+                return True
+            else:
+                bucket[bucketIndex] = nums[i]
+            if bucketIndex - 1 in bucket and abs(bucket[bucketIndex - 1] - nums[i]) <= t:
+                return True
+            if bucketIndex + 1 in bucket and abs(bucket[bucketIndex + 1] - nums[i]) <= t:
+                return True
+            bucket[bucketIndex] = nums[i]
+        return False
+
+    def whenTIsZero(self, nums, k, t):
+        window = set()
+        for i in range(k + 1):
+            if nums[i] in window: return True
+            window.add(nums[i])
+
+        for i in range(k + 1, len(nums)):
+            window.discard(nums[i - k - 1])
+            if nums[i] in window:
+                return True
+            window.add(nums[i])
+        return False
 ```
+
+t为0不单独处理:
+
+也是这道题巧妙的地方。
+
+![66](../../Image/66.png)
+
+（1）题目中 t 的取值是 0<= t <= 2^31 - 1，t可以等于0，所以“桶ID = 元素值 ÷ t ” 的方法行不通。
+（2）对应于上面的图，其实我们还可以把｛0，1，2，3｝划分在一桶，因为也满足桶内任两个元素绝对值
+
 
 ## Reference3
 
