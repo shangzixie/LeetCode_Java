@@ -1,3 +1,58 @@
+# [LeetCode https://leetcode-cn.com/problems/number-of-islands/](https://leetcode-cn.com/problems/number-of-islands/)
+
+## Methods
+
+### Method 1
+
+* `Time Complexity`: O(mn)
+* `Space Complexity`: O(min(m, n))
+* `Intuition`: BFS
+* `Key Points`:
+* `Algorithm`:
+
+### Code1
+
+* `Code Design`:
+
+```python
+import collections
+
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        dx = [0, 0, 1, -1]
+        dy = [1, -1, 0, 0]
+        visited = [[0 for _ in range(len(grid[0]))] for _ in range(len(grid))]
+        count = 0
+
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
+                if visited[i][j] == 1 or grid[i][j] == '0':
+                    continue
+                self.bfs(grid, i, j, visited, dx, dy)
+                count += 1
+
+        return count
+
+
+    def bfs(self, grid, i, j, visited, dx, dy):
+        deque = collections.deque([(i, j)])
+
+        while len(deque) > 0:
+            point = deque.popleft()
+            x = point[0]
+            y = point[1]
+            visited[x][y] = 1
+            # 遍历当前节点的四周
+            for index in range(4):
+                nextX = x + dx[index]
+                nextY = y + dy[index]
+                if nextY < 0 or nextX < 0 or nextX >= len(grid) or nextY >= len(grid[0]):
+                    continue
+                if grid[nextX][nextY] == '1' and visited[nextX][nextY] == 0:
+                    deque.append([nextX, nextY])
+```
+
+```java
 public class Solution {
     public boolean[][] visited;
     int[] dx = new int[]{1, -1, 0 ,0};
@@ -54,3 +109,6 @@ public class Solution {
         }
     }
 }
+```
+
+## Reference1
