@@ -36,11 +36,12 @@ public class UnionFind {
          int rootP=find(p);
          int rootQ=find(q);
          if(rootP==rootQ){
-             return;
+             return false;
          }
          //将两颗树合并为一颗
          parent[rootP]=rootQ; //parent[rootQ]=rootP 效果是一样的
          count--; //两个分量合二为一
+         return true
      }
      //返回某个节点x的根节点
      private int find(int x){
