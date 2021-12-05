@@ -34,6 +34,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Decode_Ways_II](Dynamic_Programming/Decode_Ways_II)
 * [Dungeon_Game](Dynamic_Programming/Dungeon_Game)
 * [Find_the_Derangement_of_An_Array](Dynamic_Programming/Find_the_Derangement_of_An_Array)
+* [kadane_algorithm](Dynamic_Programming/kadane_algorithm/readme.md)
 * [Maximum_Product_Subarray](Dynamic_Programming/Maximum_Product_Subarray)
 * [Palindrome_Partitioning_II](Dynamic_Programming/Palindrome_Partitioning_II)
 * [Unique_Binary_Search_Trees](Dynamic_Programming/Unique_Binary_Search_Trees)

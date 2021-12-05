@@ -1,4 +1,4 @@
-# [LeetCode https://leetcode-cn.com/problems/number-of-islands/](https://leetcode-cn.com/problems/number-of-islands/)
+# [LeetCode 200. Number of Islands](https://leetcode-cn.com/problems/number-of-islands/)
 
 ## Methods
 

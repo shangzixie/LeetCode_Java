@@ -77,25 +77,3 @@ public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
 [youtube](https://www.youtube.com/watch?v=do7ibYtv5nk)
 [blog](https://www.youtube.com/watch?v=do7ibYtv5nk)
-
-
-----------------------
-
-### Method 2
-
-* `Time Complexity`:
-* `Space Complexity`:
-* `Intuition`:
-* `Key Points`:
-* `Algorithm`:
-
-### Code2
-
-* `Code Design`:
-
-```java
-
-
-```
-
-## Reference2
