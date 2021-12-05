@@ -1,6 +1,7 @@
 # LeetCode
 
 If you couldn't find an answer here, you could move to [my friend](https://github.com/frostace/LeetCode)
+
 [toc]
 
 ## 1. BFS/Topological
@@ -10,7 +11,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Binary_Tree_Right_Side_View](BFS/Binary_Tree_Right_Side_View)
 * [Find_Bottom_Left_Tree_Value](BFS/Find_Bottom_Left_Tree_Value)
 
-## 2. Graph/Union_Find
+## 2. [Graph](Graph/readme.md)
 
 ### [Union_Find](Graph/Union_Find/readme.md)
 

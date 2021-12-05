@@ -71,6 +71,4 @@ public class Union_of_Island_II {
         }
         return res;
     }
-
-
 }
