@@ -73,6 +73,7 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 ## 7. [Math](./Math)
 
 * [Excel_Sheet_Column_Title](Math/Excel_Sheet_Column_Title)
+* [Excel_Sheet_Column_Number](Math/Excel_Sheet_Column_Number)
 * [Number_Of_1_Bites](Math/Number_Of_1_Bites)
 * [Pow](Math/Pow)
 * [Rotate_Array](Math/Rotate_Array)
