@@ -2,6 +2,8 @@
 
 ## Methods
 
+method 1和 method 2是同一种方法不同语言
+
 ### Method 1
 
 * `Time Complexity`:
