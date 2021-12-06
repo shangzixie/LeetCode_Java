@@ -15,6 +15,7 @@ method 1和 method 2是同一种方法不同语言
 ![64](../../Image/64.png)
 
 其中:
+
 `small`表示左边的max heap, `big`表示右边的min heap
 `balance`表示`small`比`big`多了多少个数字, 要除去`延迟删除`的数字
 `mp`的key表示要被延迟删除的数, value表示延迟删除的数的个数
