@@ -5,21 +5,13 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def pruneTree(self, root: TreeNode) -> TreeNode:
-        ans = self.dfs(root)
-        return None if ans else root
+    def pruneTree(self, gas: List, cost: List) -> None:
+        profit = 0
 
-    def dfs(self, node):
-        if node is None:
-            return True
-
-        left = self.dfs(node.left)
-        right = self.dfs(node.right)
-
-        if left and node.left:
-            node.left = None
-        if right and node.right:
-            node.right = None
-        if left and right and node.val == 0:
-            return True
-        return False
+        for i in range(len(gas)):
+            for j in range(i + 1, len(gas) + i):
+                index = j % len(gas)
+                profit += profit + gas[index] - cost[index]
+                if profit < 0:
+                    profix = 0
+                    break
