@@ -21,9 +21,6 @@ public class Container_with_Most_Water {
                 right--;
             }
         }
-        Map<Integer, Integer> map = new HashMap<>();
         return ans;
-
-
     }
 }
