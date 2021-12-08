@@ -35,13 +35,14 @@ var copyRandomList = function(head) {
     let old2new = new Map();
     let dummy = new Node();
     let newListTail = new Node(head.val);
+    dummy.next = newListTail
     let originListTail = head;
 
     // 因为用的当前的节点originListTail当循环节点
     while (originListTail) {
         // 所以copy next node
         if (originListTail.next) {
-            newListTail.next = Node(tail1.next.val);
+            newListTail.next = new Node(originListTail.next.val);
         } else {
             newListTail.next = null;
         }
