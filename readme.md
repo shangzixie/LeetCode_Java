@@ -114,7 +114,7 @@ Add
 ### Sliding Window
 
 * [Longest_Substring_Without_Repeating_Characters](Sliding_Window/Longest_Substring_Without_Repeating_Characters)
-* [Minimum_Window_Substring](Sliding_Window/Minimum_Window_Substring/readme.md)
+* [Minimum_Window_Substring](Sliding_Window/Minimum_Window_Substring)
 * [Minimum_Window_Substring_II](Sliding_Window/Minimum_Window_Substring_II)
 * [Continuous_Subarray_Sum](Sliding_Window/Continuous_Subarray_Sum)
 * [Minimum_Size_Subarray_Sum](Sliding_Window/Minimum_Size_Subarray_Sum)
