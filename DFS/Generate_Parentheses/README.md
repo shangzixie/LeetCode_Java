@@ -35,15 +35,16 @@ class Solution:
             :param right: 右括号还可以使用的个数
             :return:
             """
-            if left == 0 and right == 0:
-                res.append(cur_str)
+            if left < 0 or right < 0:
                 return
             if right < left:
                 return
-            if left > 0:
-                dfs(cur_str + '(', left - 1, right)
-            if right > 0:
-                dfs(cur_str + ')', left, right - 1)
+            if left == 0 and right == 0:
+                res.append(cur_str)
+                return
+
+            dfs(cur_str + '(', left - 1, right)
+            dfs(cur_str + ')', left, right - 1)
 
         dfs(cur_str, n, n)
         return res
