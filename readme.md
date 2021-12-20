@@ -144,6 +144,7 @@ Add
 * [Path_Sum](DFS/Path_Sum)
 * [Path_Sum_II](DFS/Path_Sum_II)
 * [Path_Sum_III](DFS/Path_Sum_III)
+* [Palindrome_Partitioning](DFS/Palindrome_Partitioning)
 * [Populating_Next_Right_Pointers_in_Each_Node](DFS/Populating_Next_Right_Pointers_in_Each_Node)
 * [Populating_Next_Right_Pointers_in_Each_Node_II](DFS/Populating_Next_Right_Pointers_in_Each_Node_II)
 * [Surrounded_Regions](DFS/Surrounded_Regions)
