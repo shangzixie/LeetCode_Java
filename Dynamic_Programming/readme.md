@@ -24,11 +24,15 @@ use dp:
 
 ```python
 fib(n):
-    for k in range(k):
+    for k in range(n):
         if k < 2: f = 1
-        else: f = fib(n-1) + fib(n-2)
+        else: f = fib(k-1) + fib(k-2)
         fib(k) = f
-        return fib(n)
+    return fib(n)
 ```
 
 they are almost the same, just recursion is from top to down(imaging a tree, root is f(n), and leaf node is f(1)) and dp is from bottom to top
+
+## dp is
+
+![82](../Image/82.png)
