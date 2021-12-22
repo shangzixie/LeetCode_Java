@@ -4,6 +4,10 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 
 [toc]
 
+## 0. some skills
+
+* [transfer 2d array to 1d array](skills.md)
+
 ## 1. BFS/Topological
 
 * [Number_of_Island](BFS/Number_of_Island)
@@ -12,6 +16,8 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 * [Find_Bottom_Left_Tree_Value](BFS/Find_Bottom_Left_Tree_Value)
 
 ## 2. [Graph](Graph/)
+
+* [Bellman_Ford_Algorithm](Graph/Bellman_Ford_Algorithm)
 
 ### [Union_Find](Graph/Union_Find/)
 

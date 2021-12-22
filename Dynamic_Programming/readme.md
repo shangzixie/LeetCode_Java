@@ -36,3 +36,9 @@ they are almost the same, just recursion is from top to down(imaging a tree, roo
 ## dp is
 
 ![82](../Image/82.png)
+
+## shortest path
+
+## reference
+
+[MIT Video](https://www.youtube.com/watch?v=OQ5jsbhAv_M&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=19)
