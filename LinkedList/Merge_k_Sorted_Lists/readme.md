@@ -165,16 +165,17 @@ class Solution {
         if (lists.length == 0) {
             return null;
         }
-        return merge(lists, 0, lists.length - 1);
+        return divided(lists, 0, lists.length - 1);
     }
 
-    private ListNode merge(ListNode[] lists, int left, int right) {
+    private ListNode divided(ListNode[] lists, int left, int right) {
         if (left == right) {
             return lists[left];
         }
         int mid = left + (right - left) / 2;
-        ListNode l1 = merge(lists, left, mid);
-        ListNode l2 = merge(lists, mid + 1, right);
+        ListNode l1 = divided(lists, left, mid);
+        ListNode l2 = divided(lists, mid + 1, right);
+
         return merge2Lists(l1, l2);
     }
 
