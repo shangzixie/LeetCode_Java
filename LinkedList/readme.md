@@ -65,3 +65,47 @@ var reverseList = function(head) {
     return tail;
 };
 ```
+
+## merge two sorted LinkedList
+
+合并两条有序链表 — 递归
+
+```java
+private ListNode merge2Lists(ListNode l1, ListNode l2) {
+    if (l1 == null) {
+        return l2;
+    }
+    if (l2 == null) {
+        return l1;
+    }
+    if (l1.val < l2.val) {
+        l1.next = merge2Lists(l1.next, l2);
+        return l1;
+    }
+    l2.next = merge2Lists(l1, l2.next);
+    return l2;
+}
+```
+
+合并两条有序链表 — 迭代
+
+```java
+private ListNode merge2Lists(ListNode l1, ListNode l2) {
+    ListNode dummyHead = new ListNode(0);
+    ListNode tail = dummyHead;
+    while (l1 != null && l2 != null) {
+        if (l1.val < l2.val) {
+            tail.next = l1;
+            l1 = l1.next;
+        } else {
+            tail.next = l2;
+            l2 = l2.next;
+        }
+        tail = tail.next;
+    }
+
+    tail.next = l1 == null? l2: l1;
+
+    return dummyHead.next;
+}
+```

@@ -49,7 +49,7 @@ class Solution {
 ### Method 2
 
 * `Time Complexity`: O(N * LogK)
-* `Intuition`: 使用小根堆对 方法1 进行优化，每次 O(logK)O(logK) 比较 K个指针求 min
+* `Intuition`: 使用小根堆对 方法1 进行优化，每次 O(logK) 比较 K个指针求 min
 * `Key Points`:
 * `Algorithm`:
 
