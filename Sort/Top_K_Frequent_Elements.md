@@ -57,6 +57,41 @@ var topKFrequent = function(nums, k) {
 
 ```
 
-## Reference
+### reference
 
 [buckets sort](https://www.youtube.com/watch?v=lm6pBga98-w)
+
+----------------
+
+### method 2
+
+* `Time Complexity`: o(nlogk)
+* `Intuition`: heap
+* `Key Points`:
+* `Algorithm`:
+
+![88](../Image/88.png)
+
+### Code
+
+* `Code Design`:
+
+```javascript
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        count = collections.Counter(nums)
+        heap = []
+        for key, val in count.items():
+            if len(heap) >= k:
+                if val > heap[0][0]:
+                    heapq.heapreplace(heap, (val, key))
+            else:
+                heapq.heappush(heap, (val, key))
+        return [item[1] for item in heap]
+```
+
+## Reference
+
+[leetcode 思路](https://leetcode-cn.com/problems/top-k-frequent-elements/solution/leetcode-di-347-hao-wen-ti-qian-k-ge-gao-pin-yuan-/)
+
+[leetcode 代码](https://leetcode-cn.com/problems/top-k-frequent-elements/solution/347-qian-k-ge-gao-pin-yuan-su-zhi-jie-pa-wemd/)
