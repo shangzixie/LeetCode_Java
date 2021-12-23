@@ -4,8 +4,8 @@
 
 ### Method 1
 
-* `Time Complexity`: O(2^n), 
-* `Space Complexity`:
+* `Time Complexity`: O(logn), 是个一叉树, 深度为logn.
+* `Space Complexity`: O(logn)
 * `Intuition`:
 * `Key Points`:
 * `Algorithm`:
@@ -13,6 +13,17 @@
 ### Code1
 
 * `Code Design`:
+
+一开始考虑为下方代码, 但是, 没考虑n为奇数或为偶数或为负数, 然后23行需要两次重复的递归, 可以优化
+
+```python
+    def dfs(self, x, n):
+        if n == 0: return 1:
+
+        return  self.dfs(x, n // 2) *  self.dfs(x, n // 2)
+```
+
+所以最终结果:
 
 ```python
 class Solution:
