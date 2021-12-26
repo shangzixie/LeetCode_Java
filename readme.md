@@ -1,6 +1,6 @@
 # LeetCode
 
-If you couldn't find an answer here, you could move to [my friend](https://github.com/frostace/LeetCode)
+All my Leetcode answer, but removing all easy questions.
 
 [toc]
 
