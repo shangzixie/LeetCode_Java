@@ -26,11 +26,14 @@ If you couldn't find an answer here, you could move to [my friend](https://githu
 
 ## 3. Binary Search
 
+* [Find_First_and_Last_Position_of_Element_in_Sorted_Array](Binary_Search/Find_First_and_Last_Position_of_Element_in_Sorted_Array)
 * [Find_Minimum_in_Rotated_Sorted_Array](Binary_Search/Find_Minimum_in_Rotated_Sorted_Array)
 * [Find_Minimum_in_Rotated_Sorted_Array_II](Binary_Search/Find_Minimum_in_Rotated_Sorted_Array_II)
 * [Median_of_Two_Sorted_Array](Binary_Search/Median_of_Two_Sorted_Array)
 * [Search_in_Rotated_Sorted_Array](Binary_Search/Search_in_Rotated_Sorted_Array)
 * [Search_in_Rotated_Sorted_Array_II](Binary_Search/Search_in_Rotated_Sorted_Array_II)
+* [Search_a_2D_Matrix](Binary_Search/Search_a_2D_Matrix)
+* [Search_a_2D_Matrix_II](Binary_Search/Search_a_2D_Matrix_II)
 
 ## 4. Dynamic Programming
 
