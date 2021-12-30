@@ -6,7 +6,8 @@ All my Leetcode answer, but removing all easy questions.
 
 ## 0. some skills
 
-* [transfer 2d array to 1d array](skills.md)
+* [transfer_2d_array_to_1d_array](skills/transfer_2d_array_to_1d_array)
+* [loop_invariant](skills/loop_invariant)
 
 ## 1. BFS/Topological
 
@@ -253,7 +254,7 @@ Add
 * [Find_Median_from_Data_Stream](DataSturcture/Find_Median_from_Data_Stream)
 * [Sliding_Window_Median](DataSturcture/Sliding_Window_Median)
 
-## 15. Sort
+## 15. [Sort](Sort/)
 
 * [Sort_Colors](Sort/Sort_Colors)
 * [Quick_Sort_Linked_List](Sort/Quick_Sort_Linked_List)
