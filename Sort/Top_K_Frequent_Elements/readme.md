@@ -4,7 +4,7 @@
 
 ## Methods
 
-![3](../Image/3.png)
+![3](../../Image/3.png)
 
 方法二, k为n时候最糟糕,还是nlogn复杂度
 
@@ -70,7 +70,7 @@ var topKFrequent = function(nums, k) {
 * `Key Points`:
 * `Algorithm`:
 
-![88](../Image/88.png)
+![88](../../Image/88.png)
 
 ### Code
 

@@ -253,6 +253,12 @@ Add
 * [Find_Median_from_Data_Stream](DataSturcture/Find_Median_from_Data_Stream)
 * [Sliding_Window_Median](DataSturcture/Sliding_Window_Median)
 
+## 15. Sort
+
+* [Sort_Colors](Sort/Sort_Colors)
+* [Quick_Sort_Linked_List](Sort/Quick_Sort_Linked_List)
+* [Top_K_Frequent_Elements](Sort/Top_K_Frequent_Elements)
+
 ## Weekly Contest
 
 The first quesiton is too easy, so not show it.
