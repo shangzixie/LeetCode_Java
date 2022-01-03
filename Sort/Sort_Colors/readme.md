@@ -69,6 +69,7 @@ class Solution {
 
 ```
 0 ..... p0  ....... p1  ......., i
+|        |           |
 0 0 0 0  1 1 1 1 1 1 2 2 2 2 2 2 x
 ```
 
@@ -84,9 +85,6 @@ class Solution {
 ```python
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
-        """
-        Do not return anything, modify nums in-place instead.
-        """
         p0, p1 = 0, 0
 
         for i in range(len(nums)):
@@ -103,3 +101,52 @@ class Solution:
 ```
 
 ## Reference2
+
+[leetcode solution](https://leetcode-cn.com/problems/sort-colors/solution/yan-se-fen-lei-by-leetcode-solution/)
+
+----------------------
+
+### Method 3
+
+* `Time Complexity`: O(n)
+* `Space Complexity`: O(1)
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
+
+三指针, 只遍历一次. 定义从`[0, p0)` 区间均为0, 定义从`(p2, len(nums))`均为2, 则因为指针`i`遍历过的数组都是已经知道的值, 所以从`[p0, i)`区间均为1
+
+```
+0 ..... p0  ......i...... p2 .....end
+|       |         |       |
+0 0 0 0 1 1 1 1 1 x x x x x 2 2 2 2 2
+```
+
+`i`遍历过程中:
+如果遇到nums[i] 为1, 直接continue掉
+如果遇到nums[i] 为0, 跟p0交换就可
+如果遇到nums[i] 为2, 这时候如果跟p2交换, 考虑到p2的定义为开区间, p2原先位置的数字不知道是几, 还需要再判断一次i位置的值, 此时要把`i -= 1`
+
+考虑到p2的定义, i的终止条件应该是 `while i <= p2`, 要考虑i为p2情况
+
+### Code3
+
+* `Code Design`:
+
+```python
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        p0, p2 = 0, len(nums) - 1
+        i = 0
+
+        while i <= p2:
+            if nums[i] == 0:
+                nums[i], nums[p0] = nums[p0], nums[i]
+                p0 += 1
+            elif nums[i] == 2:
+                nums[i], nums[p2] = nums[p2], nums[i]
+                p2 -= 1
+                if nums[i] != 1:
+                    i -= 1
+            i += 1
+```
