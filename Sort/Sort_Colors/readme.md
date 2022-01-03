@@ -59,19 +59,47 @@ class Solution {
 
 ### Method 2
 
-* `Time Complexity`:
-* `Space Complexity`:
+* `Time Complexity`: O(n)
+* `Space Complexity`: O(1)
 * `Intuition`:
 * `Key Points`:
 * `Algorithm`:
+
+三指针, 只遍历一次. 定义从`[0, p0)` 区间均为0, 定义从`[p0, p1)`均为1, 则因为指针`i`遍历过的数组都是已经知道的值, 所以从`[p1, i)`区间均为2
+
+```
+0 ..... p0  ....... p1  ......., i
+0 0 0 0  1 1 1 1 1 1 2 2 2 2 2 2 x
+```
+
+`i`遍历过程中:
+如果遇到nums[i] 为2, 直接continue掉
+如果遇到nums[i] 为1, 跟p1交换就可
+如果遇到nums[i] 为0, 这时候如果跟p0交换, 会把本应该存在p0处的`1`移到i位置去, 这时候就要再考虑将p1跟i再交换一遍
 
 ### Code2
 
 * `Code Design`:
 
-```java
+```python
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        p0, p1 = 0, 0
 
-
+        for i in range(len(nums)):
+            if nums[i] == 0:
+                nums[i], nums[p0] = nums[p0], nums[i]
+                if p1 > p0:
+                    nums[i], nums[p1] = nums[p1], nums[i]
+                p0 += 1
+                p1 += 1
+            elif nums[i] == 1:
+                nums[i], nums[p1] = nums[p1], nums[i]
+                p1 += 1
+        return
 ```
 
 ## Reference2
