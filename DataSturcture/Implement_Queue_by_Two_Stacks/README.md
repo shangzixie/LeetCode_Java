@@ -1,67 +1,18 @@
-# 40. Implement Queue by Two Stacks
-
-
-[LeetCode 40](https://www.lintcode.com/problem/implement-queue-by-two-stacks/description?_from=ladder&&fromId=1)
+# [LeetCode 232. Implement Queue using Stacks](https://leetcode-cn.com/problems/implement-queue-using-stacks/)
 
 ## Methods
 
 ### Method 1
-every time, pop elemetns of `stack1` to `stack2`. Then when use `pop()`, we could pop the elements of `stack2`
-until the `stack2` is empty, we push `stack1` to `stack2` again. 
 
-### Key Points
+* `Time Complexity`: O(1), `pop()` 和 `peek()` 操作都是均摊`O(1)`
+* `Space Complexity`: O(n)
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
 
+![99](../../Image/99.png)
+![100](../../Image/100.png)
 
-### Code
-```java
-public class MyQueue {
-    Deque<Integer> stack1;
-    Deque<Integer> stack2;
-    public MyQueue() {
-        // do intialization if necessary
-        stack1 = new ArrayDeque(); 
-        stack2 = new ArrayDeque(); 
-    }
+## Reference1
 
-    /*
-     * @param element: An integer
-     * @return: nothing
-     */
-    public void push(int element) {
-        // write your code here
-        stack1.add(element); 
-    }
-
-    /*
-     * @return: An integer
-     */
-    public int pop() {
-        if (stack2.isEmpty()){
-            while (!stack1.isEmpty()){
-                stack2.add(stack1.removeLast()); 
-            }    
-        }
-        
-        return stack2.removeLast(); 
-        
-    }
-
-    /*
-     * @return: An integer
-     */
-    public int top() {
-        // write your code here
-        if (stack2.isEmpty()){
-            while (!stack1.isEmpty()){
-                stack2.add(stack1.removeLast()); 
-            }    
-        }
-        return stack2.getLast();
-    }
-}
-
-
-```
-
-
-## Reference
+[leetcode](https://leetcode-cn.com/problems/implement-queue-using-stacks/solution/sha-shi-jun-tan-fu-za-du-ya-wo-de-suan-f-gb6d/)
