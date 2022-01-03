@@ -150,3 +150,51 @@ class Solution:
                     i -= 1
             i += 1
 ```
+
+### Method 4
+
+* `Time Complexity`: O(kn)
+* `Space Complexity`: O(1)
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
+
+所以如果有k个颜色, 分别从1, 2, ..., k. 那么可以用上述方法3
+
+先将1都移到左边, 将k都移到右边. 再将2都移到左边, k-1都移动到右边...
+
+### Code4
+
+* `Code Design`:
+
+```java
+public int[] rainbow(int[] array, int k) {
+    if (array == null || array.length < 2) {
+        return array;
+    }
+    int left = 0;
+    int right = array.length - 1;
+    for (int round = 1; round <= k / 2; round++) {
+        // since leftColor + rightColor == k + 1
+        int leftColor = round;
+        int rightColor = k + 1 - round;
+        for (int i = left; i <= right; i++) {
+            if (array[i] == leftColor) {
+                swap(array, i, left);
+                left++;
+            } else if (array[i] == rightColor) {
+                swap(array, i, right);
+                i--;
+                right--;
+            }
+        }
+    }
+    return array;
+}
+
+private void swap(int[] array, int left, int right) {
+    int tmp = array[left];
+    array[left] = array[right];
+    array[right] = tmp;
+}
+```

@@ -49,3 +49,5 @@
 总节点数=
 
 ![93](../Image/93.png)
+
+所以merge sort需要O(NlogN)是因为总共n个节点, 每个节点还要进行logN比较, 相乘就是NlogN
