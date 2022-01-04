@@ -253,6 +253,7 @@ Add
 * [Complete_Binary_Tree_Inserter](DataSturcture/Complete_Binary_Tree_Inserter)
 * [Find_Median_from_Data_Stream](DataSturcture/Find_Median_from_Data_Stream)
 * [Sliding_Window_Median](DataSturcture/Sliding_Window_Median)
+* [Min_Stack]()
 
 ## 15. [Sort](Sort/)
 
