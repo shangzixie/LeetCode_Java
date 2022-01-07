@@ -2,6 +2,7 @@
 
 ## 1. quick sort
 
+### 1.1 模板
 python:
 
 pivot为中间的版本:
@@ -79,6 +80,20 @@ class Solution:
         nums[left], nums[pivot] = nums[pivot], nums[left]
         return left
 ```
+
+### 1.2 时间复杂度分析
+
+最糟糕的时候, quick sort每次选的pivot都是最大或最小的时候, 这时候只能把一个n的数组拆分成n-1个数的数组和1个数的数组, 继续进行递归
+
+所以![111](../Image/111.png)
+
+这是个等差数列, 推导如下
+
+![112](../Image/112.png)
+最糟糕情况 时间复杂度为 n^2
+
+最好情况呢?
+![113](../Image/113.png)
 
 ## 2. merge sort
 
