@@ -4,6 +4,7 @@
 
 python:
 
+pivot为中间的版本:
 ![96](../Image/96.png)
 
 java:
@@ -44,6 +45,39 @@ public class QuickSort {
 
     }
 }
+```
+
+pivot为最右边数时候的快排:
+```python
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        self.divided(nums, 0, len(nums) - 1)
+        return nums
+
+    def divided(self, nums, start, end):
+        if start >= end:
+            return
+        mid = self.partition(nums, start, end)
+        self.divided(nums, start, mid - 1)
+        self.divided(nums, mid + 1, end)
+
+    def partition(self, nums, start, end):
+        left = start
+        right = end - 1
+        pivot = end
+
+        while left <= right:
+            while left <= right and nums[left] < nums[pivot]:
+                left += 1
+            while left <= right and nums[right] >= nums[pivot]:
+                right -= 1
+            if left <= right:
+                nums[left], nums[right] = nums[right], nums[left]
+                left += 1
+                right -= 1
+        # 此时 start, ... ,right, left, ... ,end, pivot
+        nums[left], nums[pivot] = nums[pivot], nums[left]
+        return left
 ```
 
 ## 2. merge sort
