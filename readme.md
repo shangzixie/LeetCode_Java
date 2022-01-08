@@ -257,10 +257,11 @@ Add
 
 ## 15. [Sort](Sort/)
 
-* [Sort_Colors](Sort/Sort_Colors)
-* [Quick_Sort_Linked_List](Sort/Quick_Sort_Linked_List)
-* [Top_K_Frequent_Elements](Sort/Top_K_Frequent_Elements)
 * [Kth_Largest_Element_in_an_Array](Sort/Kth_Largest_Element_in_an_Array)
+* [Quick_Sort_Linked_List](Sort/Quick_Sort_Linked_List)
+* [Sort_a_Stack_Using_A_Temporary_Stack](Sort/Sort_a_Stack_Using_A_Temporary_Stack)
+* [Sort_Colors](Sort/Sort_Colors)
+* [Top_K_Frequent_Elements](Sort/Top_K_Frequent_Elements)
 
 ## Weekly Contest
 
