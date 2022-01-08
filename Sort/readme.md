@@ -3,6 +3,7 @@
 ## 1. quick sort
 
 ### 1.1 模板
+
 python:
 
 pivot为中间的版本:
@@ -94,7 +95,37 @@ class Solution:
 
 最好情况呢?
 ![113](../Image/113.png)
+推导很麻烦, 直接得出结论: 为O(nlogN)
 
 ## 2. merge sort
 
 ![97](../Image/97.png)
+
+## 3. selection sort
+
+time complexity: `O(n^2)`
+space complexity: `O(1)`
+
+The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+
+1) The subarray which is already sorted.
+2) Remaining subarray which is unsorted.
+
+```python
+
+import sys
+A = [64, 25, 12, 22, 11]
+
+# Traverse through all array elements
+for i in range(len(A)):
+    # Find the minimum element in remaining
+    # unsorted array
+    min_idx = i
+    for j in range(i+1, len(A)):
+        if A[min_idx] > A[j]:
+            min_idx = j
+
+    # Swap the found minimum element with
+    # the first element
+    A[i], A[min_idx] = A[min_idx], A[i]
+```
