@@ -215,6 +215,7 @@ Add
 * [Reverse_Words_in_a_String_II](Stack/Reverse_Words_in_a_String_II)
 * [Traverse a tree by preOrder, inOrder, postOrder](Stack/Traverse_Tree_No_Recursion)
 * [Valid_Parentheses](Stack/Valid_Parentheses)
+* [Shunting-yard Algorithm]
 
 ### Monotonic_Stack
 
