@@ -254,6 +254,7 @@ Add
 * [Find_Median_from_Data_Stream](DataSturcture/Find_Median_from_Data_Stream)
 * [Sliding_Window_Median](DataSturcture/Sliding_Window_Median)
 * [Min_Stack](DataSturcture/Min_Stack)
+* [Implement_Deque_with_Stacks](DataSturcture/Implement_Deque_with_Multiple_Stacks)
 
 ## 15. [Sort](Sort/)
 
