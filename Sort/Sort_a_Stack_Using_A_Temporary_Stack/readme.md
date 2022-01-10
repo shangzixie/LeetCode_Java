@@ -5,12 +5,68 @@
 ### Method 1
 
 * `Time Complexity`: O(n^2)
-* `Space Complexity`: O(n)
+* `Space Complexity`:
 * `Intuition`:
 * `Key Points`:
 * `Algorithm`:
 
-利用 selection sort的原理:
+`[1,3,2,2,4]`
+
+global_min记录将所有stack内的数pop到tempStack时候的最小值, count为该最小值的次数
+
+1. 把stack所有元素都pop到tempStack, 然后记录最小值`global_min = 1`和数量`count = 1`
+2. 然后把所有tempStack的数再pop到stack内, 但是global_min不pop回去, 而是放入tempStack.
+3. 清空global_min和count. 此时`stack = [3,2,2,4], tempstack = [1]`
+4. 把stack所有元素都pop到tempStack, 然后记录最小值`global_min = 2`和数量`count = 2`
+5. 然后把所有tempStack的数再pop到stack内, 但是global_min不pop回去, 而是放入tempStack.
+6. 清空global_min和count. 此时`stack = [3,4], tempstack = [2]`
+7. 略
+
+### Code1
+
+* `Code Design`:
+
+```python
+class Solution:
+    def ans(self, inputStack):
+        tempStack = []
+        n = len(inputStack)
+        tempStackLen = 0
+
+        while tempStackLen < n:
+            globalMin = sys.maxsize
+            count = 0
+
+            while len(inputStack) > 0:
+                temp = inputStack.pop()
+                if temp < globalMin:
+                    globalMin = temp
+                    count = 1
+                elif temp == globalMin:
+                    count += 1
+                tempStack.append(temp)
+            while len(tempStack) > tempStackLen:
+                if tempStack[-1] != globalMin:
+                    inputStack.append(tempStack.pop())
+                else:
+                    tempStack.pop()
+            while count > 0:
+                tempStack.append(globalMin)
+                count -= 1
+                tempStackLen += 1
+        print(tempStack)
+
+```
+
+----------------------
+
+### Method 2
+
+* `Time Complexity`: O(n^2)
+* `Space Complexity`: O(n)
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
 
 We follow this algorithm.
 
@@ -21,7 +77,10 @@ We follow this algorithm.
     * push temp in temporary stack
 3. The sorted numbers are in tmpStack
 
-### Code1
+tmpStack的物理意义是: 访问到stack.peek为止, stack.peek以外pop的所有元素在tempStack是呈递增排列
+最糟糕情况, stack内所有元素已经是升序
+
+### Code2
 
 * `Code Design`:
 
@@ -68,6 +127,6 @@ class Solution:
 
 ```
 
-## Reference1
+## Reference2
 
 [geeksforgeeks](https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/)
