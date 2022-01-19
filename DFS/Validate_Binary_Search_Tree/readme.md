@@ -53,13 +53,56 @@ class Solution:
 * `Key Points`:
 * `Algorithm`:
 
+use stack to iterate, and also needs to use `pre`
+
 ### Code2
 
 * `Code Design`:
 
-```java
+```python
+class Solution:
+    def isValidBST(self, root: TreeNode) -> bool:
+        stack = []
+        node = root
 
+        while node:
+            stack.append(node)
+            node = node.left
+            prev = float('-inf')
 
+        while stack:
+            node = stack.pop()
+            if node.val <= prev:
+                return False
+            prev = node.val
+            if node.right:
+                node1 = node.right
+                while node1:
+                    stack.append(node1)
+                    node1 = node1.left
+        return True
+```
+
+after optimized
+
+```python
+class Solution:
+    def isValidBST(self, root: TreeNode) -> bool:
+        stack, prev = [], float('-inf')
+
+        # 初始状态stack本来就是空
+        while stack or root:
+            while root:
+                stack.append(root)
+                root = root.left
+            root = stack.pop()
+            # 如果中序遍历得到的节点的值小于等于前一个 inorder，说明不是二叉搜索树
+            if root.val <= prev:
+                return False
+            prev = root.val
+            root = root.right
+
+        return True
 ```
 
 ## Reference2
