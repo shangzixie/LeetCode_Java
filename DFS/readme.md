@@ -51,3 +51,21 @@
 ![93](../Image/93.png)
 
 所以merge sort需要O(NlogN)是因为总共n个节点, 每个节点还要进行logN比较, 相乘就是NlogN
+
+## 4. 二叉树的对称遍历. Iterate the binary tree symmetric
+
+![93](../Image/93.jpg)
+
+如何像图中标注数字一样迭代?
+
+```python
+def main(self, root):
+    self.dfs(root, root)
+
+def dfs(self, p, q):
+    if q is None and p is None:
+        return
+
+    self.dfs(p.left, q.right)
+    self.dfs(p.right, q.left)
+```
