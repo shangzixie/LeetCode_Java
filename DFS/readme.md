@@ -58,6 +58,8 @@
 
 如何像图中标注数字一样迭代?
 
+### dfs
+
 ```python
 def main(self, root):
     self.dfs(root, root)
@@ -68,4 +70,27 @@ def dfs(self, p, q):
 
     self.dfs(p.left, q.right)
     self.dfs(p.right, q.left)
+```
+
+遍历顺序:
+
+![116](../Image/116.png)
+
+### queue
+
+```python
+import collections
+
+def iterate(root):
+    queue = collections.deque([root.left, root.right])
+    while queue:
+        p = queue.popleft()
+        q = quque.popleft()
+        '''
+        do things you want
+        '''
+        queue.append(p.left)
+        queue.append(q.right)
+        queue.append(p.right)
+        queue.append(q.left)
 ```
