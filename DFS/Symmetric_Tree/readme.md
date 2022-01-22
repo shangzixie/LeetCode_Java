@@ -38,7 +38,7 @@ class Solution:
 
 * `Time Complexity`:
 * `Space Complexity`:
-* `Intuition`: stack + iterate
+* `Intuition`: queue + iterate
 * `Key Points`: traverse tree symmetric, 具体参考 [对称遍历tree](../readme.md)
 * `Algorithm`:
 
