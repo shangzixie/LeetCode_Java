@@ -4,7 +4,7 @@
 
 ### Method 1
 
-* `Time Complexity`:
+* `Time Complexity`: 这是个四叉树
 * `Space Complexity`:
 * `Intuition`:
 * `Key Points`:
