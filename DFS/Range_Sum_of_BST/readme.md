@@ -81,11 +81,12 @@ low = 16, high = 20
     def rangeSumBST(self, root: TreeNode, low: int, high: int) -> int:
         if root is None:
             return
-
+        # 中序遍历的dfs(node.left)就是为了找到起始点, 这里在找起始点的时候给了限定条件: 只有大于low时候才有必要向左遍历找起始点
         if root.val > low:
             self.rangeSumBST(root.left, low, high)
         if low <= root.val <= high:
             print(root.val)
+        # 中序遍历的dfs(node.right)是为了从起始点开始,能顺利向右遍历
         if root.val < high:
             self.rangeSumBST(root.right, low, high)
 ```
