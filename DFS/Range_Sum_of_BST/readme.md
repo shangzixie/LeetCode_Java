@@ -71,11 +71,9 @@ class Solution:
        5    15
       / \  /  \
      2  7  11 20
-          /     \
-        18       25
-        /
-       17
-low = 16, high = 17
+                \
+                25
+low = 16, high = 20
 ```
 
 ```python
