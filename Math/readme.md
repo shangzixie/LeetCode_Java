@@ -3,7 +3,7 @@
 ## 位操作
 
 1. `a << b` = `a * 2^b` or it could say move `a` to the left `b` bit
-for example: `1 << 3` -> `1000`
+for example: `1 << 3` -> 二进制:`1000` -> 十进制:`8`
 2. 二进制下, `a << 1` 相当与 `a * 2`, `a << 1 << b` 相当与 `a * 2^b`
 3. `a >> b` = `a / 2^b`
 4. `aeb` = `a * 10^b`
