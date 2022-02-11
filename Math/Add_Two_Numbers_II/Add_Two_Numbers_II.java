@@ -102,7 +102,6 @@ public class Add_Two_Numbers_II {
             tail = tail.next;
         }
         return dummy.next;
-
     }
 
 }

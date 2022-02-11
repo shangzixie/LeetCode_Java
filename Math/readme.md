@@ -15,3 +15,33 @@ for example: `1 << 3` -> 二进制:`1000` -> 十进制:`8`
 3. 由上述, 可以得到, `0 ^ 0 = 0, 0 ^ 1 = 1`, 0和谁异或,得到就是谁
 4. 同样的, 相同数异或, 结果是0 ![16](../Image/16.png)
 5. 异或满足结合律和交换律 ![15](../Image/15.png)
+
+## 模拟进位
+
+代码模拟进位, 变量只需要一个进位变量`carry`即可
+
+模板:
+
+```python
+class Solution:
+    def addStrings(self, num1: str, num2: str) -> str:
+        p1 = len(num1) - 1
+        p2 = len(num2) - 1
+
+        carry = 0
+        ans = ''
+
+        while p1 >= 0 or p2 >= 0:
+            if p1 >=0: carry += int(num1[p1])
+            if p2 >=0: carry += int(num2[p2])
+            ans = str(carry % 10) + ans
+            carry = carry // 10
+            p1 = p1 - 1
+            p2 = p2 - 1
+        if carry > 0: ans = '1' + ans
+
+        return ans
+```
+
+[Add_Binary](./Add_Binary/readme.md)
+[Add_String](./Add_String/README.md)

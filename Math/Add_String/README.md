@@ -1,55 +1,56 @@
 # 415. Add Strings
 
-[LeetCode 45](https://leetcode.com/problems/add-strings/)
-
+[LeetCode 415. Add Strings](https://leetcode-cn.com/problems/add-strings/)
 
 ## Methods
 
 ### Method 1
+
 it is the same tag to [Multiply String](../Multiply_Strings)
 
 ### Key Points
-1. the last digit need to consider to carry 
+
+1. the last digit need to consider to carry
 2. if `num1.length` > `num2.length`
 
 ### Code
+
 ```java
 
-//-------------by myself 
+//-------------by myself
 class Solution {
     public String addStrings(String num1, String num2) {
-        if (num1.length() < num2.length()) return addStrings(num2, num1); 
-        
-        int carry = 0; 
-        int digit = 0; 
-        String ans = ""; 
-        
-        int p1 = num1.length() - 1, p2 = num2.length() - 1; 
+        if (num1.length() < num2.length()) return addStrings(num2, num1);
+
+        int carry = 0;
+        int digit = 0;
+        String ans = "";
+
+        int p1 = num1.length() - 1, p2 = num2.length() - 1;
         while (p1 >= 0 && p2 >= 0) {
-            int curNum = (num1.charAt(p1) -'0') + (num2.charAt(p2) - '0'); 
+            int curNum = (num1.charAt(p1) -'0') + (num2.charAt(p2) - '0');
             System.out.println(curNum);
-            digit = (curNum + carry) % 10; 
-            carry = (curNum + carry) / 10; 
-            ans = "" + digit + ans; 
-            
+            digit = (curNum + carry) % 10;
+            carry = (curNum + carry) / 10;
+            ans = "" + digit + ans;
             p1--;
-            p2--; 
+            p2--;
         }
-        
+
         // if num1.length() > num2.length()
         while (p1 >= 0){
-            int curNum = num1.charAt(p1) - '0'; 
-            digit = (curNum + carry) % 10; 
-            carry = (curNum + carry) / 10; 
-            ans = "" + digit + ans; 
-            p1--; 
+            int curNum = num1.charAt(p1) - '0';
+            digit = (curNum + carry) % 10;
+            carry = (curNum + carry) / 10;
+            ans = "" + digit + ans;
+            p1--;
         }
         // if the sum needs carry to more digit
-        if (carry != 0) ans = "" + carry + ans; 
+        if (carry != 0) ans = "" + carry + ans;
         return ans;
     }
 
-//-------------after optimizing 
+//-------------after optimizing
     public String addStrings(String num1, String num2) {
         StringBuilder sb = new StringBuilder();
         int carry = 0;
@@ -61,9 +62,9 @@ class Solution {
         }
         return sb.reverse().toString();
     }
-} 
+}
 ```
 
-
 ## Reference
+
 [LeetCode Solution](https://leetcode.com/problems/add-strings/discuss/90436/Straightforward-Java-8-main-lines-25ms)
