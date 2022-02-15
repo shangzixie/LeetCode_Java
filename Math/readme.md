@@ -16,7 +16,7 @@ for example: `1 << 3` -> 二进制:`1000` -> 十进制:`8`
 4. 同样的, 相同数异或, 结果是0 ![16](../Image/16.png)
 5. 异或满足结合律和交换律 ![15](../Image/15.png)
 
-## 模拟进位
+## 模拟竖式加法
 
 代码模拟进位, 变量只需要一个进位变量`carry`即可
 
@@ -45,3 +45,7 @@ class Solution:
 
 [Add_Binary](./Add_Binary/readme.md)
 [Add_String](./Add_String/README.md)
+
+## 模拟竖式除法
+
+[Fraction_to_Recurring_Decimal](Math/Fraction_to_Recurring_Decimal/readme.md)
