@@ -1,29 +1,25 @@
 class Solution:
-    def fractionToDecimal(self, numerator: int, denominator: int) -> str:
-        if numerator % denominator == 0:
-            return str(numerator // denominator)
+    def maxProduct(self, words):
+        numbers = self.parseWordsToNumbers(words)
+        maxProduct = 0
+        for i in range(len(numbers)):
+            for j in range(i + 1, len(numbers)):
+                if numbers[i] | numbers[j] != 0:
+                    continue
+                maxProduct = max(len(words[i]) * len(words[j]), maxProduct)
+        return maxProduct
 
-        ans = ''
-        remainderMap = {}
-        if numerator < 0 or denominator < 0:
-            ans += '-'
-        a = abs(numerator)
-        b = abs(denominator)
-        # 先搞定整数部分
-        ans += str(a // b)
-        ans += '.'
-        a %= b
-        while a != 0:
-            if a in remainderMap:
-                index = remainderMap[a]
-                ans = ans[:index] + '(' + ans[index:]
-                ans += ')'
-                return ans
-            a *= 10
-            ans += str(a // b)
-            a %= b
-            remainderMap[a] = len(ans)
-        return ans
+    def parseWordsToNumbers(self, words):
+        numbers = []
+        for i in range(len(words)):
+            word = words[i]
+            curNumber = 0
+            for j in range(len(word)):
+                index = ord(word[j]) - ord('a')
+                curNumber |= (1 << index)
+
+            numbers.append(curNumber)
+        return numbers
 
 solution = Solution()
-solution.fractionToDecimal(4, 333)
+solution.maxProduct(["abcw","baz","foo","bar","xtfn","abcdef"])

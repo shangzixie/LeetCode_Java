@@ -49,3 +49,7 @@ class Solution:
 ## 模拟竖式除法
 
 [Fraction_to_Recurring_Decimal](Math/Fraction_to_Recurring_Decimal/readme.md)
+
+## 模拟竖式乘法
+
+[Multiply_Strings](Math/Multiply_Strings/README.md)
