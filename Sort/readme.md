@@ -50,6 +50,7 @@ public class QuickSort {
 ```
 
 pivot为最右边数时候的快排:
+
 ```python
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:

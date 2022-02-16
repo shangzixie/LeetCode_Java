@@ -85,8 +85,9 @@ public class Contains_Duplicate_III {
 
 * `Time Complexity`: O(n)
 * `Space Complexity`: O(k)
-* `Intuition`: bucket
-* `Key Points`:
+* `Intuition`:
+对于一个宽度为k的window, 每次判断window内所有数是否满足`abs(nums[j] - nums[i]) <= t` => 某个数是否落在window内任意数`num-t ~ num+t`内 => 建造桶
+* `Key Points`: bucket
 * `Algorithm`:
 
 如果我们能从最小的数`min`开始, 一个数num <= `min + t`, 就把它放进和`min`一个桶里面
@@ -106,6 +107,7 @@ class Solution:
     def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool:
         if t == 0: return self.whenTIsZero(nums, k, t)
 
+        # 找到最小的数, 构建桶, 每个通容纳的数字范围: `minNum ~ minNum + t`, `minNum + t ~ minNum + 2t`, ...
         minNum = sys.maxsize
         for i in range(len(nums)):
             minNum = min(nums[i], minNum)
