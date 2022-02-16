@@ -52,4 +52,4 @@ class Solution:
 
 ## 模拟竖式乘法
 
-[Multiply_Strings](Math/Multiply_Strings/README.md)
+[Multiply_Strings](Math/Multiply_Strings/README.md) 较难, 采用简化版竖式乘法
