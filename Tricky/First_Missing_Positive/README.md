@@ -36,7 +36,7 @@ public class Solution {
 
         int n = nums.length;
         for (int i = 0; i < n; i++){
-            if (nums[i] <= 0 || nums[i] > n) nums[i] = n + 1; //change all in-valid element to be n+1;
+            if (nums[i] <= 0 || nums[i] > n) nums[i] = n + 1; //change all invalid element to be n+1;
         }
         for (int i = 0; i < n; i++){
             int index = Math.abs(nums[i]);

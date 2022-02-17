@@ -4,7 +4,7 @@
 
 ### Method 1
 
-* `Time Complexity`: O(log(m*n)
+* `Time Complexity`: O(log(m*n))
 * `Space Complexity`: O(1)
 * `Intuition`: [transfer 2d array to 1d array](../../skills.md)
 * `Key Points`:
@@ -41,3 +41,37 @@ class Solution:
 ```
 
 ## Reference1
+
+----------------------
+
+### Method 2
+
+* `Time Complexity`:
+* `Space Complexity`:
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
+
+### Code2
+
+* `Code Design`:
+
+```python
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        x = 0
+        y = len(matrix[0]) - 1
+        while x < len(matrix) and y >= 0:
+            if x < 0 or y > len(matrix[0]):
+                return False
+            if matrix[x][y] == target:
+                return True
+            if matrix[x][y] > target:
+                y -= 1
+            if matrix[x][y] < target:
+                x += 1
+        return False
+```
+
+## Reference2
+
