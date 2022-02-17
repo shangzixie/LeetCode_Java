@@ -6,11 +6,9 @@
 
 * `Time Complexity`:
 * `Space Complexity`:
-* `Intuition`: DFS
-* `Key Points`:
+* `Intuition`: DFS. 如何保证结果为每层右边的一个节点呢? -> 右边 && 当前层第一个节点 -> 先遍历右节点 && level记录当前层 && 当前层没有其他节点在结果里面
+* `Key Points`: DFS + 优先遍历右节点
 * `Algorithm`:
-
-右视图, 当然先遍历右边优先级更高
 
 ### Code1
 
