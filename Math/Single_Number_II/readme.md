@@ -4,9 +4,9 @@
 
 ### Method 1
 
-* `Time Complexity`:
-* `Space Complexity`:
-* `Intuition`:
+* `Time Complexity`: O(32n) = O(n)
+* `Space Complexity`: O(1)
+* `Intuition`: 出现3次和1次的区别 -> 出现次数除以3是余1还是整除 -> 如何记录一个数出现多少次 -> map -> 有没有替代办法?
 * `Key Points`:
 * `Algorithm`:
 
@@ -79,8 +79,8 @@ a^b^c=a^c^b 异或运算具有交换律
 
 ### Method 2
 
-* `Time Complexity`:
-* `Space Complexity`:
+* `Time Complexity`: O(n)
+* `Space Complexity`: O(n)
 * `Intuition`:
 * `Key Points`:
 * `Algorithm`:

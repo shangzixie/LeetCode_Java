@@ -1,6 +1,4 @@
-# 49. Group Anagrams
-
-[LeetCode 49](https://leetcode.com/problems/group-anagrams/)
+# [LeetCode 49. Group Anagrams](https://leetcode-cn.com/problems/group-anagrams/)
 
 ## Methods
 
