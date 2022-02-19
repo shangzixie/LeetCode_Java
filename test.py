@@ -3,22 +3,19 @@
 # false
 # coordinate
 class Solution:
-    def getCoordinate(self, arr, target):
-        x = 0
-        y = len(arr) - 1
-        while x < len(arr[0]) and y >= 0:
-            if x < 0 or y > len(arr):
-                return False
-            if arr[x][y] > target:
-                y -= 1
-            if arr[x][y] < target:
-                x += 1
-            if arr[x][y] == target:
-                return [x, y]
-        return False
+    def findDuplicates(self, nums):
+        # use array replace of set
+        # arr[i] is negative, meaning i+1 appears twice
+        ans = []
+        for i in range(len(nums)):
+            if nums[i] < 0:
+                ans.append(i + 1)
+                continue
+            nums[nums[i] - 1] *= -1
+        return ans
 
 
 
 solution = Solution()
-result = solution.getCoordinate([[1,5,8],[4,9,12],[6,17,34]], 6)
+result = solution.findDuplicates([4,3,2,7,8,2,3,1])
 print(result)
