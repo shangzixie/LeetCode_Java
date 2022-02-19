@@ -42,26 +42,3 @@ class Solution:
         else:
             return x * half_value * half_value
 ```
-
-## Reference1
-
-----------------------
-
-### Method 2
-
-* `Time Complexity`:
-* `Space Complexity`:
-* `Intuition`:
-* `Key Points`:
-* `Algorithm`:
-
-### Code2
-
-* `Code Design`:
-
-```java
-
-
-```
-
-## Reference2
