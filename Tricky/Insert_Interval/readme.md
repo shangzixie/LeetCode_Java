@@ -1,6 +1,4 @@
-# 57. Insert Interval
-
-[LeetCode ](https://leetcode.com/problems/insert-interval/)
+# [LeetCode 57. Insert Interval](https://leetcode.com/problems/insert-interval/)
 
 
 ## Methods
@@ -9,7 +7,6 @@ this question is the hard version of [Merge_Intervals](../Merge_Intervals)
 * `Time Complexity`: O(n)
 * `Intuition`: find an appropriate position to insert the `newInterval`, then merge them.
 * `Algorithm`: 
-
 
 ### Key Points
 

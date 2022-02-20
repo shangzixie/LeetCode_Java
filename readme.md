@@ -272,7 +272,7 @@ All my Leetcode answer, but removing all easy questions.
 
 ## Weekly Contest
 
-The first quesiton is too easy, so not show it.
+The first question is too easy, so not show it.
 
 ### Contest 193
 
