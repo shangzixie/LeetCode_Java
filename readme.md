@@ -183,6 +183,7 @@ All my Leetcode answer, but removing all easy questions.
 ## 11. Tricky Method
 
 * [Longest_Consecutive_Sequence](Tricky/Longest_Consecutive_Sequence)
+* [Count_Binary_Substrings](Tricky/Count_Binary_Substrings)
 * [Find_All_Duplicates_in_an_Array](Tricky/Find_All_Duplicates_in_an_Array)
 * [Max_Points_on_A_Line](Tricky/Max_Points_on_A_Line)
 * [Next_Greater_Element_III](Tricky/Next_Greater_Element_III)
