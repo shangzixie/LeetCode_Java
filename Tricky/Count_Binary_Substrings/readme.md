@@ -47,25 +47,29 @@ class Solution:
         return ans
 ```
 
-## Reference1
-
-----------------------
-
-### Method 2
-
-* `Time Complexity`:
-* `Space Complexity`:
-* `Intuition`:
-* `Key Points`:
-* `Algorithm`:
-
-### Code2
-
-* `Code Design`:
+* `Time Complexity`: O(n)
+* `Space Complexity`: O(1)
 
 ```java
-
+class Solution {
+    public int countBinarySubstrings(String s) {
+        int ptr = 0, n = s.length(), last = 0, ans = 0;
+        while (ptr < n) {
+            char c = s.charAt(ptr);
+            int count = 0;
+            while (ptr < n && s.charAt(ptr) == c) {
+                ++ptr;
+                ++count;
+            }
+            ans += Math.min(count, last);
+            last = count;
+        }
+        return ans;
+    }
+}
 
 ```
 
-## Reference2
+## reference
+
+[LeetCode-Solution](https://leetcode-cn.com/problems/count-binary-substrings/solution/ji-shu-er-jin-zhi-zi-chuan-by-leetcode-solution/)
