@@ -1,25 +1,28 @@
-# 56. Merge Intervals
-
-[LeetCode 56](https://leetcode.com/problems/merge-intervals/)
-
+# [LeetCode 56. Merge Intervals](https://leetcode-cn.com/problems/merge-intervals/)
 
 ## Methods
 
-### Method 
+### Method
+
 If we sort the intervals by their start value, then each set of intervals that can be merged will appear as a contiguous "run" in the sorted list.
 
 First, we sort the list as described. Then, we insert the first interval into our merged list and continue considering each interval in turn as follows: If the current interval begins after the previous interval ends, then they do not overlap and we can append the current interval to merged. Otherwise, they do overlap, and we merge them by updating the end of the previous interval if it is less than the end of the current interval.
 
 ### Key Points
+
 every loop, modify and update the `merged.getLast()[1]`
 
 ------------
+
 ### My Intuitive Wrong Method
+
 every loop, when current interval non-overlapping, append `(start, cur.end)` and update `start`;
 if current interval is overlap, keep iterating to find appropriate `end`
 
 ### But
-it couldn't deal with this case: 
+
+it couldn't deal with this case:
+
 ```
 [(1,10), (2,3),(4,5),(6,7),(8,9)]
 
@@ -29,33 +32,28 @@ Expected
 [(1,10)]
 ```
 
------------
-
-
 ### Code
+
+```python
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        if len(intervals) <= 1:
+            return intervals
+
+        intervals.sort(key = lambda intervals: intervals[0])
+        ans = [intervals[0]]
+        for i in range(1, len(intervals)):
+            cur = intervals[i]
+            last = ans[-1]
+            if cur[0] > last[1]:
+                ans.append(cur)
+            else:
+                ans[-1][1] = max(cur[1], last[1])
+        return ans
+```
+
 ```java
 public class Merge_Intervals {
-
-    // right method
-    public int[][] merge(int[][] intervals) {
-        Arrays.sort(intervals, (h1, h2)-> h1[0] - h2[0]);
-
-        LinkedList<int[]> merged = new LinkedList<>();
-        for (int[] interval : intervals) {
-            // if the list of merged intervals is empty or if the current
-            // interval does not overlap with the previous, simply append it.
-            if (merged.isEmpty() || merged.getLast()[1] < interval[0]) {
-                merged.add(interval);
-            }
-            // otherwise, there is overlap, so we merge the current and previous
-            // intervals.
-            else {
-                merged.getLast()[1] = Math.max(merged.getLast()[1], interval[1]);
-            }
-        }
-
-        return merged.toArray(new int[0][0]);
-    }
     // right method 2: just update int end
     public List<Interval> merge2(List<Interval> intervals) {
         if (intervals.size() <= 1)
@@ -117,4 +115,5 @@ public class Merge_Intervals {
 ```
 
 ## Reference
+
 https://leetcode.com/problems/merge-intervals/solution/
