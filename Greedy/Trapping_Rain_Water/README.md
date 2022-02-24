@@ -14,8 +14,8 @@ left,right --遍历过程的当前位置
 
 [LeetCode 42](https://leetcode.com/problems/trapping-rain-water/)
 
-
 ## Methods
+
 [Video](https://youtu.be/hULV5F_I8EE)
 this is similar with [container with most water](../Container_with_Most_Water). but, it is different.
 
