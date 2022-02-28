@@ -3,12 +3,7 @@ rightMax,leftMax --当前左右挡板
 left,right --遍历过程的当前位置
 当前位置能存多少水： leftMax - heights[left], rightMax - heights[right]
 
-4. 
-
 ![](../../Image/TrappingRainWater.png)
-
-
-
 
 # 42. Trapping Rain Water
 
@@ -20,7 +15,8 @@ left,right --遍历过程的当前位置
 this is similar with [container with most water](../Container_with_Most_Water). but, it is different.
 
 ### Method 1
-Brute force: 
+
+Brute force:
 
 ![](../../Image/TrappingRainWater1.png)
 
@@ -28,11 +24,12 @@ for every current pointer `i`, need to find left max height `leftMax` and right 
 
 how to optimize it?
 
-we could use `left` and `right` pointer instead of `i`, everytime, maintain the `leftMax` and `rightMax`, then compute the `ans` 
+we could use `left` and `right` pointer instead of `i`, everytime, maintain the `leftMax` and `rightMax`, then compute the `ans`
+
 ### Key Points
- 
 
 ### Code
+
 ```java
 
 
@@ -89,9 +86,8 @@ public class Trapping_Rain_Water {
 
 ```
 
-
 ## Reference
+
 [brute force, dp](https://www.youtube.com/watch?v=StH5vntauyQ)
 
-[two pointer](https://www.youtube.com/watch?v=2LjNzbK2cmA&t=575s)              
-              
+[two pointer](https://www.youtube.com/watch?v=2LjNzbK2cmA&t=575s)
