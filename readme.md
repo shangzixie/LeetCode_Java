@@ -179,6 +179,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Increasing_Order_Search_Tree](DFS/Increasing_Order_Search_Tree)
 * [Binary_Tree_Maximum_Path_Sum](DFS/Binary_Tree_Maximum_Path_Sum)
 * [Validate_Binary_Search_Tree](DFS/Validate_Binary_Search_Tree)
+* [Invert_Binary_Tree](DFS/Invert_Binary_Tree)
 
 ## 11. Tricky Method
 
