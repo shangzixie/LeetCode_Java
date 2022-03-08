@@ -11,6 +11,7 @@ In index `i`, we could get the farthest index it could jump by formula `nums[i] 
 so if `farthest` is less than `nums.length`, return `false`
 
 ### Key Points
+
 we need notice `[3,2,1,0,5]` is `false`, so traverse the array, pointer `i` cann't reach a position bigger than `farthest`
 so, need `i <= farthest`
 
