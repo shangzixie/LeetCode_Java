@@ -1,4 +1,4 @@
-# [LeetCode 951. Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/)
+# [LeetCode 951. Flip Equivalent Binary Trees](https://leetcode-cn.com/problems/flip-equivalent-binary-trees/)
 
 ## Methods
 

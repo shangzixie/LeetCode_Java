@@ -272,6 +272,8 @@ All my Leetcode answer, but removing all easy questions.
 * [Sort_Colors](Sort/Sort_Colors)
 * [Top_K_Frequent_Elements](Sort/Top_K_Frequent_Elements)
 
+## 16. [Heap](heap/)
+
 ## Weekly Contest
 
 The first question is too easy, so not show it.
