@@ -32,3 +32,35 @@ but delete(), adjust node maybe from current to up or down
 ## heapify
 
 ![126](../Image/126.png)
+
+heapify是从array下标二分之一处开始处理。 因为这一行刚好对应倒数第二行。
+先先换对调左子树，再比较对调右子树
+
+```python
+class Solution:
+   """
+   @param: A: Given an integer array
+   @return: nothing
+   """
+   def heapify(self, A):
+      n = len(A)
+      for i in range(len(A) // 2, -1, -1):
+         self.siftdown(n, A, i)
+
+   def siftdown(self, n, A, index):
+
+      if index >= n:
+         return
+      left = index * 2 + 1
+      right = index * 2 + 2
+      minIndex = index
+      if left < n and A[left] < A[minIndex]:
+         minIndex = left
+      if right < n and A[right] < A[minIndex]:
+         minIndex = right
+
+      if minIndex != index:
+         A[minIndex], A[index] = A[index], A[minIndex]
+         print(1)
+         self.siftdown(n, A, minIndex)
+```
