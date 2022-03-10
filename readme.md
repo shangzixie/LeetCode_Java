@@ -274,6 +274,8 @@ All my Leetcode answer, but removing all easy questions.
 
 ## 16. [Heap](heap/)
 
+* [Kth_Largest_Element_in_an_Array](heap/Kth_Largest_Element_in_an_Array)
+
 ## Weekly Contest
 
 The first question is too easy, so not show it.
