@@ -36,31 +36,32 @@ but delete(), adjust node maybe from current to up or down
 heapify是从array下标二分之一处开始处理。 因为这一行刚好对应倒数第二行。
 先先换对调左子树，再比较对调右子树
 
+当前节点`parent`跟两个儿子比较, 如果比两个儿子都小, 那符合条件不用管
+如果当前`parent`节点比两个儿子大, 那么一直把该节点向下移动进行`siftdown`, 直到合适的位置为止
+
 ```python
 class Solution:
    """
    @param: A: Given an integer array
    @return: nothing
    """
-   def heapify(self, A):
-      n = len(A)
-      for i in range(len(A) // 2, -1, -1):
-         self.siftdown(n, A, i)
+   def heapify(self, nums):
+      n = len(nums)
+      for i in range(len(nums) // 2, -1, -1):
+         self.siftdown(n, nums, i)
 
-   def siftdown(self, n, A, index):
-
+   def siftdown(self, n, nums, index):
       if index >= n:
          return
       left = index * 2 + 1
       right = index * 2 + 2
       minIndex = index
-      if left < n and A[left] < A[minIndex]:
+      if left < n and nums[left] < nums[minIndex]:
          minIndex = left
-      if right < n and A[right] < A[minIndex]:
+      if right < n and nums[right] < nums[minIndex]:
          minIndex = right
 
       if minIndex != index:
-         A[minIndex], A[index] = A[index], A[minIndex]
-         print(1)
-         self.siftdown(n, A, minIndex)
+         nums[minIndex], nums[index] = nums[index], nums[minIndex]
+         self.siftdown(n, nums, minIndex)
 ```
