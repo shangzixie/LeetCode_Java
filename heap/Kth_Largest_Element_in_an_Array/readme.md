@@ -69,3 +69,22 @@ class Solution:
 ```
 
 ## Reference2
+
+----------------------
+
+compare method 1 and method 2:
+
+`O(c * n + klogN)` vs `O(k) + O((n-k)logk)`
+
+case 1: 当k很小, 远远小于n的时候:
+
+`O(c * n)` vs `O(n * logk)`
+
+取决于`logk` 的大小, 不好说
+
+case 2: 最糟糕时候
+
+k接近于n: `O(c * n + klogN)` = `O(nlogn)`
+k为0.5n:  `O(k) + O((n-k)logk)` = `O(nlogn)`
+
+所以也不好说

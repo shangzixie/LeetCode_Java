@@ -13,12 +13,16 @@
 
 ## basic operation
 
-### push() - O(logN)
+### push()
+
+时间复杂度: O(logN)
 
 先插入到最底层且最左边的空位, 然后不停和parent比较大小, 上下调换
 ![123](../Image/123.png)
 
-### pop() - O(logN)
+### pop()
+
+时间复杂度: O(logN)
 
 ![124](../Image/124.png)
 
@@ -33,7 +37,8 @@ but delete(), adjust node maybe from current to up or down
 
 [youtube video](https://www.youtube.com/watch?v=5iBUTMWGtIQ)
 
-time complexity: O(n)
+time complexity: O(c * n) $\approx$ O(n)
+c是个很小的系数
 
 ![126](../Image/126.png)
 
