@@ -13,7 +13,7 @@
 
 ## basic operation
 
-### push()
+### push() - O(logN)
 
 先插入到最底层且最左边的空位, 然后不停和parent比较大小, 上下调换
 ![123](../Image/123.png)
