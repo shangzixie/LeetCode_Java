@@ -7,8 +7,8 @@ Union-Find is used to determine the connected components in a graph. We can dete
 ## implement and code
 
 ![61](../../Image/61.png)
-![62](../../Image/62.png)
 
+![62](../../Image/62.png)
 
 ```java
 package UnionFind;
