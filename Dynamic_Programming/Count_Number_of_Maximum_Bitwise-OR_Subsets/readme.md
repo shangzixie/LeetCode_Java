@@ -12,15 +12,34 @@
 * `Key Points`: enumerate all possibilities -> dfs
 * `Algorithm`:
 
+暴力通过枚举, 利用排列组合的recursion的方法
+
 ### Code1
 
 * `Code Design`:
 
 ```python
+class Solution:
+    def countMaxOrSubsets(self, nums: List[int]) -> int:
+        self.maxOR = 0
+        self.count = 0
+        self.dfs(nums, 0, 0)
 
+        return self.count
+
+    def dfs(self, nums, startIndex, curOR):
+        if curOR > self.maxOR:
+            self.maxOR = curOR
+            self.count = 1
+        elif curOR == self.maxOR:
+            self.count += 1
+
+        for i in range(startIndex, len(nums)):
+            tempCurOR = curOR
+            curOR |= nums[i]
+            self.dfs(nums, i + 1, curOR)
+            curOR = tempCurOR
 ```
-
-## Reference1
 
 ----------------------
 
