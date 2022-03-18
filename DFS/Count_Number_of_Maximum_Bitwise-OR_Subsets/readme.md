@@ -40,24 +40,3 @@ class Solution:
             self.dfs(nums, i + 1, curOR)
             curOR = tempCurOR
 ```
-
-----------------------
-
-### Method 2
-
-* `Time Complexity`:
-* `Space Complexity`:
-* `Intuition`:
-* `Key Points`:
-* `Algorithm`:
-
-### Code2
-
-* `Code Design`:
-
-```java
-
-
-```
-
-## Reference2

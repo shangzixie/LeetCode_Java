@@ -48,7 +48,6 @@ All my Leetcode answer, but removing all easy questions.
 * [Palindrome_Partitioning_II](Dynamic_Programming/Palindrome_Partitioning_II)
 * [Unique_Binary_Search_Trees](Dynamic_Programming/Unique_Binary_Search_Trees)
 * [Palindromic_Substrings](Dynamic_Programming/Palindromic_Substrings)
-* [Count_Number_of_Maximum_Bitwise-OR_Subsets](Dynamic_Programming/Count_Number_of_Maximum_Bitwise-OR_Subsets)
 
 `Double Sequence Problem (双序列）`
 
@@ -181,6 +180,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Binary_Tree_Maximum_Path_Sum](DFS/Binary_Tree_Maximum_Path_Sum)
 * [Validate_Binary_Search_Tree](DFS/Validate_Binary_Search_Tree)
 * [Invert_Binary_Tree](DFS/Invert_Binary_Tree)
+* [Count_Number_of_Maximum_Bitwise-OR_Subsets](DFS/Count_Number_of_Maximum_Bitwise-OR_Subsets)
 
 ## 11. Tricky Method
 
