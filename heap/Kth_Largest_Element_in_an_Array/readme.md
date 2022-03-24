@@ -158,5 +158,4 @@ public class Solution {
         nums[index2] = temp;
     }
 }
-
 ```
