@@ -95,6 +95,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Largest_Time_for_Given_Digits](Math/Largest_Time_for_Given_Digits)
 * [Add_Binary](Math/Add_Binary/)
 * [Maximum_Product_of_Word_Lengths](Math/Maximum_Product_of_Word_Lengths)
+* [Reverse_Integer](Math/Reverse_Integer)
 
 ### Add
 
