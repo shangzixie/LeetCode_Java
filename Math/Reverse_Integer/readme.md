@@ -38,6 +38,8 @@ class Solution:
 
 ## Reference1
 
+by myself
+
 ----------------------
 
 ### Method 2
@@ -47,6 +49,8 @@ class Solution:
 * `Intuition`:
 * `Key Points`:
 * `Algorithm`:
+
+reverse string maybe not the best method when in interview.
 
 ### Code2
 
