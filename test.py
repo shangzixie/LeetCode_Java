@@ -14,19 +14,36 @@
 from sys import maxunicode
 import copy
 
+import copy
 class Solution:
-    def applicationPairs(self, nums):
-        nums = sorted(nums)
+   """
+   @param: nums: A list of integers.
+   @return: A list of permutations.
+   """
+    def permute(self, nums):
+        renderNum = nums
+        for num in nums:
+            renderNum.append(-1 * num)
         self.results = []
-        self.dfs(nums, 0, [])
-        return self.results
+        self.dfs([], renderNum)
 
-    def dfs(self, nums, index, subset):
-        self.results.append(copy.deepcopy(subset))
-        for i in range(index, len(nums)):
-            subset.append(nums[i])
-            self.dfs(nums, i + 1, subset)
-            subset.pop()
+        self.res = []
+        for nums in self.results:
+            a = nums[0]
+            b = nums[1]
+            c = nums[2]
+            if a + b + c == 24:
+                xxx
+        return self.res
 
-solution = Solution()
-solution.applicationPairs([1,2,3])
+   def dfs(self, path, renderNum):
+      if len(path) == len(renderNum):
+         self.results.append(copy.deepcopy(path))
+         return
+
+
+      for num in renderNum:
+         if num not in path:
+            path.append(num)
+            self.dfs(path, renderNum)
+            path.pop()

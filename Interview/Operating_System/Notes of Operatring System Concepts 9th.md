@@ -86,15 +86,17 @@ why cooperating processes are allowed:
 * Shared Memory is faster once it is set up, because no system calls are required and access occurs at normal memory speeds. However it is more complicated to set up, and doesn't work as well across multiple computers. Shared memory is generally preferable when large amounts of information must be shared quickly on the same computer.
 * Message Passing requires system calls for every message transfer, and is therefore slower, but it is simpler to set up and works well across multiple computers. Message passing is generally preferable when the amount and/or frequency of data transfers is small, or when multiple computers are involved.
 
-    #### message passing 
+#### message passing
+
     * Message passing systems must support at a minimum system calls for "send message" and "receive message".
     * A communication link must be established between the cooperating processes before messages can be sent.
     * With **direct communication** the sender must know the name of the receiver to which it wishes to send a message.
     * There is a one-to-one link between every sender-receiver pair.
     * **Indirect communication** uses shared mailboxes, or **ports**.
     * Multiple processes can share the same mailbox or boxes.
-    
+
 ## Communication in Client-Server Systems
+
 we discuss process communication before, now let's discuss client-server communication through networks. 
 There are two other strategies for communication in client–server systems: 
  * sockets 
@@ -108,8 +110,7 @@ There are two other strategies for communication in client–server systems:
 Communication channels via sockets may be of one of two major forms:
 * TCP
 * UDP
+
 ### Remote Procedure calls
+
 In distributed computing, a remote procedure call (RPC) is when a computer program causes a procedure (subroutine) to execute in a different address space (commonly on another computer on a shared network), which is coded as if it were a normal (local) procedure call, without the programmer explicitly coding the details for the remote interaction. That is, the programmer writes essentially the same code whether the subroutine is local to the executing program, or remote. 
-
-
- 
