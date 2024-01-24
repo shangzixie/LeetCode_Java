@@ -1,8 +1,32 @@
 # sort
 
-## 1. quick sort
+## 1. merge sort
 
-### 1.1 模板
+key word is MERGE, which merges two sorted arrays using double pointers.
+
+```python
+arr = [1, 3, 5, 7, 9, 2, 4, 6, 8, 10]
+
+1st part = [1, 3, 5, 7 , 9]
+2nd part = [2, 4, 6, 8, 10]
+they are two sorted array.
+then
+
+            i ->
+1st part = [1, 3, 5, 7 , 9]
+2nd part = [2, 4, 6, 8, 10]
+            j ->
+
+3rd part = [0, 0, 0, 0, 0, 0, 0, ...]
+            x ->
+```
+
+![97](../Image/97.png)
+
+
+## 2. quick sort
+
+### 2.1 模板
 
 python:
 
@@ -83,7 +107,7 @@ class Solution:
         return left
 ```
 
-### 1.2 时间复杂度分析
+### 2.2 时间复杂度分析
 
 最糟糕的时候, quick sort每次选的pivot都是最大或最小的时候, 这时候只能把一个n的数组拆分成n-1个数的数组和1个数的数组, 继续进行递归
 
@@ -97,10 +121,6 @@ class Solution:
 最好情况呢?
 ![113](../Image/113.png)
 推导很麻烦, 直接得出结论: 为O(nlogN)
-
-## 2. merge sort
-
-![97](../Image/97.png)
 
 ## 3. selection sort
 
