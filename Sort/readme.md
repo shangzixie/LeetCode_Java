@@ -21,8 +21,55 @@ then
             x ->
 ```
 
-![97](../Image/97.png)
+```python
+class Solution(object):
+    def sortArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        temp = [0 for _ in range(len(nums))]
+        self.divide(0, len(nums) - 1, nums, temp)
+        return nums
 
+    def divide(self, start, end, nums, temp):
+        if start >= end:
+            return
+        mid = (start + end) // 2 # including mid in odd array
+        self.divide(start, mid, nums, temp)
+        self.divide(mid + 1, end, nums, temp)
+        self.sort_merge(start, end, nums, temp)
+
+    def sort_merge(self, start, end, nums, temp):
+        # The length is at least 2
+        mid = (start + end) // 2 # left part and right part is sorted
+        index = start # for temp's start
+        i, j = start, mid + 1 # define two pointer, try to merge the two parts. i is between [start, mid], j is between [mid + 1, end]
+        while i <= mid and j <= end:
+            if nums[i] <= nums[j]:
+                temp[index] = nums[i]
+                i += 1
+            else:
+                temp[index] = nums[j]
+                j += 1
+            index += 1
+        while i <= mid:
+            temp[index] = nums[i]
+            i += 1
+            index += 1
+        while j <= end:
+            temp[index] = nums[j]
+            j += 1
+            index += 1
+        # must change original array in that, because, when compare nums[i] and nums[j] needs using last time's result on 26 line
+        for index in range(start, end + 1):
+            nums[index] = temp[index]
+```
+
+[time complexity](https://www.youtube.com/watch?v=-qOVVRIZzao): 
+
+nlog(n)
+![127](../Image/127.png)
 
 ## 2. quick sort
 
