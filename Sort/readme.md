@@ -122,6 +122,8 @@ public class QuickSort {
 
 pivot为最右边数时候的快排:
 
+定义两个指针, left和right, left左边的数都比pivot小, 不包括left. right右边的数都比pivot大, 不包括right
+
 ```python
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
@@ -167,7 +169,8 @@ class Solution:
 
 最好情况呢?
 ![113](../Image/113.png)
-推导很麻烦, 直接得出结论: 为O(nlogN)
+
+长度为n的数组, 每次都能把数组拆分成长度为n/2的数组, 直到长度为一. 此时, 数组的高度为logn, 每层都是n的时间复杂度. 所以总共为O(nlogN)
 
 ## 3. selection sort
 
