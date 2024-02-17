@@ -200,3 +200,19 @@ for i in range(len(A)):
     # the first element
     A[i], A[min_idx] = A[min_idx], A[i]
 ```
+
+## 4. Rainbow Sort
+
+it is a special case of quick sort, which is used to sort by 3 pointers.
+
+```
+000011111xxxxxx22222
+   i    j      k
+
+all numbers of i left side are 0
+all numbers between [i, j) are 1
+all numbers right of k are 2
+all numbers between [j, k] are unknown
+```
+
+[solutions](./Sort_Colors/readme.md)
