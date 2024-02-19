@@ -34,6 +34,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Search_in_Rotated_Sorted_Array](Binary_Search/Search_in_Rotated_Sorted_Array)
 * [Search_in_Rotated_Sorted_Array_II](Binary_Search/Search_in_Rotated_Sorted_Array_II)
 * [Search_in_a_Sorted_Array_of_Unknown_Size](Binary_Search/Search_in_a_Sorted_Array_of_Unknown_Size)
+* [Search_a_2D_Matrix](Binary_Search/Search_a_2D_Matrix)
 
 ## 4. Dynamic Programming
 
