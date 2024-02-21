@@ -32,9 +32,10 @@ func findClosestElements(arr []int, k int, x int) []int {
             right = mid
         }
     }
+    // not including p and q
+    // define (p, q)
     p := left
     q := right
-    fmt.Println(p, q)
     for ;k > 0; k-- {
         if p < 0 {
             q++
