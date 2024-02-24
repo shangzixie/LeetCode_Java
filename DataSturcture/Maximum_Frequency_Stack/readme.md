@@ -6,12 +6,13 @@
 ## Methods
 
 ### Method 1
+
 `pop()` could pop the most frequent element. So we could use a `PriorityQueue<int[]>`, 
 each element contains (the num, frequency, index).  when their `frequency` is same, could sort by `index`. 
 ### Key Points
 
-
 ### Code
+
 ```java
 class FreqStack {
     Map<Integer, Integer> map;
