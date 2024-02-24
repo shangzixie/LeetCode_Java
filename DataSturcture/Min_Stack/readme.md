@@ -59,7 +59,7 @@ class MinStack:
 
 ----------------------
 
-### Method 3/4
+### Method 3 and 4
 
 ![103](../../Image/103.png)
 
