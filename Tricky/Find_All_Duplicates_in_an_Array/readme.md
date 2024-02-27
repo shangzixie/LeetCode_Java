@@ -35,9 +35,9 @@ class Solution:
 
 ### Method 2
 
-* `Time Complexity`:
-* `Space Complexity`:
-* `Intuition`:
+* `Time Complexity`: O(N)
+* `Space Complexity`: O(1)
+* `Intuition`: using binary to instead of map
 * `Key Points`:
 * `Algorithm`:
 
@@ -45,9 +45,21 @@ class Solution:
 
 * `Code Design`:
 
-```java
-
-
+```python
+class Solution(object):
+    def findDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        m = 0
+        ans = []
+        for num in nums:
+            if (1 << num) & m != 0:
+                ans.append(num)
+            else:
+                m = m | (1 << num)
+        return ans
 ```
 
 ## Reference2
