@@ -4,6 +4,55 @@
 
 ### Method 1
 
+* `Time Complexity`: worst case O(n)
+* `Space Complexity`: O(1)
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
+
+1. brute force: from left to right, check length 2, then check length 4, then check length 6, ...we iterate from left to right, and for every nums[i], we expand sliding window size and check if the substring qualify.
+
+![128](/Image/128.png)
+
+### Code1
+
+* `Code Design`:
+
+```python
+class Solution(object):
+    def countBinarySubstrings(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        if len(s) < 2:
+            return 0
+        count = 0
+        for i in range(0, len(s) - 1):
+            count += self.howMany(i, s)
+        return count
+
+    def howMany(self, l, s):
+        r = l + 1
+        mr = r
+        ml = l
+        count = 0
+        while l >= 0 and r < len(s):
+            if s[l] == s[ml] and s[r] == s[mr] and s[ml] != s[mr]:
+                count += 1
+                l -= 1
+                r += 1
+            else:
+                break
+        return count
+```
+
+## Reference1
+
+----------------------
+
+### Method 2
+
 * `Time Complexity`: O(n)
 * `Space Complexity`: O(n)
 * `Intuition`:
@@ -17,7 +66,7 @@ brute force: iterate from left to right, and for every nums[i], we expand slidin
 ->
 ![121](../../Image/121.png)
 
-### Code1
+### Code2
 
 * `Code Design`:
 
