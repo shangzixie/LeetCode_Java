@@ -14,8 +14,6 @@ same to [First_Missing_Positive](Tricky/First_Missing_Positive)
 
 ### Code1
 
-
-
 * `Code Design`:
 
 ```python
