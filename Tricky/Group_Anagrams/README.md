@@ -138,6 +138,17 @@ var groupAnagrams = function(strs) {
 };
 ```
 
+for an array: `["eat","tea","tan","ate","nat","bat"]`, key is
+
+```
+a1e1t1
+a1e1t1
+a1n1t1
+a1e1t1
+a1n1t1
+a1b1t1
+```
+
 ## Reference
 
 [LeetCode Discussion](https://leetcode.com/problems/group-anagrams/discuss/19176/Share-my-short-JAVA-solution)

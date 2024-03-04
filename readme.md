@@ -145,6 +145,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Contiguous_Array](Prefix_Sum/Contiguous_Array)
 * [Find_Pivot_Index](Prefix_Sum/Find_Pivot_Index)
 * [Range_Sum_Query_2D_Immutable](Prefix_Sum/Range_Sum_Query_2D_Immutable)
+* [Can_Make_Palindrome_from_Substring](Prime_Sum/Can_Make_Palindrome_from_Substring)
 
 ## 10. [Recursion/DFS](DFS)
 
