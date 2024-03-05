@@ -149,6 +149,13 @@ All my Leetcode answer, but removing all easy questions.
 
 ## 10. [Recursion/DFS](DFS)
 
+### [Combine_and_Permutaion](DFS/Combine_and_Permutaion)
+
+combine:
+
+* [Subsets](DFS/Combine_and_Permutaion/Subsets)
+
+### Other DFS
 * [Binary_Search_Tree_Iterator](DFS/Binary_Search_Tree_Iterator)
 * [Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal](DFS/Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal)
 * [Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal](DFS/Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal)
