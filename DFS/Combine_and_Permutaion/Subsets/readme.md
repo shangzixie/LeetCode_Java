@@ -42,3 +42,44 @@ class Solution {
 ```
 
 ## Reference1
+
+----------------------
+
+### Method 2
+
+* `Time Complexity`:
+* `Space Complexity`:
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
+
+![130](/Image/130.png)
+
+the coding format is suitable for combination and permutation
+
+### Code2
+
+* `Code Design`:
+
+```java
+
+class Solution {
+    public List<List<Integer>> ans = new ArrayList<List<Integer>>();
+
+    public List<List<Integer>> subsets(int[] nums) {
+        dfs(nums, 0, new ArrayList<Integer>());
+        return ans;
+    }
+
+    public void dfs(int[] nums, int startIndex, ArrayList<Integer> subArray) {
+        ans.add(new ArrayList<Integer>(subArray));
+        for (int i = startIndex; i < nums.length; i++) {
+            subArray.add(nums[i]);
+            dfs(nums, i + 1, subArray);
+            subArray.remove(subArray.size() - 1);
+        }
+    }
+}
+```
+
+## Reference2
