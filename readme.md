@@ -50,6 +50,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Palindrome_Partitioning_II](Dynamic_Programming/Palindrome_Partitioning_II)
 * [Unique_Binary_Search_Trees](Dynamic_Programming/Unique_Binary_Search_Trees)
 * [Palindromic_Substrings](Dynamic_Programming/Palindromic_Substrings)
+* [Coin Change](Dynamic_Programming/Coin_Change)
 
 `Double Sequence Problem (双序列）`
 
@@ -156,6 +157,7 @@ combine:
 * [Subsets](DFS/Combine_and_Permutaion/Subsets)
 
 ### Other DFS
+
 * [Binary_Search_Tree_Iterator](DFS/Binary_Search_Tree_Iterator)
 * [Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal](DFS/Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal)
 * [Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal](DFS/Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal)
