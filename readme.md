@@ -225,6 +225,7 @@ combine:
 * [Search_a_2D_Matrix](Binary_Search/Search_a_2D_Matrix)
 * [Search_a_2D_Matrix_II](Binary_Search/Search_a_2D_Matrix_II)
 * [Pour_Water](Tricky/Pour_Water)
+* [Orderly_Queue](Tricky/Orderly_Queue)
 
 ## 12. Stack
 
