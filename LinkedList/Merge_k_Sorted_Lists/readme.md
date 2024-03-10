@@ -83,6 +83,35 @@ class Solution {
 }
 ```
 
+```python
+import heapq
+class Solution(object):
+    def mergeKLists(self, lists):
+        """
+        :type lists: List[ListNode]
+        :rtype: ListNode
+        """
+        """
+        [[1,4,5],[1,3,4],[2,6]]
+                   cur
+        """
+        heap = []
+        for i in range(len(lists)):
+            head = lists[i]
+            while head:
+                heapq.heappush(heap, (head.val, head))
+                head = head.next
+
+        dummy = ListNode()
+        cur = dummy
+        while len(heap) > 0:
+           _, minNode = heapq.heappop(heap)
+           cur.next = minNode
+           cur = cur.next
+        cur.next = None
+        return dummy.next
+```
+
 ### Method 3
 
 合并两条有序链表 — 递归
@@ -127,12 +156,11 @@ private ListNode merge2Lists(ListNode l1, ListNode l2) {
 }
 ```
 
-两两合并对 1 进行优化，时间复杂度：O(NlogK)
-时间复杂度分析：K 条链表的总结点数是 N，平均每条链表有 N/K 个节点，因此合并两条链表的时间复杂度是 O(N/K)。从 K 条链表开始两两合并成 1 条链表，因此每条链表都会被合并 logK 次，因此 K 条链表会被合并 `K * logK` 次，因此总共的时间复杂度是 `K * logK * N/K` 即 `O（NlogK)`
-
 下面分别贴出「两两合并」的「递归」 和 「迭代」两种实现 ：
 
 两两合并 - 迭代
+
+假设总共`k`个链表，每个链表的平均长度为`n`, 第一次合并两条链表的时间复杂度是`n + n = 2n`, 第二次合并两条链表的时间复杂度是`2n + n = 3n`, 第三次是 `3n + n = 4n` ....第k次合并是`kn + n`, 所以等差数列求和公式 `(2n + kn)k / 2 ≈ k^2 * n`，所以时间复杂度是`O(k^2 * n)`。
 
 ```java
 class Solution {
@@ -178,7 +206,7 @@ class Solution {
 
         return merge2Lists(l1, l2);
     }
-
+}
 ```
 
 ## Reference
