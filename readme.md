@@ -50,7 +50,8 @@ All my Leetcode answer, but removing all easy questions.
 * [Palindrome_Partitioning_II](Dynamic_Programming/Palindrome_Partitioning_II)
 * [Unique_Binary_Search_Trees](Dynamic_Programming/Unique_Binary_Search_Trees)
 * [Palindromic_Substrings](Dynamic_Programming/Palindromic_Substrings)
-* [Coin Change](Dynamic_Programming/Coin_Change)
+* [Coin_Change](Dynamic_Programming/Coin_Change)
+* [Word_Break](Dynamic_Programming/Word_Break)
 
 `Double Sequence Problem (双序列）`
 
@@ -292,6 +293,10 @@ combine:
 ## 16. [Heap](heap/)
 
 * [Kth_Largest_Element_in_an_Array](heap/Kth_Largest_Element_in_an_Array)
+
+## 17. [Trie](Trie/)
+
+* [Implement_Trie](Trie/Implement_Trie)
 
 ## Weekly Contest
 
