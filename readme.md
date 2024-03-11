@@ -9,7 +9,7 @@ All my Leetcode answer, but removing all easy questions.
 * [transfer_2d_array_to_1d_array](skills/transfer_2d_array_to_1d_array)
 * [loop_invariant](skills/loop_invariant)
 
-## 1. BFS/Topological
+## 1. BFS
 
 * [Number_of_Island](BFS/Number_of_Island)
 * [Clone_Graph](BFS/Clone_Graph)
@@ -297,6 +297,11 @@ combine:
 ## 17. [Trie](Trie/)
 
 * [Implement_Trie](Trie/Implement_Trie)
+
+## 18. [Topological Graph](Topological_Graph/)
+
+* [Course_Schedule](Topological_Graph/Course_Schedule)
+* [Number_of_Island](Topological_Graph/Number_of_Island)
 
 ## Weekly Contest
 
