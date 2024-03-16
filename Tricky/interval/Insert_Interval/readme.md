@@ -2,13 +2,14 @@
 
 ## Methods
 
-this question is the hard version of [Merge_Intervals](/Tricky/Merge_Intervals/)
 
 ### Method 1
 
 * `Time Complexity`: O(n)
 * `Intuition`: find an appropriate position to insert the `newInterval`, then merge them.
 * `Algorithm`:
+
+you need read [basic interval](/Tricky/interval/readme.md) first
 
 If we discuss it in categories, we will become very anxious. There are too many cases. So we just handle overlapping cases:
 
