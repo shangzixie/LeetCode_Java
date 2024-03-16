@@ -1,24 +1,32 @@
+class TreeNode(object):
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 class Solution(object):
-    def merge(self, intervals):
+    def zigzagLevelOrder(self, root):
         """
-        :type intervals: List[List[int]]
+        :type root: TreeNode
         :rtype: List[List[int]]
         """
-        intervals = sorted(intervals, key=lambda x: x[0])
+        level = []
+        queue = [root]
         ans = []
-        print(intervals)
-        start = intervals[0][0]
-        end = intervals[0][1]
-        for i in range(0, len(intervals)):
-            if intervals[i][0] <= end:
-                end = max(end, intervals[i][1])
-            else:
-                ans.append([start, end])
-                start = intervals[i][0]
-                end = intervals[i][1]
-        ans.append([start, end])
+        while len(queue) > 0:
+            for _ in range(len(queue)):
+                node = queue.pop(0)
+                level.append(node.val)
+                if node.left is not None:
+                    queue.append(node.left)
+                if node.right is not None:
+                    queue.append(node.right)
+            ans.append(level)
+            level = []
         return ans
 
+root = TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))
 
-s = Solution()
-s.merge([[1,4],[0,4]])
+solution =Solution()
+a = solution.zigzagLevelOrder(root)
+print(a)
