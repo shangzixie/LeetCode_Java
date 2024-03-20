@@ -6,9 +6,19 @@
 
 ### Method 1
 
-the point is which data used recently, its priority is the highest.
+`DoubleLinkedList + map`
 
-so use: `DoubleLinkedList + map`
+in double linked list, the head is old data, and the tail is new data. 
+
+when we get a data, we need to move it to tail, meaning the data is the most recently accessed.
+
+when we need to delete a data, we need to delete the head, because the head data is the most least recently accessed.
+
+```
+dummy -> 1 -> 2 -> tail
+  |                 |
+ old data        new data
+```
 
 ### Algorithm
 
