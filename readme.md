@@ -314,6 +314,7 @@ combine:
 * [Validate_Binary_Search_Tree](DFS/Validate_Binary_Search_Tree/)
 * [Inorder_Successor_In_BST](DFS/Inorder_Successor_In_BST/)
 * [Inorder_Successor_In_BST_II](DFS/Inorder_Successor_In_BST_II/)
+* [Recover_Binary_Search_Tree](DFS/Recover_Binary_Search_Tree)
 
 ## Weekly Contest
 
