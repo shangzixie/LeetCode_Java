@@ -299,9 +299,9 @@ combine:
 
 * [Kth_Largest_Element_in_an_Array](heap/Kth_Largest_Element_in_an_Array/)
 
-## 17. [Trie](Trie/)
+## 17. [Trie](trie/)
 
-* [Implement_Trie](Trie/Implement_Trie/)
+* [Implement_Trie](trie/Implement_Trie/)
 
 ## 18. [Topological Graph](Topological_Graph/)
 
