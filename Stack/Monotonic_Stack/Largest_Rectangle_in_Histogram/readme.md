@@ -107,7 +107,7 @@ class solution {
             return 0;
         }
         //求每个柱子的左边第一个小的柱子的下标
-        int[] leftLessMin = new int[heights.length]; // leftLess[j] denotes the index smaller than height[i]
+        int[] leftLessMin = new int[heights.length]; // leftLess[i] denotes the index smaller than height[i]
         leftLessMin[0] = -1;
         for (int i = 1; i < heights.length; i++) {
             int l = i - 1;

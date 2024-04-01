@@ -1,104 +1,59 @@
+class DequeWithStacks:
+    def __init__(self):
+        self.stack1 = []  # Front operations
+        self.stack2 = []  # Back operations
 
-"""
-Problem Statement
-Imagine a file in the following fixed format:
+    def pushFront(self, value):
+        self.stack1.append(value)
 
-<url><white_space><long value>
+    def pushBack(self, value):
+        self.stack2.append(value)
 
-e.g.
+    def popFront(self):
+        if not self.stack1:
+            while self.stack2:
+                self.stack1.append(self.stack2.pop())
+        if not self.stack1:
+            raise IndexError("Pop from an empty deque")
+        return self.stack1.pop()
 
-http://api.tech.com/item/121345 9
-http://api.tech.com/item/122345 350
-http://api.tech.com/item/123345 25
-http://api.tech.com/item/124345 231
-http://api.tech.com/item/125345 111
-.
-.
-.
-
-Write a program that reads from 'stdin' the absolute path of a file expected
-to be in this format and outputs a list of the urls associated with the 10
-largest values in the right-most column. For example, given the input data
-above if the question were to output the 2 largest values the output would
-be:
-
-http://api.tech.com/item/122345
-http://api.tech.com/item/124345
-
-Your solution should take into account extremely large files.
-
-topK: 1. max heap: pop() k
-sort: arr, sort
-binary search
-"""
-import heapq # min heap, max heap
-# (size, url)
-class LoadBalance:
-    def getTopK(self, arr, k):
-        sizeToURLs = {} # size : [url, url]
-        heap = []
-        for str in arr:
-            s = str.split(' ') # [url, size]
-            if len(s) < 2:
-                continue
-            if s[1] in sizeToURLs:
-                sizeToURLs[s[1]].append(s[0])
-            else:
-                sizeToURLs[s[1]] = [s[0]]
-            heapq.heappush(heap, float(s[1]) * -1)
-        ans = []
-        for _ in range(k):
-            s = heapq.heappop()
-            s *= -1
-            urls = sizeToURLs[s]
-            for url in urls:
-                if len(ans) >= k:
-                    break
-                ans.append(url)
-        return ans
+    def popBack(self):
+        if not self.stack2:
+            while self.stack1:
+                self.stack2.append(self.stack1.pop())
+        if not self.stack2:
+            raise IndexError("Pop from an empty deque")
+        return self.stack2.pop()
 
 
-# arr = ['http://api.tech.com/item/121345 9', 'http://api.tech.com/item/122345 350']
-# min heap, max heap
 
-class LoadBalance1:
-    def getTopK(self, arr, k):
-        heap = []
-        for str in arr:
-            s = str.split(' ')  # [url, size]
-            if len(s) < 2:
-                continue
-            # heap = [(9, url), (-350, url)]
-            heapq.heappush(heap, (float(s[1]) * -1, s[0]))
-        ans = []
-        for _ in range(k):
-            s = heapq.heappop()
-            url = s[1]
-            ans.append(url)
-        return ans
+# Example usage
+deque = DequeWithStacks()
+deque.pushFront(5)
+deque.pushFront(4)
+deque.pushFront(3)
+deque.pushFront(2)
+deque.pushFront(1)
+deque.pushBack(6)
+deque.pushBack(7)
+deque.pushBack(8)
+deque.pushBack(9)
+# print(deque.popBack())
+# print(deque.popBack())
+# print(deque.popBack())
+# print(deque.popBack())
+# print(deque.popBack())
+# print(deque.popBack())
+# print(deque.popBack())
+# print(deque.popBack())
+# print(deque.popBack())
 
-
-class LoadBalance1:
-    self.ans = []
-    def getCurrentTopK(self, arr, k):
-        ans = self.getTopK(arr, self.ans, k)
-        self.ans = ans
-    def getTopK(self, arr1, arr2, k):
-        for str in arr1:
-            s = str.split(' ')  # [url, size]
-            if len(s) < 2:
-                continue
-            # heap = [(9, url), (-350, url)]
-            heapq.heappush(self.heap, (float(s[1]) * -1, s[0]))
-        for str in arr2:
-            s = str.split(' ')  # [url, size]
-            if len(s) < 2:
-                continue
-            # heap = [(9, url), (-350, url)]
-            heapq.heappush(self.heap, (float(s[1]) * -1, s[0]))
-        self.ans = []
-        for _ in range(k):
-            s = heapq.heappop(self.heap)
-            url = s[1]
-            ans.append(url)
-        return self.ans
+print(deque.popFront())
+print(deque.popFront())
+print(deque.popFront())
+print(deque.popFront())
+print(deque.popFront())
+print(deque.popFront())
+print(deque.popFront())
+print(deque.popFront())
+print(deque.popFront())
