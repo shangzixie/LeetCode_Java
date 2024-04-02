@@ -160,6 +160,10 @@ combine:
 
 * [Subsets](DFS/Combine_and_Permutaion/Subsets/)
 
+Recursion:
+
+* [Restore IP Addresses](DFS/Restore_IP_Addresses/)
+
 ### Other DFS
 
 * [Binary_Search_Tree_Iterator](DFS/Binary_Search_Tree_Iterator/)

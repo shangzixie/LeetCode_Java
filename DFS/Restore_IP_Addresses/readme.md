@@ -10,6 +10,8 @@
 * `Key Points`:
 * `Algorithm`:
 
+![157](/Image/157.png)
+
 和[Palindrome_Partitioning](DFS/Palindrome_Partitioning/readme.md)类似, 但是需要注意几个点:
 
 1. 先用一个数组记录path, 最后再拼接
