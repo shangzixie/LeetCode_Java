@@ -161,6 +161,10 @@ combine:
 * [Subsets](DFS/Combine_and_Permutaion/Subsets/)
 * [Subsets II](DFS/Combine_and_Permutaion/Subsets_ii/)
 
+Permutations:
+
+* [Permutations](DFS/Combine_and_Permutaion/Permutations/)
+
 Recursion:
 
 * [Restore IP Addresses](DFS/Restore_IP_Addresses/)
