@@ -4,7 +4,7 @@
 
 ### Method 1
 
-* `Time Complexity`:
+* `Time Complexity`: O(n)
 * `Space Complexity`:
 * `Intuition`: brute force: 遍历每一个元素num, 对每个元素num, 去判断num + 1, num + 2...等是否在数组中 -> 优化
 * `Key Points`:

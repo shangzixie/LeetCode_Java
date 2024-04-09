@@ -1,4 +1,4 @@
-# [LeetCode 147. Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)
+# [LeetCode 147. Insertion Sort List](https://leetcode.cn/problems/insertion-sort-list/)
 
 ## Methods
 
