@@ -1,4 +1,4 @@
-# [LeetCode https://www.youtube.com/watch?v=670Gn4e89B8](https://leetcode.cn/problems/is-graph-bipartite/description/)
+# [LeetCode 785. Is Graph Bipartite?](https://leetcode.cn/problems/is-graph-bipartite/description/)
 
 ## Methods
 
