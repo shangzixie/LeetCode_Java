@@ -18,6 +18,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Binary_Tree_Zigzag_Level_Order_Traversal](BFS/Binary_Tree_Zigzag_Level_Order_Traversal/)
 * [Is_Graph_Bipartite](BFS/Is_Graph_Bipartite/)
 * [Possible_Bipartition](BFS/Possible_Bipartition/)
+* [Check_Completeness_of_a_Binary_Tree](BFS/Check_Completeness_of_a_Binary_Tree/)
 
 ## 2. [Graph](Graph/)
 
