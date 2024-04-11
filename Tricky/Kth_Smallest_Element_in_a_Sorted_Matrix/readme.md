@@ -57,7 +57,7 @@ class Solution(object):
 
 ### Method 2
 
-* `Time Complexity`: 
+* `Time Complexity`:
 * `Space Complexity`:
 * `Intuition`:
 * `Key Points`:
@@ -65,7 +65,7 @@ class Solution(object):
 
 最小的值为左上角, 最大的值为右下角, 是否可以以此为基础进行二分查找呢? 所以先写下二分查找的模板. 这里面我们定义一个函数`equalOrSmaller()`, 用来计算比当前中间值`mid`小于等于的数有多少个, 如果它小于`k`, 说明第`k`小的数在`mid`右边, 我们可以放弃左半部分. 如果它大于等于`k`, 说明第`k`小的数在`mid`左边, 我们可以放弃右半部分.
 
-这里的关键是如何实现`equalOrSmaller()`?
+这里的关键是如何实现`equalOrSmaller()`? 这里建议先做题[240. Search a 2D Matrix II](https://leetcode.cn/problems/search-a-2d-matrix-ii/description/), 是一样的思路
 
 因为矩阵每行每列都递增, 那么不大于`mid`的数, 肯定分布在矩阵的左上角. 例如下图, `mid = 8`:
 
