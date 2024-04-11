@@ -246,6 +246,7 @@ Recursion:
 * [Pour_Water](Tricky/Pour_Water/)
 * [Orderly_Queue](Tricky/Orderly_Queue/)
 * [K-th_Smallest_in_Lexicographical_Order](Tricky/K-th_Smallest_in_Lexicographical_Order/)
+* [Kth_Smallest_Element_in_a_Sorted_Matrix](Tricky/Kth_Smallest_Element_in_a_Sorted_Matrix/)
 
 ## 12. Stack
 
