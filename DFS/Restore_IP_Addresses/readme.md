@@ -38,13 +38,13 @@ class Solution:
         for length in range(1, 4):
             subString = s[startIndex: startIndex + length]
             if startIndex + length > len(s) + 1:
-                continue
+                return
             if not subString:
-                continue
+                return
             if len(subString) > 1 and subString[0] == '0':
-                continue
+                return
             if int(subString) > 255:
-                continue
+                return
             path.append(subString)
             self.dfs(s, path, startIndex + length)
             path.pop()
