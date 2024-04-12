@@ -163,6 +163,7 @@ combine:
 
 * [Subsets](DFS/Combine_and_Permutaion/Subsets/)
 * [Subsets II](DFS/Combine_and_Permutaion/Subsets_ii/)
+* [Factor Combinations](DFS/Combine_and_Permutaion/Factor_Combinations/) - hard to think
 
 Permutations:
 
