@@ -135,7 +135,7 @@ There are only three cases for a string:
 2. '(' are less than ')'
 3. '(' and ')' are the same
 
-Now, when you scan from left to right, you can only find the correct maxLength for `2` and `3`, because if it is case `1`, where '(' are more than ')' (e.g., "((()"), then `left` is always greater than `right` and `maxLength` does not have the chance to be updated.
+Now, when you scan from left to right, you can only find the correct maxLength for `2` and `3`, because if it is case `1`, where '(' are more than ')' e.g., `"(()"`, then `left` is always greater than `right` and `maxLength` does not have the chance to be updated.
 
 Similarly, when you scan from right to left, you can only find the `maxLength` for cases `1` and `3`.
 
