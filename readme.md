@@ -19,6 +19,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Is_Graph_Bipartite](BFS/Is_Graph_Bipartite/)
 * [Possible_Bipartition](BFS/Possible_Bipartition/)
 * [Check_Completeness_of_a_Binary_Tree](BFS/Check_Completeness_of_a_Binary_Tree/)
+* [The Maze](BFS/The_Maze/)
 
 ## 2. [Graph](Graph/)
 
