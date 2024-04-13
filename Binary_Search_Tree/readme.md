@@ -10,6 +10,39 @@
 
 ## 应用
 
+### 应用1
+
+如何中序遍历一个BST:
+
+```python
+# dfs
+
+def dfs(self, root):
+    self.dfs(root.left)
+    print(root.val)
+    self.dfs(root.right)
+
+# stack
+def dfs(self, root):
+    """
+    :type root: TreeNode
+    :rtype: bool
+    """
+    stack = []
+    cur = root
+    while stack or cur:
+        while cur:
+            stack.append(cur)
+            cur = cur.left
+        cur = stack.pop()
+        print(cur.val)
+        cur = cur.right
+    return False
+```
+
+所以根据中序遍历的性质, 可做题[Validate Binary Search Tree](DFS/Validate_Binary_Search_Tree/)
+
+### 应用2
 根据上图BST的性质, 一个二叉树的节点, 左子树的值都小于它, 右子树的值都大于它, 例如上图节点root值是8, 左边所有值都比他小, 右边都比8大. 所以对于[Inorder_Successor_In_BST](/DFS/Inorder_Successor_In_BST/)这道题, 可以从上往下找:
 
 1. 从根节点开始，每到达一个节点就比较节点的值和节点p的值

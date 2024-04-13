@@ -26,19 +26,22 @@
 class Solution:
     def isValidBST(self, root: TreeNode) -> bool:
         self.pre = float('-inf')
-        return self.dfs(root)
+        self.ans = True
+        self.dfs(root)
+        return self.ans
 
-    def dfs(self, root):
-        if root is None:
-            return True
+    def dfs(self, node):
+        if self.ans is False:
+            return
+        if node is None:
+            return
+        self.dfs(node.left)
 
-        left = self.dfs(root.left)
+        if self.lastNodeVal >= node.val:
+            self.ans = False
+        self.lastNodeVal = node.val
 
-        if root.val <= self.pre: return False
-        self.pre = root.val
-
-        right = self.dfs(root.right)
-        return left and right
+        self.dfs(node.right)
 ```
 
 ## Reference1
@@ -86,22 +89,24 @@ class Solution:
 after optimized
 
 ```python
-class Solution:
-    def isValidBST(self, root: TreeNode) -> bool:
-        stack, prev = [], float('-inf')
-
-        # 初始状态stack本来就是空
-        while stack or root:
-            while root:
-                stack.append(root)
-                root = root.left
-            root = stack.pop()
-            # 如果中序遍历得到的节点的值小于等于前一个 inorder，说明不是二叉搜索树
-            if root.val <= prev:
+class Solution(object):
+    def isValidBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        stack = []
+        cur = root
+        lastNodeVal = float('-inf')
+        while stack or cur:
+            while cur:
+                stack.append(cur)
+                cur = cur.left
+            cur = stack.pop()
+            if cur.val <= lastNodeVal:
                 return False
-            prev = root.val
-            root = root.right
-
+            lastNodeVal = cur.val
+            cur = cur.right
         return True
 ```
 
