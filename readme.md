@@ -177,7 +177,6 @@ Recursion:
 
 ### Other DFS
 
-* [Binary Search Tree Iterator](DFS/Binary_Search_Tree_Iterator/)
 * [Construct Binary Tree from Inorder and Postorder Traversal](DFS/Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal/)
 * [Construct Binary Tree from Preorder and Inorder Traversal](DFS/Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal/)
 * [Convert Sorted Array to Binary Search Tree](DFS/Convert_Sorted_Array_to_Binary_Search_Tree/)
@@ -195,7 +194,6 @@ Recursion:
 * [Populating Next Right Pointers in Each Node II](DFS/Populating_Next_Right_Pointers_in_Each_Node_II/)
 * [Surrounded Regions](DFS/Surrounded_Regions/)
 * [Symmetric Tree](DFS/Symmetric_Tree/)
-* [Unique Binary Search Tress II](DFS/Unique_Binary_Search_Tress_II/)
 * [Generate Parentheses](DFS/Generate_Parentheses/)
 * [Sudoku Solver](DFS/Sudoku_Solver/)
 * [Reorder Routes to Make All Paths Lead to the City Zero](DFS/Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero/)
@@ -332,6 +330,9 @@ Recursion:
 * [Inorder Successor In BST](DFS/Inorder_Successor_In_BST/)
 * [Inorder Successor In BST II](DFS/Inorder_Successor_In_BST_II/)
 * [Recover Binary Search Tree](DFS/Recover_Binary_Search_Tree)
+* [Convert Sorted Array to Binary Search Tree](DFS/Convert_Sorted_Array_to_Binary_Search_Tree/)
+* [Convert Sorted List to Binary Search Tree](DFS/Convert_Sorted_List_to_Binary_Search_Tree/)
+* [Unique Binary Search Trees II](DFS/Unique_Binary_Search_Tress_II/)
 
 ## Weekly Contest
 
