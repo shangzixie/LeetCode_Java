@@ -173,6 +173,7 @@ Permutations:
 Recursion:
 
 * [Restore IP Addresses](DFS/Restore_IP_Addresses/)
+* [Generate Parentheses](DFS/Generate_Parentheses)
 
 ### Other DFS
 
