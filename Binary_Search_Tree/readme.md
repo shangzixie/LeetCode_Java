@@ -90,3 +90,40 @@ var inorderSuccessor = function(root, p) {
 怎么理解情况2呢? 要找比p节点大的后继节点, 没有右子树的情况, 那就要向上找. 向上一层, 分两种情况:
 
 ![149](/Image/149.png)
+
+### 应用3
+
+convert a sorted array to a height-balanced binary search tree.
+
+[108. Convert Sorted Array to Binary Search Tree](/DFS/Convert_Sorted_Array_to_Binary_Search_Tree/)
+
+基本模板
+
+```python
+class Solution(object):
+    def sortedArrayToBST(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: TreeNode
+        """
+        return self.dfs(nums, 0, len(nums) - 1)
+    def dfs(self, nums, left, right):
+        if left > right:
+            return None
+        if left == right:
+            return TreeNode(nums[left])
+
+        mid = (left + right) // 2
+        root = TreeNode(nums[mid])
+        left = self.dfs(nums, left, mid - 1)
+        right = self.dfs(nums, mid + 1, right)
+        root.left = left
+        root.right = right
+        return root
+```
+
+从这道基础题, 可以延伸出来两道题
+
+[109. Convert Sorted List to Binary Search Tree](/DFS/Convert_Sorted_List_to_Binary_Search_Tree/)
+
+[1382. Balance a Binary Search Tree](https://leetcode.cn/problems/balance-a-binary-search-tree/description/)
