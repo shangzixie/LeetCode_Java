@@ -248,6 +248,7 @@ Recursion:
 * [Orderly Queue](Tricky/Orderly_Queue/)
 * [K-th Smallest in Lexicographical Order](Tricky/K-th_Smallest_in_Lexicographical_Order/)
 * [Kth Smallest Element in a Sorted Matrix](Tricky/Kth_Smallest_Element_in_a_Sorted_Matrix/)
+* [Merge Sorted Array](Tricky/Merge_Sorted_Array/)
 
 ## 12. Stack
 
@@ -317,6 +318,7 @@ Recursion:
 ## 17. [Trie](trie/)
 
 * [Implement Trie](trie/Implement_Trie/)
+* [Replace Words](trie/Replace_Words/)
 
 ## 18. [Topological Graph](Topological_Graph/)
 

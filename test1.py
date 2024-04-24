@@ -1,21 +1,38 @@
 class Solution:
     """
-    @param s: a string
-    @return: return a integer
+    input: [[1,3], [2,4], [4,6]]
+                     i    
+                           j
+    output: how many 
+
+    {point: distance}
+    distance count > 2:
+        ans += 1
+    p: distance, point
+    point: {distance:[points]}
+    visited = []
+    {distance: count} -> C
+
     """
-    def longestValidParentheses(self, s):
-        stack = [-1]
-        maxlen = 0
-        for i in range(len(s)):
-            if s[i] == '(':
-                stack.append(i)
-            else:
-                j = stack.pop()
-                if s[j] ==")" or j == -1:
-                    stack.append(i)
-                elif s[j] == "(":
-                    maxlen = max(maxlen, i - stack[-1])
-        return maxlen
+    def getNums(self, nums):
+        distanceToCount = {} # key is distance , value count
+        for i in range(len(nums)):
+            for j in range(len(nums)):
+                if i == j:
+                    continue
+                distanceToCount = {}
+                x1, y1 = nums[i][0], nums[i][1]
+                x2, y2 = nums[j][0], nums[j][1]
+                distance = (y2 - y1)^2 + (x2 - x1)^2
+                if distance in distanceToCount:
+                    distanceToCount[distance] += 1
+                else:
+                    distanceToCount[distance] = 1
+            ans = 0
+            for dis in distanceToCount:
+                count = distanceToCount[dis]
+                ans += count * (count - 1) / 2
+        return ans
 
 
 so = Solution()
