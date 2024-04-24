@@ -9,38 +9,37 @@
 * `Key Points`:
 * `Algorithm`:
 
+两次翻转即可，第一次全局翻转，第二次翻转各个单词
+
 ### Code
 
 * `Code Design`:
 
 ```java
- private void reverse(char[] s, int start, int end) {
-        while (start < end) {
-            char tmp = s[start];
-            s[start] = s[end];
-            s[end] = tmp;
-            start++;
-            end--;
+func reverseWords(s []byte)  {
+    if len(s)  <= 1 {
+        return
+    }
+    reverse(s, 0, len(s) - 1)
+    left := 0
+    for i, ch := range s {
+        if ch == byte(' ') {
+            right := i - 1
+            reverse(s, left, right)
+            left = i + 1
         }
     }
+    // 翻转最后一个单词
+    reverse(s, left, len(s) - 1)
+}
 
-    public void reverseWords(char[] s) {
-        // 两次翻转即可，第一次全局翻转，第二次翻转各个单词
-        int len = s.length;
-        reverse(s, 0, len - 1);
-
-        int start = 0;
-        for (int i = 0; i < len; i++) {
-            if (s[i] == ' ') {
-                // 翻转前面的单词
-                reverse(s, start, i-1);
-                start = i + 1;
-            }
-        }
-
-        // 翻转最后一个单词
-        reverse(s, start, len - 1);
+func reverse(s []byte, left int, right int) {
+    for left < right {
+        s[left], s[right] = s[right], s[left]
+        left += 1
+        right -= 1
     }
+}
 ```
 
 ### Method 2
