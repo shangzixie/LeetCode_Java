@@ -112,11 +112,11 @@ class Solution:
         for i in range(len(nums)):
             minNum = min(nums[i], minNum)
 
-        bucket = {}
+        bucket = {} # key is the bucket index, value is num
         for i in range(len(nums)):
             bucketIndex = (nums[i] - minNum) // t
             # clear outside window num
-            if i >= k + 1 and (nums[i - k - 1] - minNum) // t in bucket:
+            if i - k - 1 >= 0 and (nums[i - k - 1] - minNum) // t in bucket:
                 del bucket[(nums[i - k - 1] - minNum) // t]
             # build bucket and check ans
             if bucketIndex in bucket:
@@ -132,6 +132,12 @@ class Solution:
 
     def whenTIsZero(self, nums, k, t):
         window = set()
+        if k >= len(nums):
+            for i in range(len(nums)):
+                if nums[i] in window: return True
+                window.add(nums[i])
+            return False
+
         for i in range(k + 1):
             if nums[i] in window: return True
             window.add(nums[i])
