@@ -9,8 +9,7 @@
 * `Intuition`: use constant space complexity, and the total numbers is n. so we could use the input array as set. same to [Find_All_Duplicates_in_an_Array](Tricky/Find_All_Duplicates_in_an_Array)
 * `Key Points`:
 * `Algorithm`:
-brute force: use a Set to store all cell. Then from 1 ~ n to look for which
-element is not in Set, n is the length of the array
+brute force: use a Set to store all cell. Then from 1 ~ n to look for which element is not in Set, n is the length of the array
 
 How to optimize it to constant space complexity? use "index and negtive" to
 replace Set.
