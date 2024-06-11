@@ -1,5 +1,7 @@
 # sort
 
+![6](/Image/6.png)
+
 ## 1. merge sort
 
 key word is MERGE, which merges two sorted arrays using double pointers.
