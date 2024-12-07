@@ -19,35 +19,28 @@ two variable `left` and `right` to record left bracket and right bracket
 ### Code
 
 ```python
-from typing import List
+class Solution(object):
+    def generateParenthesis(self, n):
+        """
+        :type n: int
+        :rtype: List[str]
+        """
+        self.ans = []
+        self.dfs(n, n, "")
+        return self.ans
+    def dfs(self, left, right, subString):
+        if left < 0:
+            return
+        if right < 0:
+            return
+        if left > right:
+            return
+        if left == 0 and right == 0:
+            self.ans.append(subString)
+            return
 
-
-class Solution:
-    def generateParenthesis(self, n: int) -> List[str]:
-
-        res = []
-        cur_str = ''
-
-        def dfs(cur_str, left, right):
-            """
-            :param cur_str: 从根结点到叶子结点的路径字符串
-            :param left: 左括号还可以使用的个数
-            :param right: 右括号还可以使用的个数
-            :return:
-            """
-            if left < 0 or right < 0:
-                return
-            if right < left:
-                return
-            if left == 0 and right == 0:
-                res.append(cur_str)
-                return
-
-            dfs(cur_str + '(', left - 1, right)
-            dfs(cur_str + ')', left, right - 1)
-
-        dfs(cur_str, n, n)
-        return res
+        self.dfs(left - 1, right, subString + "(")
+        self.dfs(left, right - 1, subString + ")")
 ```
 
 ## Reference

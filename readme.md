@@ -174,8 +174,7 @@ Permutations:
 
 Recursion:
 
-* [Restore IP Addresses](DFS/Restore_IP_Addresses/)
-* [Generate Parentheses](DFS/Generate_Parentheses)
+* [Strobogrammatic Number II](/DFS/Recursion/Strobogrammatic_Number_II/readme.md)
 
 ### Other DFS
 
