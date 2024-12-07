@@ -327,7 +327,7 @@ Recursion:
 * [Course Schedule](Topological_Graph/Course_Schedule/)
 * [Number of Island](Topological_Graph/Number_of_Island/)
 
-## 19. [Binary Search Tree](Binary_Search_Tree/)
+## 19. [Binary Search Tree](/Binary_Search_Tree_BST/readme.md)
 
 * [Binary Search Tree Iterator](DFS/Binary_Search_Tree_Iterator/)
 * [Validate Binary Search Tree](DFS/Validate_Binary_Search_Tree/)
