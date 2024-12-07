@@ -16,30 +16,26 @@ time complexity is O(logn ^ 2);
 
 ### Code
 
-```java
-class Solution {
-    public int divide(int dividend, int divisor) {
-        //System.out.println(Integer.MIN_VALUE - 1);
-        //System.out.println(Integer.MAX_VALUE);
-        if (dividend == Integer.MIN_VALUE && divisor == -1){
-            return Integer.MAX_VALUE;
-        }
-        int a = Math.abs(dividend);
-        int b = Math.abs(divisor);
-        int res = 0;
-        while(a - b >= 0){
+```python
+class Solution:
+    def divide(self, dividend: int, divisor: int) -> int:
+        if dividend == -2147483648 and divisor == -1:
+            return 2147483647
+        ans = 0
+        a = abs(dividend)
+        b = abs(divisor)
 
-            int x = 0; // x is power which means 2^x
-            //find the max value of x
-            while( a - (b << 1 << x) >= 0){
-                x++;
-            }
-            a -= b << x; // a = a - b * 2^x
-            res += 1 << x; // res = res + 1 * 2^x
-        }
-        return (dividend >= 0) == (divisor >= 0) ? res :-res;
-    }
-}
+        while a - b >= 0:
+            power = 1
+            while a - (b << power) > 0:
+                power += 1
+            power -= 1
+            a -= (b << power)
+            ans += 1 << power
+        if divisor * dividend > 0:
+            return ans
+        else:
+            return -ans
 ```
 
 ----------------------

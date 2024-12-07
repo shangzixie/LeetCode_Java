@@ -49,7 +49,6 @@ class Solution:
             ans += str(a // b)
             a %= b
         return ans
-
 ```
 
 ## Reference
