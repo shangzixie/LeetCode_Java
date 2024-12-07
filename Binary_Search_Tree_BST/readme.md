@@ -40,7 +40,7 @@ def dfs(self, root):
     return False
 ```
 
-所以根据中序遍历的性质, 可做题[Validate Binary Search Tree](/DFS/Validate_Binary_Search_Tree/)
+所以根据中序遍历的性质, 可做题[Validate Binary Search Tree](/DFS/Validate_Binary_Search_Tree/). 上述模板, 还会演变另一个题目[173. Binary Search Tree Iterator](/Binary_Search_Tree_BST/Binary_Search_Tree_Iterator/readme.md)
 
 ### 应用2
 
