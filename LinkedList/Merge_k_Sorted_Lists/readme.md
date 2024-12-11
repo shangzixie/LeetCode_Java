@@ -163,26 +163,13 @@ private ListNode merge2Lists(ListNode l1, ListNode l2) {
 假设总共`k`个链表，每个链表的平均长度为`n`, 第一次合并两条链表的时间复杂度是`n + n = 2n`, 第二次合并两条链表的时间复杂度是`2n + n = 3n`, 第三次是 `3n + n = 4n` ....第k次合并是`kn + n`, 所以等差数列求和公式 `(2n + kn)k / 2 ≈ k^2 * n`，所以时间复杂度是`O(k^2 * n)`。
 
 ```java
-class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        if (lists.length == 0) {
-            return null;
+        ListNode ans = null;
+        for (int i = 0; i < lists.length; ++i) {
+            ans = mergeTwoLists(ans, lists[i]);
         }
-        int k = lists.length;
-        while (k > 1) {
-            int idx = 0;
-            for (int i = 0; i < k; i += 2) {
-                if (i == k - 1) {
-                    lists[idx++] = lists[i];
-                } else {
-                    lists[idx++] = merge2Lists(lists[i], lists[i + 1]);
-                }
-            }
-            k = idx;
-        }
-        return lists[0];
+        return ans;
     }
-}
 ```
 
 两两合并 - 递归
