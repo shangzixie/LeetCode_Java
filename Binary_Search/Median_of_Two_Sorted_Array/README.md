@@ -75,5 +75,5 @@ public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
 ## Reference1
 
-[youtube](https://www.youtube.com/watch?v=do7ibYtv5nk)
-[blog](https://www.youtube.com/watch?v=do7ibYtv5nk)
+[youtube1](https://www.youtube.com/watch?v=ScCg9v921ns&t=15s)
+[youtube2](https://www.youtube.com/watch?v=do7ibYtv5nk)
