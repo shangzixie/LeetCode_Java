@@ -53,3 +53,12 @@ class Solution:
 ## 模拟竖式乘法
 
 [Multiply_Strings](Math/Multiply_Strings/README.md) 较难, 采用简化版竖式乘法
+
+## 求数组中位数
+
+如果一个sorted数组， 求中位数；其中数组为奇数长度时候，中位数为中间那一个数， 数组为偶数长度时，中位数为中间的两个数和除以2.
+则不用讨论奇偶，以下一个公式可求解
+```pyhton
+n = len(nums)
+median = (nums[(n - 1) // 2] + nums[n // 2]) // 2 
+```
