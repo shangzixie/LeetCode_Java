@@ -24,56 +24,52 @@
 
 * `Code Design`:
 
-```java
-public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int MIN_VALUE = 0x80000000;
+```python
+class Solution:
+    def findMedianSortedArrays(self, nums1, nums2):
+        MIN_VALUE = float('-inf')
+        MAX_VALUE = float('inf')
 
-        int MAX_VALUE = 0x7fffffff;
+        N1 = len(nums1)
+        N2 = len(nums2)
+        
+        if N1 > N2:  # Ensure nums1 is the smaller array
+            return self.findMedianSortedArrays(nums2, nums1)
 
-        int N1 = nums1.length;
-        int N2 = nums2.length;
-        if (N1 > N2) {// 确保N1是短的部分。
-            return findMedianSortedArrays(nums2, nums1);
-        }
+        if N1 == 0:
+            return (nums2[(N2 - 1) // 2] + nums2[N2 // 2]) / 2  # Handle case for an empty nums1
 
-        if (N1 == 0)
-            return ((double) nums2[(N2 - 1) / 2] + (double) nums2[N2 / 2]) / 2; // 不管奇数偶数都成立
-        int size = (N1 + N2);
-        int cutL = 0, cutR = N1;
-        int cut1 = N1 / 2;
-        int cut2 = size / 2 - cut1;
+        size = N1 + N2
+        start, end = 0, N1
 
-        while (cut1 <= N1) {
-            cut1 = (cutR - cutL) / 2 + cutL;
-            cut2 = size / 2 - cut1;
+        cutA = 0 # nums1的cut
+        cutB = 0 # nums2的cut
+        while start <= end:
+            cutA = (start + end) // 2
+            cutB = size // 2 - cutA
 
-            double L1 = (cut1 == 0) ? MIN_VALUE : nums1[cut1 - 1];
-            double L2 = (cut2 == 0) ? MIN_VALUE : nums2[cut2 - 1];
-            double R1 = (cut1 == N1) ? MAX_VALUE : nums1[cut1];
-            double R2 = (cut2 == N2) ? MAX_VALUE : nums2[cut2];
-            if (L1 > R2)
-                cutR = cut1 - 1;
-            else if (L2 > R1)
-                cutL = cut1 + 1;
-            else {// Otherwise, that's the right cut.
-                if (size % 2 == 0) {// 偶数个数的时候
-                    L1 = (L1 > L2 ? L1 : L2);
-                    R1 = (R1 < R2 ? R1 : R2);
-                    return (L1 + R1) / 2;
-                }
+            L1 = MIN_VALUE if cutA == 0 else nums1[cutA - 1]
+            L2 = MIN_VALUE if cutB == 0 else nums2[cutB - 1]
+            R1 = MAX_VALUE if cutA == N1 else nums1[cutA]
+            R2 = MAX_VALUE if cutB == N2 else nums2[cutB]
 
-                else {
-                    R1 = (R1 < R2 ? R1 : R2);
-                    return R1;
-                }
-            }
-        }
-        return -1;
-    }
+            if L1 > R2:
+                end = cutA - 1
+            elif L2 > R1:
+                start = cutA + 1
+            else:  # We have found the correct cut
+                if size % 2 == 0:  # Even total length
+                    L1 = max(L1, L2)
+                    R1 = min(R1, R2)
+                    return (L1 + R1) / 2
+                else:  # Odd total length
+                    R1 = min(R1, R2)
+                    return R1
+        return -1
 
 ```
 
 ## Reference1
 
-[youtube](https://www.youtube.com/watch?v=do7ibYtv5nk)
-[blog](https://www.youtube.com/watch?v=do7ibYtv5nk)
+[youtube1](https://www.youtube.com/watch?v=ScCg9v921ns&t=15s)
+[youtube2](https://www.youtube.com/watch?v=do7ibYtv5nk)
