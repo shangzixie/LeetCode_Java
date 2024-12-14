@@ -27,8 +27,9 @@ All my Leetcode answer, but removing all easy questions.
 
 ### [Union Find](Graph/Union_Find/)
 
-* [Number of Islands II](Graph/Number_of_Islands_II/)
-* [Redundant Connection](Graph/Redundant_Connection/)
+* [Number of Islands II](/Graph/Number_of_Islands_II/)
+* [Redundant Connection](/Graph/Redundant_Connection/)
+* [Graph Valid Tree](/Graph/Graph_Valid_Tree/readme.md)
 
 ## 3. Binary Search
 
