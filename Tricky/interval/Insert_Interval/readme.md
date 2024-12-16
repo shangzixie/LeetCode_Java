@@ -21,6 +21,29 @@ If we discuss it in categories, we will become very anxious. There are too many 
 ### Code
 
 ```python
+class Solution:
+    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:   
+        if len(intervals) == 0:
+            return [newInterval]
+
+        ans = []
+        i = 0
+        while i < len(intervals) and intervals[i][1] < newInterval[0]:
+            ans.append(intervals[i])
+            i += 1
+        start, end = newInterval[0], newInterval[1]
+        while i < len(intervals) and end >= intervals[i][0]:
+            start = min(start, intervals[i][0])
+            end = max(end, intervals[i][1])
+            i += 1
+        ans.append([start, end])
+        while i < len(intervals):
+            ans.append(intervals[i])
+            i += 1
+        return ans
+```
+
+```python
 class Solution(object):
     def insert(self, intervals, newInterval):
         """
