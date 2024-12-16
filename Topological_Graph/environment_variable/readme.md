@@ -1,5 +1,27 @@
-from collections import defaultdict, deque
+# Environment Variable
 
+It's not LeetCode problem. It's a Google interview question.
+
+![170](/Image/170.png)
+
+## Methods
+
+### Method 1
+
+* `Time Complexity`:
+* `Space Complexity`:
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
+
+![171](/Image/171.png)
+
+### Code1
+
+* `Code Design`:
+
+```python
+from collections import defaultdict, deque
 
 def parse_environment(env_list):
     # 解析输入数组为变量和表达式
@@ -13,13 +35,11 @@ def parse_environment(env_list):
         value = parts[1].strip()
         variables[var_name] = value
 
-    # variable = {'VAR1': 'value', 'VAR2': '$VAR1/suffix', 'VAR3': '$VAR2/another', 'VAR4': '$VAR3/$VAR1'}
-
     # 构建依赖图
-    graph = defaultdict(list)  # key is node, values are node that reference it
-    indegree = defaultdict(int)  # {node: indegree}
+    graph = defaultdict(list) # {node: [neighbors]}
+    indegree = defaultdict(int) # {node: indegree}
     values = {}
-    dependencies = defaultdict(set) # key is node, values are the node dependency
+    dependencies = defaultdict(set)
 
     # 遍历所有变量，构建依赖关系图
     for var, expr in variables.items():
@@ -38,10 +58,6 @@ def parse_environment(env_list):
                 dependencies[var].add(dep_var)
             expr = expr[:start_index-1] + expr[end_index:]  # 移除引用的部分
         values[var] = expr  # 存储最终值（可能是变量引用的表达式）
-    # graph = {'VAR1': ['VAR2', 'VAR4'], 'VAR2': ['VAR3'], 'VAR3': ['VAR4']})
-    # in-degree = {'VAR2': 1, 'VAR3': 1, 'VAR4': 2})
-    # dependencies = {'VAR1': set(), 'VAR2': {'VAR1'}, 'VAR3': {'VAR2'}, 'VAR4': {'VAR1', 'VAR3'}})
-    # values = {'VAR1': 'value', 'VAR2': '/suffix', 'VAR3': '/another', 'VAR4': '/'}
 
     # 拓扑排序解析变量
     queue = deque([var for var in variables if indegree[var] == 0])
@@ -59,11 +75,9 @@ def parse_environment(env_list):
     # 检测未解析的变量
     for var in variables:
         if var not in resolved:
-            raise ValueError(
-                f"Circular dependency detected or undefined variable: {var}")
+            raise ValueError(f"Circular dependency detected or undefined variable: {var}")
 
     return resolved
-
 
 def resolve_value(expr, resolved):
     # 替换变量引用为实际值
@@ -79,7 +93,6 @@ def resolve_value(expr, resolved):
             raise ValueError(f"Undefined variable: {var}")
     return expr
 
-
 # 示例输入
 env_list = [
     'VAR1 = value',
@@ -94,3 +107,29 @@ try:
     print(resolved_env)
 except ValueError as e:
     print(f"Error: {e}")
+
+
+```
+
+## Reference1
+
+----------------------
+
+### Method 2
+
+* `Time Complexity`:
+* `Space Complexity`:
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
+
+### Code2
+
+* `Code Design`:
+
+```java
+
+
+```
+
+## Reference2
