@@ -3,6 +3,8 @@
 ![143](/Image/143.png)
 ![144](/Image/144.png)
 
+topological graph need a in-degree list, and a neighbors list.
+
 ## BFS
 
 ```python
@@ -13,7 +15,6 @@ class DirectedGraphNode:
         self.label = x
         self.neighbors = []
 """
-
 class Solution:
     """
     @param: graph: A list of Directed graph node
