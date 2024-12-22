@@ -21,6 +21,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Check Completeness of a Binary Tree](BFS/Check_Completeness_of_a_Binary_Tree/)
 * [The Maze](BFS/The_Maze/)
 * [Word Ladder](BFS/Word_Ladder/)
+* [Open the Lock](BFS/Open_the_Lock/)
 
 ## 2. [Graph](Graph/)
 

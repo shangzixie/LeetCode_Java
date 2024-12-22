@@ -1,60 +1,39 @@
-
-from collections import deque, defaultdict
-
-
 class Solution:
-    def add_word_to_adj(self, word):
-        # build general to words, for examle word is hot
-        # map is {'hot': [*ot, h*t, ho*]}
-        generals = []
-        for i in range(len(word)):
-            general = word[:i] + '*' + word[i:]
-            generals.append(general)
-        self.adj[word].append(generals)
-        # build general to words
-        # map is {*ot: [hot], h*t: [hot], ho*: [hot]}
-        for i in range(len(word)):
-            general = word[:i] + '*' + word[i:]
-            self.adj[general].append(word)
-        """
-        以上代码可以优化为:
-        generals = []
-        for i in range(len(word)):
-            general = word[:i] + '*' + word[i:]
-            generals.append(general)
-            self.adf[general].append(word)
-        self.adj[word].append(generals)
-        """
+    # 双向bfs
+    def openLock(self, deadends: List[str], target: str) -> int:
+        if target == "0000":
+            return 0
+        dead = set(deadends)
+        if "0000" in dead:
+            return -1
+        d = {"0000": 0}
+        ed = {target: 0}
+        q = deque(["0000"])
+        eq = deque([target])
 
-    def ladderLength(self, beginWord, endWord, wordList):
-        q = deque([beginWord])
+        def spin(start: str) -> List[str]:
+            for i in range(4):
+                num = int(start[i])
+                for j in [1, -1]:
+                    yield start[:i] + str((num + j) % 10) + start[i + 1:]
 
-        # 存储各单词被初次转换时的距离，但源点处为 0，在最后调整
-        word_to_level = {beginWord: 0}
-        # 邻接表
-        self.adj = defaultdict(list)
+        def update(s: deque, visited: dict, u: dict) -> int:
+            while s:
+                cur = s.popleft()
+                tim = t[cur]
+                for st in spin(cur):
+                    if st not in dead and st not in visited:
+                        if st in u:
+                            return u[st] + tim + 1
+                        else:
+                            s.append(st)
+                            visited[st] = tim + 1
 
-        # 填充无向图的邻接表
-        for word in wordList:
-            self.add_word_to_adj(word)
-        # don't forget the beginword
-        self.add_word_to_adj(beginWord)
-
-        # BFS
-        while q:
-            word = q.popleft()
-            for nextWord in self.adj[word]:
-                if nextWord in word_to_level:
-                    continue
-                word_to_level[nextWord] = word_to_level[word] + 1
-                q.append(nextWord)
-                if nextWord == endWord:
-                    # 因为我们两个单词插入了新的通配节点, 所以这里要除以2
-                    return word_to_level[nextWord] // 2 + 1
-
-        return 0
-
-
-
-solu = Solution()
-solu.ladderLength("hit", "hot", ["hot", "dot", "dog", "lot", "log", "cog"])
+        while q and eq:
+            if len(q) <= len(eq):
+                r = update(q, d, ed)
+            else:
+                r = update(eq, ed, d)
+            if r:
+                return r
+        return -1
