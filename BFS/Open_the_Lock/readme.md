@@ -46,16 +46,16 @@ class Solution:
             for j in [1, -1]:
                 yield start[:i] + str((num + j) % 10) + start[i + 1:]
 
-    def update(self, s: deque, visited: dict, visited_2: dict) -> int:
-        while s:
-            cur = s.popleft()
+    def update(self, queue: deque, visited: dict, visited_2: dict) -> int:
+        while queue:
+            cur = queue.popleft()
             level = visited[cur]
             for next_pwd in self.spin(cur):
                 if next_pwd not in self.dead and next_pwd not in visited:
                     if next_pwd in visited_2:
                         return visited_2[next_pwd] + level + 1
                     else:
-                        s.append(next_pwd)
+                        queue.append(next_pwd)
                         visited[next_pwd] = level + 1
 ```
 
