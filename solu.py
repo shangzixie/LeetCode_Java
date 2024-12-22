@@ -1,57 +1,60 @@
 
-"""
-input: 1,3,5,7,9;2,4,6,8;-2,-1
-
-[13579]
-[2468]
-[-2 -1]
-"""
-
-# f(n) = f(n-1) + f(n - 2)
-import heapq
+from collections import deque, defaultdict
 
 
-class Node:
-    def __init__(self, val = 0, next = None):
-        self.next = next
-        self.val = val
 class Solution:
-    def solution(self, strs): # from 1
-        # minheap: [1, 2, -2]
-        heads = []
-        linkedlist = strs.split(";") # ["1,3,5" , "2,4,6,8", "-2, -1"]
-        for subStr in linkedlist:
-            nums = subStr.split(",")
-            dummy = Node()
-            p = dummy
-            for num in nums:
-                p.next = Node(int(num))
-                p = p.next
-            heads.append(dummy.next)
+    def add_word_to_adj(self, word):
+        # build general to words, for examle word is hot
+        # map is {'hot': [*ot, h*t, ho*]}
+        generals = []
+        for i in range(len(word)):
+            general = word[:i] + '*' + word[i:]
+            generals.append(general)
+        self.adj[word].append(generals)
+        # build general to words
+        # map is {*ot: [hot], h*t: [hot], ho*: [hot]}
+        for i in range(len(word)):
+            general = word[:i] + '*' + word[i:]
+            self.adj[general].append(word)
+        """
+        以上代码可以优化为:
+        generals = []
+        for i in range(len(word)):
+            general = word[:i] + '*' + word[i:]
+            generals.append(general)
+            self.adf[general].append(word)
+        self.adj[word].append(generals)
+        """
 
-        minHeap = []
-        # heapify: O(m)
-        # maintain heap, heap size is m -> logm
-        for node in heads:
-            heapq.heappush(minHeap, (node.val, node))
-        # minHeap =  [1, 2, -2]
-        dummy = Node()
-        p = dummy
+    def ladderLength(self, beginWord, endWord, wordList):
+        q = deque([beginWord])
 
-        # O(n) * O(logm)
-        while minHeap:
-            _, node = heapq.heappop(minHeap)
-            p.next = node
-            p = p.next
-            if node.next:
-                heapq.heappush(minHeap, (node.next.val, node.next))
+        # 存储各单词被初次转换时的距离，但源点处为 0，在最后调整
+        word_to_level = {beginWord: 0}
+        # 邻接表
+        self.adj = defaultdict(list)
 
-        p = dummy.next
-        while p:
-            print(p.val)
-            p = p.next
-        return dummy.next
+        # 填充无向图的邻接表
+        for word in wordList:
+            self.add_word_to_adj(word)
+        # don't forget the beginword
+        self.add_word_to_adj(beginWord)
+
+        # BFS
+        while q:
+            word = q.popleft()
+            for nextWord in self.adj[word]:
+                if nextWord in word_to_level:
+                    continue
+                word_to_level[nextWord] = word_to_level[word] + 1
+                q.append(nextWord)
+                if nextWord == endWord:
+                    # 因为我们两个单词插入了新的通配节点, 所以这里要除以2
+                    return word_to_level[nextWord] // 2 + 1
+
+        return 0
+
 
 
 solu = Solution()
-solu.solution("1,3,5,7,9;-2,-1;2,4,6,8")
+solu.ladderLength("hit", "hot", ["hot", "dot", "dog", "lot", "log", "cog"])

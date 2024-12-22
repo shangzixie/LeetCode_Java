@@ -20,6 +20,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Possible Bipartition](BFS/Possible_Bipartition/)
 * [Check Completeness of a Binary Tree](BFS/Check_Completeness_of_a_Binary_Tree/)
 * [The Maze](BFS/The_Maze/)
+* [Word Ladder](BFS/Word_Ladder/)
 
 ## 2. [Graph](Graph/)
 
