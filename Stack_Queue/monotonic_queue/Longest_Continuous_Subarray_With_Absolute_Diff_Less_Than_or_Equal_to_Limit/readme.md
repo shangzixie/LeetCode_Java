@@ -1,38 +1,24 @@
-"""
-typedef struct {
-    int startAddr;
-    int endAddr;
-} IoRecord;
+# [LeetCode 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/description/)
 
-// 注意：返回的数组必须在函数内调用malloc进行内存分配，由框架代码调用free进行内存释放。
-// 返回的数组长度存在 *returnValSize 中。
-static IoRecord *IoMerge(int sectorSize, const IoRecord *opArray, size_t opArraySize, size_t *returnValSize)
-{
-    *returnValSize = 0;
-    return NULL;
-}
+## Methods
 
-[x1, y1] [x2, y2]
-  a         b
+### Method 1
 
-1. 交叉
-2. 不交叉
+* `Time Complexity`:
+* `Space Complexity`:
+* `Intuition`:
+* `Key Points`:
+* `Algorithm`:
 
-交叉: ab位置不确定
-1. y1  >= x2
-y2 >= x1
+please read [double ended queue for sliding window](Stack_Queue\monotonic_queue\readme.md) first.
 
+所以对于一个滑动窗口，我们可以维护两个单调队列，一个单调递增，一个单调递减，这样我们就可以在O(1)时间内得到当前窗口的最大值和最小值。
 
-y1  i -> x2
+### Code1
 
-intertvals = [a,b,c]
-a.start
-a[0]a[1]
+* `Code Design`:
 
-32
-[[0, 30], [10, 33], [130, 150], [151, 158], [60, 100], [130, 150], [20, 50]]
-"""
-
+```python
 class Solution:
     def longestSubarray(self, nums: List[int], limit: int) -> int:
         n = len(nums)
@@ -53,9 +39,12 @@ class Solution:
                 if nums[left] == max_to_min[0]:
                     max_to_min.popleft()
                 left += 1
-            
             result = max(result, right - left + 1)
             right += 1
-        
         return result
+```
 
+## Reference1
+
+youtube视频没啥用
+[youtube](https://www.youtube.com/watch?v=p8-f0_CwWLk)
