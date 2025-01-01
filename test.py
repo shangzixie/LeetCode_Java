@@ -1,96 +1,29 @@
-from collections import defaultdict, deque
+import time
+import random
 
 
-def parse_environment(env_list):
-    # 解析输入数组为变量和表达式
-    variables = {}
-    for entry in env_list:
-        # 根据 '=' 拆分变量名和值
-        parts = entry.split('=')
-        if len(parts) != 2:
-            raise ValueError(f"Invalid environment variable format: {entry}")
-        var_name = parts[0].strip()
-        value = parts[1].strip()
-        variables[var_name] = value
+def love_before_sunrise():
+    """
+    A poetic function to simulate the fleeting beauty of connections before sunrise.
+    """
+    moments = [
+        "A gentle conversation under the stars",
+        "The sound of footsteps echoing in empty streets",
+        "A glance that speaks volumes",
+        "The warmth of a fleeting touch",
+        "The promise of a moment never to be forgotten"
+    ]
 
-    # variable = {'VAR1': 'value', 'VAR2': '$VAR1/suffix', 'VAR3': '$VAR2/another', 'VAR4': '$VAR3/$VAR1'}
+    print("As the world sleeps, love awakens...\n")
+    time.sleep(1)
 
-    # 构建依赖图
-    graph = defaultdict(list)  # key is node, values are node that reference it
-    indegree = defaultdict(int)  # {node: indegree}
-    values = {}
-    dependencies = defaultdict(set) # key is node, values are the node dependency
+    for _ in range(5):
+        moment = random.choice(moments)
+        print(f"🌅 {moment}")
+        time.sleep(2)
 
-    # 遍历所有变量，构建依赖关系图
-    for var, expr in variables.items():
-        dependencies[var] = set()
-        # 查找变量中是否有引用其他变量
-        while '$' in expr:
-            start_index = expr.find('$') + 1  # 发现$的位置
-            end_index = expr.find('/', start_index)  # 查找引用结束位置（如果有斜杠）
-            if end_index == -1:
-                end_index = len(expr)  # 如果没有斜杠，说明变量名到结尾为止
-            dep_var = expr[start_index:end_index]
-
-            if dep_var in variables:
-                graph[dep_var].append(var)
-                indegree[var] += 1
-                dependencies[var].add(dep_var)
-            expr = expr[:start_index-1] + expr[end_index:]  # 移除引用的部分
-        values[var] = expr  # 存储最终值（可能是变量引用的表达式）
-    # graph = {'VAR1': ['VAR2', 'VAR4'], 'VAR2': ['VAR3'], 'VAR3': ['VAR4']})
-    # in-degree = {'VAR2': 1, 'VAR3': 1, 'VAR4': 2})
-    # dependencies = {'VAR1': set(), 'VAR2': {'VAR1'}, 'VAR3': {'VAR2'}, 'VAR4': {'VAR1', 'VAR3'}})
-    # values = {'VAR1': 'value', 'VAR2': '/suffix', 'VAR3': '/another', 'VAR4': '/'}
-
-    # 拓扑排序解析变量
-    queue = deque([var for var in variables if indegree[var] == 0])
-    resolved = {}
-
-    while queue:
-        current = queue.popleft()
-        if current not in resolved:
-            resolved[current] = resolve_value(values[current], resolved)
-        for neighbor in graph[current]:
-            indegree[neighbor] -= 1
-            if indegree[neighbor] == 0:
-                queue.append(neighbor)
-
-    # 检测未解析的变量
-    for var in variables:
-        if var not in resolved:
-            raise ValueError(
-                f"Circular dependency detected or undefined variable: {var}")
-
-    return resolved
+    print("\nThe sunrise comes, but the memory lingers forever. 💫")
 
 
-def resolve_value(expr, resolved):
-    # 替换变量引用为实际值
-    while '$' in expr:
-        start_index = expr.find('$') + 1
-        end_index = expr.find('/', start_index)
-        if end_index == -1:
-            end_index = len(expr)
-        var = expr[start_index:end_index]
-        if var in resolved:
-            expr = expr[:start_index-1] + resolved[var] + expr[end_index:]
-        else:
-            raise ValueError(f"Undefined variable: {var}")
-    return expr
-
-
-# 示例输入
-env_list = [
-    'VAR1 = value',
-    'VAR2 = $VAR1/suffix',
-    'VAR3 = $VAR2/another',
-    'VAR4 = $VAR3/$VAR1'
-]
-
-# 调用解析函数
-try:
-    resolved_env = parse_environment(env_list)
-    print(resolved_env)
-except ValueError as e:
-    print(f"Error: {e}")
+if __name__ == "__main__":
+    love_before_sunrise()
