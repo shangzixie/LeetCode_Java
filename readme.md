@@ -255,6 +255,7 @@ Recursion:
 * [K-th Smallest in Lexicographical Order](Tricky/K-th_Smallest_in_Lexicographical_Order/)
 * [Kth Smallest Element in a Sorted Matrix](Tricky/Kth_Smallest_Element_in_a_Sorted_Matrix/)
 * [Merge Sorted Array](Tricky/Merge_Sorted_Array/)
+* [Maximum Number of Weeks for Which You Can Work](/Tricky/Maximum_Number_of_Weeks_for_Which_You_Can_Work/)
 
 ## 12. Stack
 
