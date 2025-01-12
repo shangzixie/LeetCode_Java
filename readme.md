@@ -112,6 +112,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Add Binary](Math/Add_Binary/)
 * [Maximum Product of Word Lengths](Math/Maximum_Product_of_Word_Lengths/)
 * [Reverse Integer](Math/Reverse_Integer/)
+* [Max Points on A Line](Tricky/Max_Points_on_A_Line/)
 
 ### Add
 
@@ -224,7 +225,6 @@ Recursion:
 * [Longest Consecutive Sequence](Tricky/Longest_Consecutive_Sequence/)
 * [Count Binary Substrings](Tricky/Count_Binary_Substrings/)
 * [Find All Duplicates in an Array](Tricky/Find_All_Duplicates_in_an_Array/)
-* [Max Points on A Line](Tricky/Max_Points_on_A_Line/)
 * [Next Greater Element III](Tricky/Next_Greater_Element_III/)
 * [Set Mismatch](Tricky/Set_Mismatch/)
 * [Sliding Window Maximum](Tricky/Sliding_Window_Maximum/)
