@@ -44,6 +44,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Search in a Sorted Array of Unknown Size](Binary_Search/Search_in_a_Sorted_Array_of_Unknown_Size/)
 * [Search a 2D Matrix](Binary_Search/Search_a_2D_Matrix/)
 * [Find K Closest Elements](Binary_Search/Find_K_Closest_Elements/)
+* [Maximum Number of Weeks for Which You Can Work](/Binary_Search/Maximum_Number_of_Weeks_for_Which_You_Can_Work/)
 
 ## 4. Dynamic Programming
 
@@ -255,7 +256,6 @@ Recursion:
 * [K-th Smallest in Lexicographical Order](Tricky/K-th_Smallest_in_Lexicographical_Order/)
 * [Kth Smallest Element in a Sorted Matrix](Tricky/Kth_Smallest_Element_in_a_Sorted_Matrix/)
 * [Merge Sorted Array](Tricky/Merge_Sorted_Array/)
-* [Maximum Number of Weeks for Which You Can Work](/Tricky/Maximum_Number_of_Weeks_for_Which_You_Can_Work/)
 
 ## 12. Stack
 
