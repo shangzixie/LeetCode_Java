@@ -43,9 +43,25 @@ if a == b + c + d + ... or a = b + c + d + ... + 1 or a = b + c + d + ... - 1:
 * `Code Design`:
 
 ```python
+class Solution:
+    def numberOfWeeks(self, milestones: List[int]):
+        # 耗时最长工作所需周数
+        longest = max(milestones)
+        # 其余工作共计所需周数
+        rest = sum(milestones) - longest
+        if longest > rest + 1:
+            # 此时无法完成所耗时最长的工作
+            return rest * 2 + 1
+        else:
+            # 此时可以完成所有工作
+            return longest + rest
 
+作者：力扣官方题解
+链接：https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/solutions/908442/ni-ke-yi-gong-zuo-de-zui-da-zhou-shu-by-rbidw/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
 ## Reference1
 
-[leetcode answer](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days)
+[leetcode answer](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/solutions/909585/ezi-zai-fei-hua-e-bi-jiao-hao-li-jie-de-8in32/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days)
