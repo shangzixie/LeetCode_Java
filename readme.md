@@ -44,6 +44,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Search in a Sorted Array of Unknown Size](Binary_Search/Search_in_a_Sorted_Array_of_Unknown_Size/)
 * [Search a 2D Matrix](Binary_Search/Search_a_2D_Matrix/)
 * [Find K Closest Elements](Binary_Search/Find_K_Closest_Elements/)
+* [Minimum Number of Days to Make m Bouquets](/Binary_Search/Minimum_Number_of_Days_to_Make_m_Bouquets/)
 
 ## 4. Dynamic Programming
 
