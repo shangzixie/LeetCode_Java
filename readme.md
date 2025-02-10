@@ -22,6 +22,7 @@ All my Leetcode answer, but removing all easy questions.
 * [The Maze](BFS/The_Maze/)
 * [Word Ladder](BFS/Word_Ladder/)
 * [Open the Lock](BFS/Open_the_Lock/)
+* [Making A Large Island](BFS/Making_A_Large_Island/)
 
 ## 2. [Graph](Graph/)
 
