@@ -1,5 +1,6 @@
-def gcd(a, b):
-    return a if b == 0 else gcd(b, a % b)
 
-print(gcd(10, 5))  # 5
-print(gcd(14, 21))  # 7
+from itertools import accumulate
+
+
+w = [1,3,4,5]
+print(list(accumulate(w)))

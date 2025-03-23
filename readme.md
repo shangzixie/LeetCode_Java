@@ -115,6 +115,7 @@ All my Leetcode answer, but removing all easy questions.
 * [Maximum Product of Word Lengths](Math/Maximum_Product_of_Word_Lengths/)
 * [Reverse Integer](Math/Reverse_Integer/)
 * [Max Points on A Line](Tricky/Max_Points_on_A_Line/)
+* [Random Pick with Weight](Math/Random_Pick_with_Weight/)
 
 ### Add
 
