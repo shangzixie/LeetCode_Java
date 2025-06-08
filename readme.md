@@ -9,7 +9,7 @@ All my Leetcode answer, but removing all easy questions.
 * [transfer 2d array to 1d array](skills/transfer_2d_array_to_1d_array/)
 * [loop invariant](skills/loop_invariant/)
 
-## 1. BFS
+## 1. [BFS](/BFS)
 
 * [Number of Island](BFS/Number_of_Island/)
 * [Clone Graph](BFS/Clone_Graph/)
@@ -23,6 +23,9 @@ All my Leetcode answer, but removing all easy questions.
 * [Word Ladder](BFS/Word_Ladder/)
 * [Open the Lock](BFS/Open_the_Lock/)
 * [Making A Large Island](BFS/Making_A_Large_Island/)
+* Bidirectional BFS
+  * [Open the Lock](BFS/Bidirectional_BFS/Open_the_Lock)
+  * [Minimum Knight Moves](BFS/Bidirectional_BFS/Minimum_Knight_Moves)
 
 ## 2. [Graph](Graph/)
 
