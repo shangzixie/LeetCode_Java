@@ -4,7 +4,7 @@
 
 ### Method 1
 
-same to [First_Missing_Positive](Tricky/First_Missing_Positive)
+same to [First_Missing_Positive](/Tricky/First_Missing_Positive)
 
 * `Time Complexity`: O(n)
 * `Space Complexity`: O(1)
